@@ -1,0 +1,12 @@
+# node_modules
+node_modules/
+
+# dist
+dist/
+
+# .env
+src/data/.env
+src/data/.env.development
+
+# config
+src/config.ts
