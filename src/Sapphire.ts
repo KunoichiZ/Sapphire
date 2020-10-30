@@ -10,15 +10,12 @@ export class SBClient extends SapphireClient {
 
     public constructor(options?: ClientOptions) {
       super(options);
-      this.arguments.registerPath(join(__dirname, '..', 'arguments'));
-      this.commands.registerPath(join(__dirname, '..', 'commands'));
-      this.events.registerPath(join(__dirname, '..', 'events'));
-      this.preconditions.registerPath(join(__dirname, '..', 'preconditions'));
+      // this.arguments.registerPath(join(__dirname, '..', 'arguments'));
+      this.commands.registerPath(join(__dirname, 'commands'));
+      // this.events.registerPath(join(__dirname, '..', 'events'));
+      // this.preconditions.registerPath(join(__dirname, '..', 'preconditions'));
+      this.registerUserDirectories();
 	}
-
-    public fetchPrefix = async (message: Message) => {
-		  return process.env.PREFIX;
-	  };
 }
 
 const client = new SBClient({
@@ -31,7 +28,8 @@ const client = new SBClient({
     }
   });
   
-  client.registerUserDirectories();
   client.login(TOKENS.BOT_TOKEN)
-    .catch(console.error);
+    .catch((error) => {
+      client.logger.error(error);
+    });
 
