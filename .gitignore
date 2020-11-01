@@ -10,3 +10,6 @@ src/data/.env.development
 
 # config
 src/config.ts
+
+# DS_Store
+.DS_Store
