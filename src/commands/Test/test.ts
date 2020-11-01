@@ -6,7 +6,8 @@ ApplyOptions<CommandOptions>({
     name: 'test',
     preconditions: ['OwnerOnly'],
 })
-export default class UserCommand extends Command {
+
+export default class TestCommand extends Command {
     public run(message: Message) {
 		return message.channel.send("test message working!");
 	}
