@@ -4,6 +4,7 @@ import { Message } from 'discord.js';
 
 ApplyOptions<CommandOptions>({
     name: 'test',
+    aliases: ['t'],
     preconditions: ['OwnerOnly'],
 })
 
