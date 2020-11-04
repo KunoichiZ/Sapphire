@@ -35,7 +35,7 @@
   dependencies:
     "@klasa/cache" "^0.0.3"
 
-"@sapphire/decorators@^1.0.2":
+"@sapphire/decorators@^1.0.1":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-1.0.2.tgz#6a93cdfdc8d679c7668b3e4fafb8d3538aa774cf"
   integrity sha512-PSoI7xrWCPOIRpEP6n+PTyov4KS3VqLD/6mEeHv28Wh7Ju1kGw5axt/kJg2GzPW+fPjjgaYXXEy29sGmu7aVpw==
@@ -55,7 +55,7 @@
   dependencies:
     "@discordjs/collection" "^0.1.6"
 
-"@sapphire/utilities@^1.0.2":
+"@sapphire/utilities@^1.0.1", "@sapphire/utilities@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.0.2.tgz#91f4efc7208e5e9bb65096e7ee2c21b7322a2760"
   integrity sha512-+VeSCI+M1Dd3vVbQjcDmFrS7erqWpKySrv+2qDtCTt57BQNZ+Ca406bUohN34JbJQ0rwAB3vtpCLpaWdOwaqhA==
@@ -149,7 +149,7 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
-discord.js@^12.4.1:
+discord.js@^12.3.1:
   version "12.4.1"
   resolved "https://registry.yarnpkg.com/discord.js/-/discord.js-12.4.1.tgz#be88bb32caa9e41eae67749a4e2387585745ac3b"
   integrity sha512-KxOB8LOAN3GmrvkD6a6Fr1nlfArIFZ+q7Uqg4T/5duB90GZy9a0/Py2E+Y+eHKP6ZUCR2mbNMLCcHGjahiaNqA==
