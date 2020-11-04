@@ -4,7 +4,7 @@
   "description": "testing sapphire and discord",
   "main": "src/Sapphire.ts",
   "author": "KunoichiZ",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "private": true,
   "scripts": {
     "build": "tsc -b src",
