@@ -2,12 +2,11 @@
 // import { MessageEmbed } from 'discord.js';
 import { ApplyOptions } from '@sapphire/decorators';
 import { Command, CommandOptions, Args } from '@sapphire/framework';
-import { Message } from 'discord.js';
+import { Message, MessageEmbed } from 'discord.js';
 import { Query } from '@favware/graphql-pokemon';
 import nodeFetch from 'node-fetch';
 
-ApplyOptions<CommandOptions>({
-    name: 'pokedex',
+@ApplyOptions<CommandOptions>({
     aliases: ['dex', 'pokemon', 'mon', 'poke', 'dexter'],
     description: 'Gets data for any given Pokémon'
 })
@@ -52,7 +51,7 @@ export default class PokedexCommand extends Command {
             `
             })
         })
-        .then((res) => res.json())
+        .then((res) => res.json() as Promise<GraphQLPokemonResponse<'getPokemonDetails'>>)
         .then((json) => console.log(json.data));
 
     }
