@@ -2,8 +2,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 import { Command, CommandOptions } from '@sapphire/framework';
 import { Message } from 'discord.js';
 
-ApplyOptions<CommandOptions>({
-    name: 'test',
+@ApplyOptions<CommandOptions>({
     aliases: ['t'],
     preconditions: ['OwnerOnly'],
 })
