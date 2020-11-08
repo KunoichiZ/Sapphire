@@ -60,10 +60,10 @@
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.0.2.tgz#91f4efc7208e5e9bb65096e7ee2c21b7322a2760"
   integrity sha512-+VeSCI+M1Dd3vVbQjcDmFrS7erqWpKySrv+2qDtCTt57BQNZ+Ca406bUohN34JbJQ0rwAB3vtpCLpaWdOwaqhA==
 
-"@sapphire/utilities@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.0.3.tgz#5d02e18ef2e10b69fa35395b8879d96302335b93"
-  integrity sha512-AkS4h3/h1sqzlaU/qRhBN3/VQSaVykkTIctyIzYt7WxTtpeBF9j1sthyTtk8axKqn2KEad/qsl//CRcLiZ2TOg==
+"@sapphire/utilities@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.1.0.tgz#f0eb237240c4607301eb170f6cc7f27369ae1ab0"
+  integrity sha512-EPZS+Ho+1bVgt/DBlkof1rV4JK4fjS1kIyvFgrhV+AvJb9/5ohk+CzYDR44k79824DqpX2st6jNcLPybDLy9Pw==
 
 "@types/dotenv@^8.2.0":
   version "8.2.0"
