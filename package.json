@@ -19,7 +19,7 @@
     "typescript": "^4.0.5"
   },
   "dependencies": {
-    "@favware/graphql-pokemon": "^4.4.0",
+    "@favware/graphql-pokemon": "^4.5.0",
     "@sapphire/decorators": "^1.0.2",
     "@sapphire/framework": "github:sapphire-project/framework#build",
     "@sapphire/utilities": "^1.1.0",
