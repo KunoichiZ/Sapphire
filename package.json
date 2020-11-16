@@ -22,7 +22,7 @@
     "@favware/graphql-pokemon": "^4.5.0",
     "@sapphire/decorators": "^1.0.2",
     "@sapphire/framework": "github:sapphire-project/framework#build",
-    "@sapphire/utilities": "^1.1.0",
+    "@sapphire/utilities": "^1.1.1",
     "chokidar": "^3.4.3",
     "colorette": "^1.2.1",
     "discord.js": "^12.4.1",
