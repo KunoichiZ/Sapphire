@@ -13,3 +13,6 @@ src/config.ts
 
 # DS_Store
 .DS_Store
+
+# error logs
+yarn-error.log
