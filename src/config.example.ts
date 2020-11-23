@@ -4,7 +4,6 @@ export const PREFIX = '-';
 export const OWNER_ID = '';
 
 export const CLIENT_OPTIONS: ClientOptions = {
-	defaultPrefix: PREFIX,
 	messageCacheLifetime: 120,
 	messageCacheMaxSize: 20,
 	messageEditHistoryMaxSize: 0,
