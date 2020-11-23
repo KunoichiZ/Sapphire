@@ -1,7 +1,10 @@
 import { ClientOptions } from 'discord.js';
 
-export const PREFIX = '-';
+export const NAME = '';
+export const PREFIX = '';
 export const OWNER_ID = '';
+export const CLIENT_ID = '';
+export const CLIENT_SECRET = '';
 
 export const CLIENT_OPTIONS: ClientOptions = {
 	messageCacheLifetime: 120,
