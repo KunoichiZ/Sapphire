@@ -9,7 +9,8 @@
   "scripts": {
     "build": "tsc -b src",
     "dev": "yarn build && yarn start",
-    "start": "node dist/Sapphire.js"
+    "start": "node dist/Sapphire.js",
+    "watch": "tsc -b src -w"
   },
   "devDependencies": {
     "@types/module-alias": "^2.0.0",
@@ -20,6 +21,7 @@
   "dependencies": {
     "@favware/graphql-pokemon": "^4.5.0",
     "@sapphire/decorators": "^1.0.2",
+    "@sapphire/event-iterator": "^1.1.0",
     "@sapphire/framework": "github:sapphire-project/framework#build",
     "@sapphire/utilities": "^1.1.1",
     "chokidar": "^3.4.3",

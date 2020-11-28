@@ -28,6 +28,11 @@
   resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-1.0.3.tgz#b5642873e0ed018f7dc3a3f8422718b54d6a5b70"
   integrity sha512-FEjFaAYOU6oBsYEokI1xfMWg2iYstQWR8+56Q1xBWhbPaSn3wQXlzGl1L3E2WHJDWFGyBZ7PA54yASSUk3vd6A==
 
+"@sapphire/event-iterator@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.1.0.tgz#128e3a06c8ba23886f1947a8465edea4c6c05fdc"
+  integrity sha512-0piqO6+mjCje5jlPzvBClKDUNBaaqwubIkmxOZC3hSTpdmVD2bkvLrngOWQhX86jhDO9h6Ldkcy5zfFksTayYA==
+
 "@sapphire/framework@github:sapphire-project/framework#build":
   version "0.0.1"
   resolved "https://codeload.github.com/sapphire-project/framework/tar.gz/2d65a8d18dafc7512249dc8f33b448c1bde81d9f"
@@ -134,6 +139,11 @@ combined-stream@^1.0.8:
   integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
   dependencies:
     delayed-stream "~1.0.0"
+
+common-tags@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
+  integrity sha512-6P6g0uetGpW/sdyUy/iQQCbFF0kWVMSIVSyYz7Zgjcgh8mgw8PQzDNZeyZ5DQ2gM7LBoZPHmnjz8rUthkBG5tw==
 
 delayed-stream@~1.0.0:
   version "1.0.0"
