@@ -9,6 +9,7 @@
   "scripts": {
     "build": "tsc -b src",
     "dev": "yarn build && yarn start",
+    "lint": "eslint --fix src --ext ts",
     "start": "node dist/Sapphire.js",
     "watch": "tsc -b src -w"
   },
@@ -19,14 +20,16 @@
     "typescript": "^4.1.2"
   },
   "dependencies": {
-    "@favware/graphql-pokemon": "^4.5.0",
+    "@favware/graphql-pokemon": "^5.0.0",
     "@sapphire/decorators": "^1.0.2",
+    "@sapphire/eslint-config": "^1.0.4",
     "@sapphire/event-iterator": "^1.1.0",
     "@sapphire/framework": "github:sapphire-project/framework#build",
     "@sapphire/utilities": "^1.1.1",
     "chokidar": "^3.4.3",
     "colorette": "^1.2.1",
     "discord.js": "^12.5.1",
+    "eslint": "^7.15.0",
     "module-alias": "^2.2.2",
     "node-fetch": "^2.6.1",
     "reflect-metadata": "^0.1.13"
