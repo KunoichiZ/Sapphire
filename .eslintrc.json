@@ -1,0 +1,16 @@
+{
+	"extends": "@sapphire",
+	"rules": {
+		"@typescript-eslint/no-throw-literal": 0,
+		"@typescript-eslint/restrict-plus-operands": 0,
+		"@typescript-eslint/naming-convention": 0
+	},
+	"overrides": [
+		{
+			"files": ["src/commands/**/*.ts", "jest.config.ts"],
+			"rules": {
+				"@typescript-eslint/require-await": 0
+			}
+		}
+	]
+}
