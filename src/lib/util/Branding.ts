@@ -15,7 +15,7 @@ export namespace Branding {
     export const Height = '5\'2" (158 cm)'
     export const Weight = '99 lbs (45 kg)'
 
-	export const enum BrandingColors {
+    export const enum BrandingColors {
         Primary = 0x26bbec,
         Secondary = 0xfe4f60
     }
