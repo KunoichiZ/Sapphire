@@ -36,6 +36,7 @@
     "@sapphire/eslint-config": "^1.0.4",
     "@sapphire/event-iterator": "^1.1.0",
     "@sapphire/framework": "github:sapphire-project/framework#build",
+    "@sapphire/time-utilities": "^1.2.0",
     "@sapphire/utilities": "^1.1.1",
     "chokidar": "^3.4.3",
     "colorette": "^1.2.1",

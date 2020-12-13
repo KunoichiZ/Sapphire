@@ -105,6 +105,13 @@
   resolved "https://registry.yarnpkg.com/@sapphire/ratelimits/-/ratelimits-1.1.0.tgz#274236efe51a785b758a7233708198b0ded710f9"
   integrity sha512-C+3AZ/AoLJR2h4hQK8heyGuYfKDzdOOA9MKlwSZrx0uKa9DypgajEAYjcOjrsAjhzQ9jatKvkQ4XKK5oTzp4LA==
 
+"@sapphire/time-utilities@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.0.tgz#a632d711b6bcbc63440b005e131cdbd7c1b6a61c"
+  integrity sha512-jzIiJ6FzXrDomwelCACB6yVSQ0Kn0lSNXmR0CzGRC+W8c/yr5CVH+SMEMNsf+ts53RK1EwWIT7EmqQN36ajnPQ==
+  dependencies:
+    "@sapphire/utilities" "^1.1.1"
+
 "@sapphire/utilities@^1.1.0", "@sapphire/utilities@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.1.1.tgz#899b033312794ecfb48efa81b6e97ecc7b2879d4"
