@@ -1,16 +1,17 @@
 // Stats command from godfather (https://github.com/Soumil07/godfather) Copyright 2020 Soumil07, used under the AGPL-3.0 License
 import { ApplyOptions } from '@sapphire/decorators';
-import { Command, CommandOptions } from '@sapphire/framework';
+import { CommandOptions } from '@sapphire/framework';
 import { roundNumber } from '@sapphire/utilities';
 import { format } from '@utils/durationFormat';
 import { Branding } from '@utils/Branding';
 import { Message, MessageEmbed } from 'discord.js';
 import { cpus } from 'os';
+import SapphireCommand from '@lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	description: 'View bot statistics'
 })
-export default class extends Command {
+export default class StatsCommand extends SapphireCommand {
 
 	public async run(message: Message) {
 		return message.channel.send(await this.buildEmbed(message));

@@ -1,8 +1,9 @@
 // Help command from Gitcord (https://github.com/gitcord-project) Copyright 2020 Charalampos Fanoulis, used under the MIT license
 
 import { ApplyOptions } from '@sapphire/decorators';
-import { Args, Command, CommandOptions } from '@sapphire/framework';
+import { Args, CommandOptions } from '@sapphire/framework';
 import { Message, MessageEmbed } from 'discord.js';
+import SapphireCommand from '@lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
     aliases: ['commands', 'cmd', 'cmds', 'h'],
@@ -11,7 +12,7 @@ import { Message, MessageEmbed } from 'discord.js';
 	preconditions: []
 })
 
-export default class TestCommand extends Command {
+export default class HelpCommand extends SapphireCommand {
     public async run(message: Message, args: Args) {
 		const command = await args.pickResult('string');
 		if (command.success) return this.commandHelp(message, command.value);

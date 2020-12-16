@@ -13,7 +13,7 @@ import { Message, MessageAttachment } from 'discord.js';
 	detailedDescription: 'Reserved only for owners',
 	preconditions: [PreConditions.OwnerOnly]
 })
-export default class extends Command {
+export default class ExecCommand extends Command {
 	public async run(message: Message, args: Args) {
 		const input = await args.pick('string');
 		const result = await exec(input, { timeout: 60000 }).catch((error) => ({

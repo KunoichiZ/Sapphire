@@ -1,16 +1,17 @@
 // import { AbilitiesEntry, DexDetails, GenderEntry, StatsEntry } from '@favware/graphql-pokemon';
 // import { MessageEmbed } from 'discord.js';
 import { ApplyOptions } from '@sapphire/decorators';
-import { Command, CommandOptions, Args } from '@sapphire/framework';
+import { CommandOptions, Args } from '@sapphire/framework';
 import { Message, MessageEmbed } from 'discord.js';
 import { Query } from '@favware/graphql-pokemon';
 import nodeFetch from 'node-fetch';
+import SapphireCommand from '@lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
     aliases: ['dex', 'pokemon', 'mon', 'poke', 'dexter'],
     description: 'Gets data for any given Pokémon'
 })
-export default class PokedexCommand extends Command {
+export default class PokedexCommand extends SapphireCommand {
     public async run(message: Message, args: Args) {
         
         const pokemon = await args.rest('string');

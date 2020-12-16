@@ -2,12 +2,13 @@
 import { Stopwatch } from '@klasa/stopwatch';
 import { Type } from '@klasa/type';
 import { ApplyOptions } from '@sapphire/decorators';
-import { Args, Command, CommandOptions } from '@sapphire/framework';
+import { Args, CommandOptions } from '@sapphire/framework';
 import { codeBlock, isThenable } from '@sapphire/utilities';
 import { clean } from '@utils/clean';
 import { fetch, FetchMethods, FetchResultTypes } from '@utils/util';
 import { Message, MessageEmbed } from 'discord.js';
 import { inspect } from 'util';
+import SapphireCommand from '@lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['ev'],
@@ -15,7 +16,7 @@ import { inspect } from 'util';
 	detailedDescription: 'Reserved only for owners',
 	preconditions: ['OwnerOnly']
 })
-export default class EvalCommand extends Command {
+export default class EvalCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
 		const code = await args.pick('string');
 		const { success, result, time, type } = await this.eval(code);
