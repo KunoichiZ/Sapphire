@@ -16,3 +16,10 @@ export const CLIENT_OPTIONS: ClientOptions = {
 export const TOKENS = {
 	BOT_TOKEN: ''
 };
+
+export const PGSQL_ENABLED = false;
+export const PGSQL_DATABASE_NAME = 'sapphire';
+export const PGSQL_DATABASE_PASSWORD = '';
+export const PGSQL_DATABASE_USER = '';
+export const PGSQL_DATABASE_PORT = 5432;
+export const PGSQL_DATABASE_HOST = 'localhost';
