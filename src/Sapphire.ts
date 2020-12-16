@@ -10,6 +10,7 @@ export class SBClient extends SapphireClient {
     public constructor(options?: ClientOptions) {
       super(options);
       this.registerUserDirectories();
+      this.fetchPrefix = () => PREFIX
   }
   
   public get invite() {
@@ -21,7 +22,7 @@ export class SBClient extends SapphireClient {
   public get version() {
 		const versionStr = this._version.join('.');
     return versionStr;
-	}
+  }
 }
 
 const client = new SBClient({
