@@ -42,7 +42,7 @@
     "colorette": "^1.2.1",
     "common-tags": "^1.8.0",
     "discord.js": "^12.5.1",
-    "eslint": "^7.15.0",
+    "eslint": "^7.16.0",
     "module-alias": "^2.2.2",
     "node-fetch": "^2.6.1",
     "reflect-metadata": "^0.1.13",
