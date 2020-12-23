@@ -22,6 +22,7 @@ import { Events } from '@sapphire/framework';
 import { isThenable, mergeObjects } from '@sapphire/utilities';
 import { Client } from 'discord.js';
 import nodeFetch, { RequestInit, Response } from 'node-fetch';
+import { ValueTransformer } from "typeorm";
 
 export function getAllRegexMatches(regex: RegExp, string: string) {
 	let match = undefined;
@@ -67,6 +68,8 @@ export const enum FetchMethods {
 	Put = 'PUT',
 	Delete = 'DELETE'
 }
+
+export const kBigIntTransformer: ValueTransformer = { from: Number, to: String };
 
 export async function fetch<R>(url: string, type?: FetchResultTypes.JSON): Promise<R>;
 export async function fetch<R>(url: string, options: RequestInit, type?: FetchResultTypes.JSON): Promise<R>;
