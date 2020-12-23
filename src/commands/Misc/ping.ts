@@ -12,7 +12,7 @@ export default class PingCommand extends SapphireCommand {
 	public async run(message: Message) {
 		const sent = await message.channel.send('Pinging...');
 		const ping = sent.createdTimestamp - message.createdTimestamp;
-		return sent.edit(`Pong! That took ${ping}ms. Latency: ${this.client.ws.ping}ms`);
+		return sent.edit(`Pong! That took ${ping}ms. Latency: ${this.context.client.ws.ping}ms`);
 	}
 
 }

@@ -1,3 +1,4 @@
+// Info command is modified from godfather (https://github.com/Soumil07/godfather) Copyright 2020 Soumil07, used under the AGPL-3.0 License
 import { ApplyOptions } from '@sapphire/decorators';
 import { CommandOptions } from '@sapphire/framework';
 import { Message } from 'discord.js';
@@ -10,7 +11,7 @@ export default class InfoCommand extends SapphireCommand {
 
 	public async run(message: Message) {
 		const messageText = [
-			`Sapphire v${this.client.version} is a Pokémon based Discord Bot for the Pokémon Crossroads Discord server`,
+			`Sapphire v${this.context.client.version} is a Pokémon based Discord Bot for the Pokémon Crossroads Discord server`,
 			' ',
 			'**Sapphire features:**',
 			'• Look up a Pokémon\'s dex entries, stats, abilities',

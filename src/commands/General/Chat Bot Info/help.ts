@@ -20,7 +20,7 @@ export default class HelpCommand extends SapphireCommand {
 	}
 
 	private async commandHelp(message: Message, cmd: string) {
-		const command = this.client.commands.get(cmd);
+		const command = this.context.client.commands.get(cmd);
 		if (typeof command === 'undefined') return message.channel.send("Couldn't find that command!");
 		return message.channel.send(
 			new MessageEmbed()
@@ -33,6 +33,6 @@ export default class HelpCommand extends SapphireCommand {
 	}
 
 	private mapCommandsToStr() {
-		return this.client.commands.map((val) => `${val.name} → ${val.description}`).join('\n');
+		return this.context.client.commands.map((val) => `${val.name} → ${val.description}`).join('\n');
 	}
 }
