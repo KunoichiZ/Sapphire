@@ -52,6 +52,7 @@
   "_moduleAliases": {
     "@utils": "dist/lib/util",
     "@lib": "dist/lib",
-    "@root": "dist"
+    "@root": "dist",
+    "@orm/*": ["./*"]
   }
 }

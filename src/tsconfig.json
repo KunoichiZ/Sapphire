@@ -9,7 +9,8 @@
 		"paths": {
 			"@utils/*": ["lib/util/*"],
 			"@lib/*": ["lib/*"],
-			"@root/*": ["*"]
+			"@root/*": ["*"],
+			"@orm/*": ["lib/orm/*"]
 		},
 		"composite": true,
 		"declaration": true,
