@@ -1,11 +1,12 @@
 // Exec command from Gitcord (https://github.com/gitcord-project) Copyright 2020 Charalampos Fanoulis, used under the MIT license
 import { PreConditions } from '@lib/types/Types';
 import { ApplyOptions } from '@sapphire/decorators';
-import { Args, Command, CommandOptions } from '@sapphire/framework';
+import { Args, CommandOptions } from '@sapphire/framework';
 import { codeBlock } from '@sapphire/utilities';
 import { exec } from '@utils/exec';
 import { fetch, FetchMethods, FetchResultTypes } from '@utils/util';
 import { Message, MessageAttachment } from 'discord.js';
+import SapphireCommand from '@lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['execute'],
@@ -13,7 +14,7 @@ import { Message, MessageAttachment } from 'discord.js';
 	detailedDescription: 'Reserved only for owners',
 	preconditions: [PreConditions.OwnerOnly]
 })
-export default class ExecCommand extends Command {
+export default class ExecCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
 		const input = await args.pick('string');
 		const result = await exec(input, { timeout: 60000 }).catch((error) => ({
