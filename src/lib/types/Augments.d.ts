@@ -1,4 +1,5 @@
 import GuildSettingsEntity from '../orm/entities/GuildSettings';
+import { Piece } from '@sapphire/framework';
 
 declare module 'discord.js' {
 	interface Client {
@@ -7,4 +8,11 @@ declare module 'discord.js' {
         settingsCache: Map<string, GuildSettingsEntity>;
         fetchGuildPrefix(guild: Guild): Promise<string>;
     }
+}
+
+declare module '@sapphire/framework' {
+	interface ArgType {
+		duration: number;
+		piece: Piece;
+	}
 }
