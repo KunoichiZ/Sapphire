@@ -1,6 +1,6 @@
 // User argument is from godfather (https://github.com/Soumil07/godfather) Copyright 2020 Soumil07, used under the AGPL-3.0 License
 import { Argument, ArgumentContext, AsyncArgumentResult } from '@sapphire/framework';
-import { User } from 'discord.js';
+import type { User } from 'discord.js';
 
 const USER_REGEX = /^(?:<@!?)?(\d{17,19})>?$/;
 

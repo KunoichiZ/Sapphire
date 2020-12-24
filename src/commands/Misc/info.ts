@@ -1,7 +1,7 @@
 // Info command is modified from godfather (https://github.com/Soumil07/godfather) Copyright 2020 Soumil07, used under the AGPL-3.0 License
 import { ApplyOptions } from '@sapphire/decorators';
-import { CommandOptions } from '@sapphire/framework';
-import { Message } from 'discord.js';
+import type { CommandOptions } from '@sapphire/framework';
+import type { Message } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({

@@ -1,8 +1,8 @@
-import GuildSettings from '#lib/orm/entities/GuildSettings';
+import type GuildSettings from '#lib/orm/entities/GuildSettings';
 import GuildSettingRepository from '#lib/orm/repositories/GuildSettingRepository';
 import { PGSQL_ENABLED, PREFIX } from '#root/config';
 import { SapphireClient } from '@sapphire/framework';
-import { ClientOptions, Guild, Message } from 'discord.js';
+import type { ClientOptions, Guild, Message } from 'discord.js';
 import { getCustomRepository } from 'typeorm';
 
 export class SBClient extends SapphireClient {

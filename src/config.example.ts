@@ -1,4 +1,4 @@
-import { ClientOptions } from 'discord.js';
+import type { ClientOptions } from 'discord.js';
 
 export const NAME = '';
 export const PREFIX = '';

@@ -1,4 +1,4 @@
-import { Client, Guild } from 'discord.js';
+import type { Client, Guild } from 'discord.js';
 import { EntityRepository, Repository } from 'typeorm';
 import GuildSettingsEntity from '#orm/entities/GuildSettings';
 

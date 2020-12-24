@@ -1,7 +1,7 @@
 // Exec command from Gitcord (https://github.com/gitcord-project) Copyright 2020 Charalampos Fanoulis, used under the MIT license
 import { PreConditions } from '#lib/types/Types';
 import { ApplyOptions } from '@sapphire/decorators';
-import { Args, CommandOptions } from '@sapphire/framework';
+import type { Args, CommandOptions } from '@sapphire/framework';
 import { codeBlock } from '@sapphire/utilities';
 import { exec } from '#utils/exec';
 import { fetch, FetchMethods, FetchResultTypes } from '#utils/util';

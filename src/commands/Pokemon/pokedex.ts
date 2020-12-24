@@ -1,9 +1,9 @@
 // import { AbilitiesEntry, DexDetails, GenderEntry, StatsEntry } from '@favware/graphql-pokemon';
 // import { MessageEmbed } from 'discord.js';
 import { ApplyOptions } from '@sapphire/decorators';
-import { CommandOptions, Args } from '@sapphire/framework';
-import { Message, MessageEmbed } from 'discord.js';
-import { Query } from '@favware/graphql-pokemon';
+import type { CommandOptions, Args } from '@sapphire/framework';
+import type { Message } from 'discord.js';
+import type { Query } from '@favware/graphql-pokemon';
 import nodeFetch from 'node-fetch';
 import SapphireCommand from '#lib/SapphireCommand';
 
@@ -17,6 +17,7 @@ export default class PokedexCommand extends SapphireCommand {
         const pokemon = await args.rest('string');
         // message.channel.send(pokemon);
         console.log(pokemon)
+        console.log(message)
 
 
         interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {

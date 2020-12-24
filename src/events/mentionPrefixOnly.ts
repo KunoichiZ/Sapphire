@@ -1,7 +1,7 @@
 // mentionPrefixOnly event from Soumil07 (https://github.com/Soumil07/godfather) Copyright 2020 Soumil07, used under the AGPL-3.0 License
 
 import { Event, Events, PieceContext } from '@sapphire/framework';
-import { Message } from 'discord.js';
+import type { Message } from 'discord.js';
 
 export default class extends Event<Events.MentionPrefixOnly> {
 

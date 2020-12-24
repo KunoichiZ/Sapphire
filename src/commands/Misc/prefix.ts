@@ -1,11 +1,11 @@
 // Prefix command from godfather (https://github.com/Soumil07/godfather) Copyright 2020 Soumil07, used under the AGPL-3.0 License
 import GuildSettingRepository from '#lib/orm/repositories/GuildSettingRepository';
 import SapphireCommand from '#lib/SapphireCommand';
-import { Args, CommandOptions } from '@sapphire/framework';
+import type { Args, CommandOptions } from '@sapphire/framework';
 import { ApplyOptions } from '@sapphire/decorators';
-import { Message } from 'discord.js';
+import type { Message } from 'discord.js';
 import { getCustomRepository } from 'typeorm';
-import { PGSQL_ENABLED } from '#root/config';
+// import { PGSQL_ENABLED } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	description: 'View and change the server prefix.',
@@ -26,10 +26,10 @@ export default class extends SapphireCommand {
 		return message.channel.send(`Successfully updated this server's prefix to: \`${newPrefix.value}\``);
 	}
 
-	public async onLoad() {
-		if (!PGSQL_ENABLED) {
-			await this.unload();
-		}
-	}
+	// public async onLoad() {
+	// 	if (!PGSQL_ENABLED) {
+	// 		await this.unload();
+	// 	}
+	// }
 
 }

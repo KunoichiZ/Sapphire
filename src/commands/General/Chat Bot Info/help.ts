@@ -1,7 +1,7 @@
 // Help command from Gitcord (https://github.com/gitcord-project) Copyright 2020 Charalampos Fanoulis, used under the MIT license
 
 import { ApplyOptions } from '@sapphire/decorators';
-import { Args, CommandOptions } from '@sapphire/framework';
+import type { Args, CommandOptions } from '@sapphire/framework';
 import { Message, MessageEmbed } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
 
