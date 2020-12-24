@@ -1,6 +1,6 @@
 import { Client, Guild } from 'discord.js';
 import { EntityRepository, Repository } from 'typeorm';
-import GuildSettingsEntity from '../entities/GuildSettings';
+import GuildSettingsEntity from '#orm/entities/GuildSettings';
 
 @EntityRepository(GuildSettingsEntity)
 export default class GuildSettingRepository extends Repository<GuildSettingsEntity> {

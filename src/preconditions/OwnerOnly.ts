@@ -1,4 +1,4 @@
-import { OWNER_ID } from '@root/config';
+import { OWNER_ID } from '#root/config';
 import { Awaited, err, ok, Precondition, Result, UserError } from '@sapphire/framework';
 import { Message } from 'discord.js';
 
