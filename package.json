@@ -22,7 +22,6 @@
     "watch": "tsc-watch --onSuccess node dist/Sapphire.js"
   },
   "devDependencies": {
-    "@types/module-alias": "^2.0.0",
     "@types/node": "^14.14.14",
     "@types/node-fetch": "^2.5.7",
     "tsc-watch": "^4.2.9",
@@ -44,9 +43,7 @@
     "common-tags": "^1.8.0",
     "discord.js": "^12.5.1",
     "eslint": "^7.16.0",
-    "module-alias": "^2.2.2",
     "node-fetch": "^2.6.1",
-    "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.29"
   },
   "imports": {

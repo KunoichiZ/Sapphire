@@ -1,4 +1,3 @@
-require('module-alias/register');
 import 'reflect-metadata';
 import { TOKENS, PREFIX, PGSQL_ENABLED } from '#root/config';
 import { SapphireClient } from '@sapphire/framework';
