@@ -53,6 +53,6 @@
     "@utils": "dist/lib/util",
     "@lib": "dist/lib",
     "@root": "dist",
-    "@orm/*": ["./*"]
+    "@orm": "dist/lib/orm"
   }
 }
