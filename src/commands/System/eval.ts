@@ -1,6 +1,6 @@
 // Eval command from Gitcord (https://github.com/gitcord-project) Copyright 2020 Charalampos Fanoulis, used under the MIT license
-import { Stopwatch } from '@klasa/stopwatch';
-import { Type } from '@klasa/type';
+import { Stopwatch } from '@sapphire/stopwatch';
+import { Type } from '@sapphire/type';
 import { ApplyOptions } from '@sapphire/decorators';
 import { Args, CommandOptions } from '@sapphire/framework';
 import { codeBlock, isThenable } from '@sapphire/utilities';
