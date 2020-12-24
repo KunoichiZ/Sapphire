@@ -10,7 +10,7 @@ export const CLIENT_OPTIONS: ClientOptions = {
 	messageCacheLifetime: 120,
 	messageCacheMaxSize: 20,
 	messageEditHistoryMaxSize: 0,
-	presence: { status: 'online', activity: { type: 'LISTENING', name: `${PREFIX}help` } },
+	presence: { status: 'online', activity: { type: 'LISTENING', name: `${PREFIX}help` } }
 };
 
 export const TOKENS = {
