@@ -1,4 +1,4 @@
-import UserSettingsEntity  from "@orm/entities/UserSettings";
+import UserSettingsEntity  from "#orm/entities/UserSettings";
 import { EntityRepository, FindOneOptions, Repository } from "typeorm";
 
 @EntityRepository(UserSettingsEntity)

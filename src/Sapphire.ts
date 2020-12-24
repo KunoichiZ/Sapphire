@@ -1,11 +1,11 @@
 require('module-alias/register');
 import 'reflect-metadata';
-import { TOKENS, PREFIX, PGSQL_ENABLED } from '@root/config';
+import { TOKENS, PREFIX, PGSQL_ENABLED } from '#root/config';
 import { SapphireClient } from '@sapphire/framework';
 import { Guild, Message } from 'discord.js';
 import type { ClientOptions } from 'discord.js';
-import GuildSettings from '@lib/orm/entities/GuildSettings';
-import GuildSettingRepository from '@lib/orm/repositories/GuildSettingRepository';
+import GuildSettings from '#lib/orm/entities/GuildSettings';
+import GuildSettingRepository from '#lib/orm/repositories/GuildSettingRepository';
 import { getCustomRepository } from 'typeorm';
 
 export class SBClient extends SapphireClient {

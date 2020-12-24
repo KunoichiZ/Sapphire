@@ -2,7 +2,7 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { CommandOptions } from '@sapphire/framework';
 import { Message } from 'discord.js';
-import SapphireCommand from '@lib/SapphireCommand';
+import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	description: 'Shows you useful information about the bot.'

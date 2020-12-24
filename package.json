@@ -49,10 +49,10 @@
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.29"
   },
-  "_moduleAliases": {
-    "@utils": "dist/lib/util",
-    "@lib": "dist/lib",
-    "@root": "dist",
-    "@orm": "dist/lib/orm"
+  "imports": {
+    "#lib/*": "./dist/lib/*.js",
+    "#orm/*": "./dist/lib/orm/*.js",
+    "#root/*": "./dist/*.js",
+    "#utils/*": "./dist/lib/util/*.js"
   }
 }

@@ -4,11 +4,11 @@ import { Type } from '@klasa/type';
 import { ApplyOptions } from '@sapphire/decorators';
 import { Args, CommandOptions } from '@sapphire/framework';
 import { codeBlock, isThenable } from '@sapphire/utilities';
-import { clean } from '@utils/clean';
-import { fetch, FetchMethods, FetchResultTypes } from '@utils/util';
+import { clean } from '#utils/clean';
+import { fetch, FetchMethods, FetchResultTypes } from '#utils/util';
 import { Message, MessageEmbed } from 'discord.js';
 import { inspect } from 'util';
-import SapphireCommand from '@lib/SapphireCommand';
+import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['ev'],

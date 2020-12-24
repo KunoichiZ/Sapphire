@@ -7,10 +7,10 @@
 		"module": "commonjs",
 		"moduleResolution": "node",
 		"paths": {
-			"@utils/*": ["lib/util/*"],
-			"@lib/*": ["lib/*"],
-			"@root/*": ["*"],
-			"@orm/*": ["lib/orm/*"]
+			"#utils/*": ["lib/util/*"],
+			"#lib/*": ["lib/*"],
+			"#root/*": ["*"],
+			"#orm/*": ["lib/orm/*"]
 		},
 		"composite": true,
 		"declaration": true,

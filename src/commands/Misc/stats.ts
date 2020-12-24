@@ -2,11 +2,11 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { CommandOptions } from '@sapphire/framework';
 import { roundNumber } from '@sapphire/utilities';
-import { format } from '@utils/durationFormat';
-import { Branding } from '@utils/Branding';
+import { format } from '#utils/durationFormat';
+import { Branding } from '#utils/Branding';
 import { Message, MessageEmbed } from 'discord.js';
 import { cpus } from 'os';
-import SapphireCommand from '@lib/SapphireCommand';
+import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	description: 'View bot statistics'

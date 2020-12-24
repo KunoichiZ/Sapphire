@@ -3,7 +3,7 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Args, CommandOptions } from '@sapphire/framework';
 import { Message, MessageEmbed } from 'discord.js';
-import SapphireCommand from '@lib/SapphireCommand';
+import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
     aliases: ['commands', 'cmd', 'cmds', 'h'],

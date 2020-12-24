@@ -1,5 +1,5 @@
 import { AfterInsert, AfterLoad, AfterRemove, AfterUpdate, Entity, Column, PrimaryColumn, BaseEntity } from 'typeorm';
-import { kBigIntTransformer } from "@utils/util";
+import { kBigIntTransformer } from "#utils/util";
 
 @Entity({ name: 'user_settings' })
 export default class User extends BaseEntity {

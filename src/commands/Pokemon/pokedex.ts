@@ -5,7 +5,7 @@ import { CommandOptions, Args } from '@sapphire/framework';
 import { Message, MessageEmbed } from 'discord.js';
 import { Query } from '@favware/graphql-pokemon';
 import nodeFetch from 'node-fetch';
-import SapphireCommand from '@lib/SapphireCommand';
+import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
     aliases: ['dex', 'pokemon', 'mon', 'poke', 'dexter'],

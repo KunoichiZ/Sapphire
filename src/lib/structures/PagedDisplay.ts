@@ -19,7 +19,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import { EventIterator, EventIteratorOptions } from '@sapphire/event-iterator';
 import { mergeDefault, mergeObjects } from '@sapphire/utilities';
-import { wrapAroundNumber } from '@utils/util';
+import { wrapAroundNumber } from '#utils/util';
 import type { Message, MessageEmbed, MessageReaction, ReactionEmoji } from 'discord.js';
 
 export interface ReactionDisplayOptions extends Partial<EventIteratorOptions<[MessageReaction]>> {
