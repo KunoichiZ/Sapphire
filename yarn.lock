@@ -60,16 +60,6 @@
   dependencies:
     graphql "^15.4.0"
 
-"@klasa/stopwatch@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@klasa/stopwatch/-/stopwatch-0.0.1.tgz#77e0a91f9483d2c3ec841ca64a97086f7734c3eb"
-  integrity sha512-qKxiJoxju/mABXIajNHXPdbMqL8gtUgnDbhri1QEmhboBq9gwWSDnKZZNT3YXt/9w9THsJ+9s2j82PtYWxHDRw==
-
-"@klasa/type@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@klasa/type/-/type-0.0.1.tgz#ef2dda6069ba8d26d1835033bac227029106998d"
-  integrity sha512-gCacZ/FtVyYw+lJy5FmuHPfVkrLwN0FiAwLck2BLVgpUcalaC4GHIyK9U2CiHcegwPYDK8/Ef7yBwUC/xkGi3Q==
-
 "@sapphire/decorators@^1.0.2":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-1.1.0.tgz#0b831f4747cea25b766abed67c2a35284d06ff8a"
@@ -85,23 +75,17 @@
   resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.1.1.tgz#6a5e3f94d1d022bd25d501d9252b4ee99ab08c28"
   integrity sha512-jXzaodQntHztPPHvbCUdF/dzSD3RzQwPSjasEIvQtH6VCHk7tc3sRrXQ2XDoCb2X4LSdmp+FxFyYJOr4LuIeHg==
 
-"@sapphire/framework@github:sapphire-project/framework#build":
+"@sapphire/framework@^1.0.0-alpha.0":
   version "1.0.0-alpha.0"
-  resolved "https://codeload.github.com/sapphire-project/framework/tar.gz/8fad874ff698af9e2baf0b22d94227d3764a0c6d"
+  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-1.0.0-alpha.0.tgz#4cea3ed3bd19cb9ef3f98be4b0f6122943f78274"
+  integrity sha512-x54Q165V9DnK+iUJNAoPKcaILhOV8aJmXfI6L3vfY9u2wdl5BkcsTOq+yKtyAniK/sGkOwNAF0l6xFq/MBjmdw==
   dependencies:
     "@sapphire/pieces" "^1.0.0"
     "@sapphire/ratelimits" "^1.1.1"
     "@sapphire/utilities" "^1.2.0"
     lexure "^0.17.0"
 
-"@sapphire/pieces@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/pieces/-/pieces-1.0.0.tgz#b3c775f33f524f07d7275ea250b11a09ad3cc459"
-  integrity sha512-zsdLFLbuUbcT2Qz1HMkbQLbuRsXXFfQmf2U/SLtw7wmwhn+dC9z3/sPzwG2tRBwALNydFCFF3hBrlk2gW9g52w==
-  dependencies:
-    "@discordjs/collection" "^0.1.6"
-
-"@sapphire/pieces@github:sapphire-project/pieces#build":
+"@sapphire/pieces@^1.0.0", "@sapphire/pieces@github:sapphire-project/pieces#build":
   version "1.0.0"
   resolved "https://codeload.github.com/sapphire-project/pieces/tar.gz/6857ecd79463cd05355d6395c2375d470cfa717b"
   dependencies:
@@ -112,12 +96,22 @@
   resolved "https://registry.yarnpkg.com/@sapphire/ratelimits/-/ratelimits-1.1.1.tgz#0e9a0f6b8fa1a4e3d1c909435f964b4755f04dbe"
   integrity sha512-TsXgkduFgZvuiEgNm7rlIHhciJgbKBhJKpDZwKvCLUmdB+7OzpSL9xIWH4AtUe4xXZs61FjgNdRvf7yfSsOcdQ==
 
+"@sapphire/stopwatch@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.1.tgz#6e3da66aa673dc2edaac7003f523a7b7a26b3b03"
+  integrity sha512-UDseyfNRXditsvYonDCXMm8kqxQ62iZeVn8HMB5Z9vv0AbxXrmrEAPoywHEqZL3/NXJy/RZyrb+MRcOxqy0HtA==
+
 "@sapphire/time-utilities@^1.2.0":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.1.tgz#6ffa9af8256a9c193c2a9dd0932a75165497fb9c"
   integrity sha512-EG0Vc5AwMZsIVZmFUJYphEpq0ldFHRRqmy0RqJJeVWr8nviJ2bcvOmZ+TmIYXbvU9R9giTbl9C6z0F++9JAeeA==
   dependencies:
     "@sapphire/utilities" "^1.2.0"
+
+"@sapphire/type@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-1.1.1.tgz#f9da91e00006a3a48baaad46a895ad3253ef71e1"
+  integrity sha512-uKW8kNJz6xKnZKUynaN7Q6h8fq+YBdE/7y6fIGL4h5VYrPZioBhmBxmRxvN+ZXzvOX36K8BHe6PfgptFWI1GIg==
 
 "@sapphire/utilities@^1.1.1", "@sapphire/utilities@^1.2.0":
   version "1.2.0"
