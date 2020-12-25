@@ -20,9 +20,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 import { FetchError } from '#lib/errors/FetchError';
 import { Events } from '@sapphire/framework';
 import { isThenable, mergeObjects } from '@sapphire/utilities';
-import { Client } from 'discord.js';
+import type { Client } from 'discord.js';
 import nodeFetch, { RequestInit, Response } from 'node-fetch';
-import { ValueTransformer } from "typeorm";
+import type { ValueTransformer } from "typeorm";
 
 export function getAllRegexMatches(regex: RegExp, string: string) {
 	let match = undefined;

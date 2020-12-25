@@ -2,7 +2,7 @@
 import { Stopwatch } from '@sapphire/stopwatch';
 import { Type } from '@sapphire/type';
 import { ApplyOptions } from '@sapphire/decorators';
-import { Args, CommandOptions } from '@sapphire/framework';
+import type { Args, CommandOptions } from '@sapphire/framework';
 import { codeBlock, isThenable } from '@sapphire/utilities';
 import { clean } from '#utils/clean';
 import { fetch, FetchMethods, FetchResultTypes } from '#utils/util';

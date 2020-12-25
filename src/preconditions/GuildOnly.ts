@@ -1,5 +1,5 @@
 import { Awaited, err, ok, Precondition, Result, UserError } from '@sapphire/framework';
-import { Message } from 'discord.js';
+import type { Message } from 'discord.js';
 
 export class ClientPrecondition extends Precondition {
 	public run(message: Message): Awaited<Result<unknown, UserError>> {
