@@ -12,7 +12,6 @@ import { getCustomRepository } from 'typeorm';
 	preconditions: ['GuildOnly', ['AdminOnly', 'OwnerOnly']]
 })
 export default class extends SapphireCommand {
-
 	public async run(message: Message, args: Args) {
 		const newPrefix = await args.restResult('string');
 		const guildSettings = await getCustomRepository(GuildSettingRepository).ensure(this.context.client, message.guild!);
@@ -31,5 +30,4 @@ export default class extends SapphireCommand {
 	// 		await this.unload();
 	// 	}
 	// }
-
 }

@@ -9,7 +9,6 @@ import type { Message } from 'discord.js';
 	preconditions: ['OwnerOnly']
 })
 export default class extends SapphireCommand {
-
 	public async run(message: Message, args: Args) {
 		const piece = await args.pickResult('piece');
 		if (!piece.success) throw 'Missing required argument: piece';
@@ -17,5 +16,4 @@ export default class extends SapphireCommand {
 		await piece.value.reload();
 		return message.channel.send(`✅ Reloaded ${piece.value.store.name.slice(0, -1)}: ${piece.value.name}`);
 	}
-
 }

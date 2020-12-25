@@ -8,29 +8,27 @@ import nodeFetch from 'node-fetch';
 import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
-    aliases: ['dex', 'pokemon', 'mon', 'poke', 'dexter'],
-    description: 'Gets data for any given Pokémon'
+	aliases: ['dex', 'pokemon', 'mon', 'poke', 'dexter'],
+	description: 'Gets data for any given Pokémon'
 })
 export default class PokedexCommand extends SapphireCommand {
-    public async run(message: Message, args: Args) {
-        
-        const pokemon = await args.rest('string');
-        // message.channel.send(pokemon);
-        console.log(pokemon)
-        console.log(message)
+	public async run(message: Message, args: Args) {
+		const pokemon = await args.rest('string');
+		// message.channel.send(pokemon);
+		console.log(pokemon);
+		console.log(message);
 
+		interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
+			data: Record<K, Omit<Query[K], '__typename'>>;
+		}
 
-        interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
-            data: Record<K, Omit<Query[K], '__typename'>>;
-        }
-        
-        nodeFetch('https://graphqlpokemon.favware.tech/', {
-            method: 'POST',
-            headers: {
-            'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-            query: `
+		nodeFetch('https://graphqlpokemon.favware.tech/', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				query: `
                 {
                     getPokemonDetails(pokemon: ${pokemon} skip: 0 take: 2 reverse: true) {
                         num
@@ -51,12 +49,9 @@ export default class PokedexCommand extends SapphireCommand {
                     }
                 }
             `
-            })
-        })
-        .then((res) => res.json() as Promise<GraphQLPokemonResponse<'getPokemonDetails'>>)
-        .then((json) => console.log(json.data));
-
-    }
+			})
+		})
+			.then((res) => res.json() as Promise<GraphQLPokemonResponse<'getPokemonDetails'>>)
+			.then((json) => console.log(json.data));
+	}
 }
-
-

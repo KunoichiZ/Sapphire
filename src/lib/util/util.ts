@@ -22,11 +22,11 @@ import { Events } from '@sapphire/framework';
 import { isThenable, mergeObjects } from '@sapphire/utilities';
 import type { Client } from 'discord.js';
 import nodeFetch, { RequestInit, Response } from 'node-fetch';
-import type { ValueTransformer } from "typeorm";
+import type { ValueTransformer } from 'typeorm';
 
 export function getAllRegexMatches(regex: RegExp, string: string) {
 	let match = undefined;
-	let matches: string[] = [];
+	const matches: string[] = [];
 
 	while ((match = regex.exec(string)) !== null) {
 		matches.push(match[1]);

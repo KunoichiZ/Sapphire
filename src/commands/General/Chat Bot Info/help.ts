@@ -6,14 +6,13 @@ import { Message, MessageEmbed } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
-    aliases: ['commands', 'cmd', 'cmds', 'h'],
-    description: 'Gives you a list of commands',
+	aliases: ['commands', 'cmd', 'cmds', 'h'],
+	description: 'Gives you a list of commands',
 	detailedDescription: 'You may also provide a command, which will return info about that command',
 	preconditions: []
 })
-
 export default class HelpCommand extends SapphireCommand {
-    public async run(message: Message, args: Args) {
+	public async run(message: Message, args: Args) {
 		const command = await args.pickResult('string');
 		if (command.success) return this.commandHelp(message, command.value);
 		return message.channel.send(this.mapCommandsToStr());

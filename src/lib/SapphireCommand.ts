@@ -3,9 +3,7 @@ import { Command } from '@sapphire/framework';
 import { sep } from 'path';
 
 export default abstract class SapphireCommand extends Command {
-
 	public get category() {
 		return this.path.split(sep).reverse()[1] ?? 'General';
 	}
-
 }

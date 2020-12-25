@@ -3,7 +3,9 @@
 </p>
 
 # Sapphire
+
 Discord bot for the Pokemon Crossroads Discord Channel
 
 ## Credits
-* All of the dependencies listed in [package.json](./package.json).
+
+-   All of the dependencies listed in [package.json](./package.json).
