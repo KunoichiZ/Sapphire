@@ -16,3 +16,9 @@ src/config.ts
 
 # error logs
 yarn-error.log
+
+# text documents
+*.rtf
+
+# basic command file
+src/basic command.ts
