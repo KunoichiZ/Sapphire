@@ -18,6 +18,7 @@
 		"build": "tsc -b src",
 		"dev": "yarn build && yarn start",
 		"lint": "eslint --fix src --ext ts",
+		"prettier": "prettier --write package.json README.md tsconfig*",
 		"start": "node dist/Sapphire.js",
 		"watch": "tsc-watch -b src --onSuccess \"node dist/Sapphire.js\""
 	},
