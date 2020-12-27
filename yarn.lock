@@ -93,10 +93,10 @@
   dependencies:
     twemoji-parser "^13.0.0"
 
-"@sapphire/eslint-config@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-1.1.0.tgz#9c5eb2d2161def04a3af299b09cad4566e01bcab"
-  integrity sha512-9FHKkDs8NJxibgqT/HLV7ktrVC+3bwzrj+ae1Pi65uFq9xEMwXRVOfrTPQPlF7WKE8B+dmnDCMgwJkndOwS5hw==
+"@sapphire/eslint-config@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-1.1.1.tgz#4526dc4f1ef256957caaac0240d6ba1284cc01d1"
+  integrity sha512-/nOxMp0Q8N6qcnAkK3XiZR8AZfIfyq4PAtBXCDrNhPzheaHZxX85ocVVo3nsCrI2wUuwkE5Ep0Qt6g6j2kROIQ==
 
 "@sapphire/event-iterator@^1.1.1":
   version "1.1.1"
