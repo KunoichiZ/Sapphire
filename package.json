@@ -43,7 +43,7 @@
     "@sapphire/event-iterator": "^1.1.1",
     "@sapphire/framework": "github:sapphire-project/framework#build",
     "@sapphire/pieces": "github:sapphire-project/pieces#build",
-    "@sapphire/stopwatch": "^1.0.1",
+    "@sapphire/stopwatch": "^1.0.2",
     "@sapphire/time-utilities": "^1.2.1",
     "@sapphire/type": "^1.1.1",
     "@sapphire/utilities": "^1.2.0",
