@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@sapphire/decorators": "^1.1.0",
-    "@sapphire/event-iterator": "^1.1.1",
+    "@sapphire/event-iterator": "^1.1.2",
     "@sapphire/framework": "github:sapphire-project/framework#build",
     "@sapphire/pieces": "github:sapphire-project/pieces#build",
     "@sapphire/stopwatch": "^1.0.1",
