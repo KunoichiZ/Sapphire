@@ -141,10 +141,10 @@
   dependencies:
     "@sapphire/utilities" "^1.2.0"
 
-"@sapphire/ts-config@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-1.0.3.tgz#e923ca8b04a1f759961cee309ed8f64880bfa9a1"
-  integrity sha512-Id//WIO0zAj07TqO8wkr9IboQwzW/ZKuTP2BA2UlnmnJ4j3ShkKazRa2m3p6FWpnlUbDf2GN8In1lYc+GXTvNQ==
+"@sapphire/ts-config@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-1.1.0.tgz#b4dc337d98f9cfc086a2e6e0ab545af0a5bfa90e"
+  integrity sha512-EQbQr461Ahn8tR/zWaOkciorFoq49dHpPpVY257EckUDGeRJ9Nwgpo9IfN2hnPjlnMqxbSV8awvLnwaLcEl4iQ==
 
 "@sapphire/type@^1.1.1":
   version "1.1.1"
