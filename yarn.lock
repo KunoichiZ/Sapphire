@@ -119,10 +119,10 @@
   dependencies:
     "@discordjs/collection" "^0.1.6"
 
-"@sapphire/prettier-config@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.0.3.tgz#94ac022956a0aebd2ae625a0a2c88d605ef5a6ef"
-  integrity sha512-bbfmP5iViyEtFC40GWBO6qgMxUzbfuMs2tk77D/1hfxRGB5XD0f7udBoD+sBn2p4Y/jgIrY0BW7F1BnQDf9ZuA==
+"@sapphire/prettier-config@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.0.4.tgz#c95d8ef00c6a4441ca42f9a4b72abb1a33013580"
+  integrity sha512-KQz5jyRU7IH523UOcnQvScobY13wnPUlGYoGaccon4naaraXniGunVVgQFpY+Zyrqn3DjlQavsMUki0sYbEc6w==
 
 "@sapphire/ratelimits@^1.1.1":
   version "1.1.1"
