@@ -20,5 +20,7 @@ yarn-error.log
 # text documents
 *.rtf
 
-# basic command file
+# basic command and test copy file
 src/basic command.ts
+src/commands/Test/test copy.ts
+src/commands/Test/basic command.ts
