@@ -15,4 +15,12 @@ declare module '@sapphire/framework' {
 		duration: number;
 		piece: Piece;
 	}
+
+	interface Command {
+		category: string;
+	}
+
+	interface CommandOptions {
+		category: string;
+	}
 }
