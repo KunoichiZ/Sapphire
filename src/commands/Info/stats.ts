@@ -9,6 +9,7 @@ import { cpus } from 'os';
 import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
+	category: 'Info',
 	description: 'View bot statistics'
 })
 export default class StatsCommand extends SapphireCommand {

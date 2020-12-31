@@ -8,6 +8,7 @@ import { getCustomRepository } from 'typeorm';
 // import { PGSQL_ENABLED } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
+	category: 'Info',
 	description: 'View and change the server prefix.',
 	preconditions: ['GuildOnly', ['AdminOnly', 'OwnerOnly']]
 })

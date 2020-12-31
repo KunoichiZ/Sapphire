@@ -6,11 +6,12 @@ import type { Message } from 'discord.js';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['r'],
+	category: 'System',
 	preconditions: ['OwnerOnly']
 })
 export default class extends SapphireCommand {
 	public async run(message: Message, args: Args) {
-		const piece = await args.pickResult("piece");
+		const piece = await args.pickResult('piece');
 
 		if (!piece.success) throw 'Missing required argument: piece';
 

@@ -9,6 +9,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['dex', 'pokemon', 'mon', 'poke', 'dexter'],
+	category: 'Pokemon',
 	description: 'Gets data for any given Pokémon'
 })
 export default class PokedexCommand extends SapphireCommand {

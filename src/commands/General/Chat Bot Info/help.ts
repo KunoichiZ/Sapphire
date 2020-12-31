@@ -7,6 +7,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['commands', 'cmd', 'cmds', 'h'],
+	category: 'Chat Bot Info',
 	description: 'Gives you a list of commands',
 	detailedDescription: 'You may also provide a command, which will return info about that command',
 	preconditions: []

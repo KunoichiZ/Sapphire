@@ -5,10 +5,11 @@ import SapphireCommand from '#lib/SapphireCommand';
 import { format } from '#utils/durationFormat';
 
 @ApplyOptions<CommandOptions>({
-	description: 'Shows you the bot\'s uptime'
+	category: 'Info',
+	description: "Shows you the bot's uptime"
 })
 export default class UptimeCommand extends SapphireCommand {
-    public async run(message: Message) {
-        return message.channel.send(`I've been online for ${format(this.context.client.uptime ?? 0)}.`)
-    }
+	public async run(message: Message) {
+		return message.channel.send(`I've been online for ${format(this.context.client.uptime ?? 0)}.`);
+	}
 }

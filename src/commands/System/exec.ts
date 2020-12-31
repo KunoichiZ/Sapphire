@@ -1,5 +1,4 @@
 // Exec command from Gitcord (https://github.com/gitcord-project) Copyright 2020 Charalampos Fanoulis, used under the MIT license
-import { PreConditions } from '#lib/types/Types';
 import { ApplyOptions } from '@sapphire/decorators';
 import type { Args, CommandOptions } from '@sapphire/framework';
 import { codeBlock } from '@sapphire/utilities';
@@ -10,9 +9,10 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['execute'],
+	category: 'System',
 	description: 'Execute a command on the host system',
 	detailedDescription: 'Reserved only for owners',
-	preconditions: [PreConditions.OwnerOnly]
+	preconditions: ['OwnerOnly']
 })
 export default class ExecCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {

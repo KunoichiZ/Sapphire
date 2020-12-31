@@ -12,6 +12,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['ev'],
+	category: 'System',
 	description: 'Evaluates arbitary JavaScript',
 	detailedDescription: 'Reserved only for owners',
 	preconditions: ['OwnerOnly']
