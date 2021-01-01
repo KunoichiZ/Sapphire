@@ -93,6 +93,20 @@
   dependencies:
     twemoji-parser "^13.0.0"
 
+"@sapphire/discord-utilities@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord-utilities/-/discord-utilities-2.0.0.tgz#03c7bb7134f82e637b61412c68a07f8f3349dd63"
+  integrity sha512-cvZWdAYxVHEGUtFS4w4FDipDZfpWriwMv/AKkKl0siEzC7g9ZGYzfXAWrot9muVGKMqNib5WDVrP+ets2QPJvA==
+  dependencies:
+    twemoji-parser "^13.0.0"
+
+"@sapphire/discord.js-utilities@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-1.0.0.tgz#33681e0342590a8d61a9dbaa11f07eacf7215e2b"
+  integrity sha512-ui3Diwx82FYM/Mb/rTEYfd16OpiQmgMHXVPxtMlV0LrXnkUGLxlyBZbwq4eFXHPvBWv+m4mor2rwM3g39/5hBA==
+  dependencies:
+    "@sapphire/discord-utilities" "^2.0.0"
+
 "@sapphire/eslint-config@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-1.1.1.tgz#4526dc4f1ef256957caaac0240d6ba1284cc01d1"
@@ -887,6 +901,11 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
+
+fuse.js@^6.4.4:
+  version "6.4.4"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.4.4.tgz#68b92aad73f2a00980c34afaf5a727761c314c3b"
+  integrity sha512-tw9+6zGBerQG207qz4r9TJRA4xhVWiB/4UTA8cw8b2X5v7t94YbgxZ0/9ey9X7268D28HKHlWn10Q0s+kHe+xw==
 
 get-caller-file@^2.0.1, get-caller-file@^2.0.5:
   version "2.0.5"
