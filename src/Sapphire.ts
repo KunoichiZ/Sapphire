@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import { connect } from '#lib/orm/ormConfig';
+// import { connect } from '#lib/orm/ormConfig';
 import { SBClient } from '#lib/SapphireClient';
 import { PREFIX, TOKENS } from '#root/config';
 
@@ -15,7 +15,7 @@ const main = async () => {
 	});
 
 	try {
-		await connect();
+		// await connect();
 		await client.login(TOKENS.BOT_TOKEN);
 	} catch (error) {
 		client.logger.error(error);
