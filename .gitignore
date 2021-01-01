@@ -24,3 +24,9 @@ yarn-error.log
 src/basic command.ts
 src/commands/Test/test copy.ts
 src/commands/Test/basic command.ts
+
+# stash.patch
+stash.patch
+
+# .orig files
+*.orig
