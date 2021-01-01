@@ -10,7 +10,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 	description: 'Unmutes the selected member',
 	preconditions: ['OwnerOnly', 'AdminOnly']
 })
-export default class MuteCommand extends SapphireCommand {
+export default class UnmuteCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
 		const user = await args.pick('user');
 		const modlogsChannel = this.context.client.channels.cache.get('683163930344161310') as TextChannel;
