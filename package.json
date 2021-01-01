@@ -61,6 +61,7 @@
 		"zlib-sync": "^0.1.7"
 	},
 	"imports": {
+		"#data/*": "./dist/lib/data/*.json",
 		"#lib/*": "./dist/lib/*.js",
 		"#orm/*": "./dist/lib/orm/*.js",
 		"#root/*": "./dist/*.js",

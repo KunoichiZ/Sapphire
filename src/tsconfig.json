@@ -8,7 +8,8 @@
 			"#utils/*": ["lib/util/*"],
 			"#lib/*": ["lib/*"],
 			"#root/*": ["*"],
-			"#orm/*": ["lib/orm/*"]
+			"#orm/*": ["lib/orm/*"],
+			"#data/*": ["lib/data/*"]
 		},
 		"composite": true
 	}
