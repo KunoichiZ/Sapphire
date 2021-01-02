@@ -6,10 +6,10 @@ export default class User extends BaseEntity {
 	@PrimaryColumn('varchar', { name: 'id', length: 19 })
 	public id!: string;
 
-	@Column('varchar', { name: 'switchfc', default: '', length: 17})
+	@Column('varchar', { name: 'switchfc', default: '', length: 17 })
 	public switchfc = '';
 
-	@Column('varchar', { name: 'gofc', default: '', length: 14})
+	@Column('varchar', { name: 'gofc', default: '', length: 14 })
 	public gofc = '';
 
 	@Column('bigint', { name: 'balance', default: 0, transformer: kBigIntTransformer })
