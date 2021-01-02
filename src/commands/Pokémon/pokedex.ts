@@ -19,7 +19,7 @@ enum BaseStats {
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['dex', 'pokemon', 'mon', 'poke', 'dexter'],
-	category: 'Pokemon',
+	category: 'Pokémon',
 	description: 'Gets data for any given Pokémon'
 })
 export default class PokedexCommand extends SapphireCommand {
