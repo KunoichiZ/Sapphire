@@ -1,4 +1,4 @@
-import GuildSettingsEntity from '../orm/entities/GuildSettings';
+import GuildSettingsEntity from '#orm/entities/GuildSettings';
 import { Piece } from '@sapphire/framework';
 
 declare module 'discord.js' {
