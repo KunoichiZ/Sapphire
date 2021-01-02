@@ -81,10 +81,10 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@sapphire/decorators@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-1.2.0.tgz#301875d033af2a0743b8fae116cdb15790c51242"
-  integrity sha512-0iCo5u198tJ/d6D7xNxwWQ8UURGTMgIfrhx4NqpxwPOmxqsaJCfyph6thRxR/JztwLDN4Qu3gF2jDqKlVjJ7/g==
+"@sapphire/decorators@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-1.2.1.tgz#0287f9b1fb56c67819a57f53bd1bc21992694243"
+  integrity sha512-Nwf4aTFpTgQH+h4OYBX4Fd/5oViWuEBZTu+yf292/FVuH/V3uwdj8t5iDLhdojPt2+1Eb8zTDS/1fKn6XN4l5w==
 
 "@sapphire/discord-utilities@^1.0.3":
   version "1.0.3"
