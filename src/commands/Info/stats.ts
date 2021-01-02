@@ -2,11 +2,11 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions } from '@sapphire/framework';
 import { roundNumber } from '@sapphire/utilities';
-import { format } from '#utils/durationFormat';
-import { BrandingColors } from '#utils/Branding';
 import { Message, MessageEmbed } from 'discord.js';
 import { cpus } from 'os';
 import SapphireCommand from '#lib/SapphireCommand';
+import { format } from '#utils/durationFormat';
+import { BrandingColors } from '#utils/Branding';
 
 @ApplyOptions<CommandOptions>({
 	category: 'Info',

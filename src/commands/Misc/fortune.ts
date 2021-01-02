@@ -1,9 +1,9 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions } from '@sapphire/framework';
 import { Message, MessageEmbed, Emoji } from 'discord.js';
+import Fuse from 'fuse.js';
 import SapphireCommand from '#lib/SapphireCommand';
 import { fortunes } from '#data/fortunes';
-import Fuse from 'fuse.js';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['eightball'],

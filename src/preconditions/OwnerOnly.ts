@@ -1,6 +1,6 @@
-import { OWNER_ID } from '#root/config';
 import { Awaited, err, ok, Precondition, Result, UserError } from '@sapphire/framework';
 import type { Message } from 'discord.js';
+import { OWNER_ID } from '#root/config';
 
 export class ClientPrecondition extends Precondition {
 	public run(message: Message): Awaited<Result<unknown, UserError>> {

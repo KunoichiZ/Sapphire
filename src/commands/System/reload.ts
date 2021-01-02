@@ -1,8 +1,8 @@
 // Reload command is from godfather (https://github.com/Soumil07/godfather) Copyright 2020 Soumil07, used under the AGPL-3.0 License
 import type { Args, CommandOptions } from '@sapphire/framework';
 import { ApplyOptions } from '@sapphire/decorators';
-import SapphireCommand from '#lib/SapphireCommand';
 import type { Message } from 'discord.js';
+import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['r'],

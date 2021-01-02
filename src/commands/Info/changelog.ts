@@ -1,8 +1,8 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions } from '@sapphire/framework';
 import { Message, MessageEmbed } from 'discord.js';
-import SapphireCommand from '#lib/SapphireCommand';
 import { stripIndents } from 'common-tags';
+import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['cl', 'log'],

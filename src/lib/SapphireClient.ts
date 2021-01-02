@@ -1,9 +1,9 @@
-import type GuildSettings from '#lib/orm/entities/GuildSettings';
-import GuildSettingRepository from '#lib/orm/repositories/GuildSettingRepository';
-import { PGSQL_ENABLED, PREFIX } from '#root/config';
 import { SapphireClient } from '@sapphire/framework';
 import type { ClientOptions, Guild, Message } from 'discord.js';
 import { getCustomRepository } from 'typeorm';
+import type GuildSettings from '#lib/orm/entities/GuildSettings';
+import GuildSettingRepository from '#lib/orm/repositories/GuildSettingRepository';
+import { PGSQL_ENABLED, PREFIX } from '#root/config';
 
 export class SBClient extends SapphireClient {
 	public settingsCache = new Map<string, GuildSettings>();

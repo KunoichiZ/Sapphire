@@ -1,9 +1,10 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions, Args } from '@sapphire/framework';
+import { toTitleCase } from '@sapphire/utilities';
 import { Message, MessageEmbed } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
 import { fetchGraphQLPokemon, getAbilityDetailsByFuzzy, parseBulbapediaURL } from '#utils/Pokemon';
-import { toTitleCase } from '@sapphire/utilities';
+
 import { BrandingColors } from '#utils/Branding';
 
 @ApplyOptions<CommandOptions>({

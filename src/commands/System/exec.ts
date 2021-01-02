@@ -2,10 +2,10 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import type { Args, CommandOptions } from '@sapphire/framework';
 import { codeBlock } from '@sapphire/utilities';
-import { exec } from '#utils/exec';
-import { fetch, FetchMethods, FetchResultTypes } from '#utils/util';
 import { Message, MessageAttachment } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
+import { exec } from '#utils/exec';
+import { fetch, FetchMethods, FetchResultTypes } from '#utils/util';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['execute'],

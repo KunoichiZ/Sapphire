@@ -1,8 +1,8 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions } from '@sapphire/framework';
+import { Timestamp } from '@sapphire/time-utilities';
 import { Message, MessageEmbed } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
-import { Timestamp } from '@sapphire/time-utilities';
 import { BrandingColors } from '#utils/Branding';
 
 @ApplyOptions<CommandOptions>({

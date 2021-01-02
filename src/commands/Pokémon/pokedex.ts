@@ -2,11 +2,11 @@
 // import { MessageEmbed } from 'discord.js';
 import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions, Args } from '@sapphire/framework';
-import { Message, MessageEmbed } from 'discord.js';
+import { toTitleCase } from '@sapphire/utilities';
 import type { AbilitiesEntry, DexDetails, GenderEntry, StatsEntry } from '@favware/graphql-pokemon';
+import { Message, MessageEmbed } from 'discord.js';
 import { fetchGraphQLPokemon, getPokemonDetailsByFuzzy, parseBulbapediaURL, resolveColor } from '#utils/Pokemon';
 import SapphireCommand from '#lib/SapphireCommand';
-import { toTitleCase } from '@sapphire/utilities';
 
 enum BaseStats {
 	hp = 'HP',

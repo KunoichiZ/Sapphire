@@ -1,10 +1,10 @@
 // Help command from Dominus (https://github.com/RealShadowNova/dominus) Copyright 2021 RealShadowNova, used under the Apache-2.0 License
 import type { Args, CommandOptions } from '@sapphire/framework';
+import { PaginatedMessage } from '@sapphire/discord.js-utilities';
 import { ApplyOptions } from '@sapphire/decorators';
 import { Message, MessageEmbed, APIMessage, TextChannel, NewsChannel } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
 import { BrandingColors } from '#utils/Branding';
-import { PaginatedMessage } from '@sapphire/discord.js-utilities';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['commands', 'cmd', 'cmds', 'h'],
