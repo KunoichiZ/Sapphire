@@ -1,7 +1,6 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions } from '@sapphire/framework';
 import { Message, MessageEmbed, Emoji } from 'discord.js';
-import Fuse from 'fuse.js';
 import SapphireCommand from '#lib/SapphireCommand';
 import { fortunes } from '#data/fortunes';
 
@@ -12,18 +11,16 @@ import { fortunes } from '#data/fortunes';
 })
 export default class EightBallCommand extends SapphireCommand {
 	public async run(message: Message) {
-		const fortuneOptions = {
-			keys: ['id']
-		};
+		const obj_keys = Object.keys(fortunes.fortunes);
+		const ran_key = obj_keys[Math.floor(Math.random() * obj_keys.length)];
+		const key = Number(ran_key);
+		const selectedFortune = fortunes.fortunes[key];
+
 		const fortune = this.context.client.emojis.cache.find((emoji: Emoji) => emoji.name === 'fortune');
-		const random = Math.floor(Math.random() * 54) + 1;
-		const randomTxt = random.toString();
-		const fortunesFuse = new Fuse(fortunes.fortunes, fortuneOptions);
-		const result = fortunesFuse.search(randomTxt);
-		console.log();
+
 		const fortuneEmbed = new MessageEmbed();
 
-		fortuneEmbed.setColor('#ffff00').addField(`${fortune} Fortune`, result[0].item.msg);
+		fortuneEmbed.setColor('#ffff00').addField(`${fortune} Fortune`, selectedFortune.msg);
 
 		return message.channel.send(fortuneEmbed);
 	}
