@@ -81,10 +81,10 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@sapphire/decorators@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-1.2.0.tgz#301875d033af2a0743b8fae116cdb15790c51242"
-  integrity sha512-0iCo5u198tJ/d6D7xNxwWQ8UURGTMgIfrhx4NqpxwPOmxqsaJCfyph6thRxR/JztwLDN4Qu3gF2jDqKlVjJ7/g==
+"@sapphire/decorators@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-1.2.1.tgz#0287f9b1fb56c67819a57f53bd1bc21992694243"
+  integrity sha512-Nwf4aTFpTgQH+h4OYBX4Fd/5oViWuEBZTu+yf292/FVuH/V3uwdj8t5iDLhdojPt2+1Eb8zTDS/1fKn6XN4l5w==
 
 "@sapphire/discord-utilities@^1.0.3":
   version "1.0.3"
@@ -107,15 +107,15 @@
   dependencies:
     "@sapphire/discord-utilities" "^2.0.0"
 
-"@sapphire/eslint-config@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-1.1.1.tgz#4526dc4f1ef256957caaac0240d6ba1284cc01d1"
-  integrity sha512-/nOxMp0Q8N6qcnAkK3XiZR8AZfIfyq4PAtBXCDrNhPzheaHZxX85ocVVo3nsCrI2wUuwkE5Ep0Qt6g6j2kROIQ==
-
-"@sapphire/event-iterator@^1.1.2":
+"@sapphire/eslint-config@^1.1.2":
   version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.1.2.tgz#1686a0b52fae3d67db52b35ba2eb6996dbaa722d"
-  integrity sha512-hr3CPKdffLSgV7dMNMxNCI9P54iAqLGQ3so4Uj7RILPh+5iikeQYVcfIxANA1BO3mMMviFRSz/jBDrqZNxgXUw==
+  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-1.1.2.tgz#f251a06893e86f1c7403512aff33710b91b27905"
+  integrity sha512-+4rACw64/CBg3JawaEGyOxjG0Igma3SSP51kfqXY9jv0VO/JfeCdA5iIQKOHtyphhVYXTc5BclAeyFdsi6p9LQ==
+
+"@sapphire/event-iterator@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.1.3.tgz#6c878faff3d79476775d1cbf54ac6e092b094e7f"
+  integrity sha512-RjxppvOGQa3AkCvlkwIxLpWga6Dx44dDj252CyUnmKqRjf9hkqyZDTYK2LgLZ2rGMcx7T3Mj+7c/iwbCBSrKsw==
 
 "@sapphire/framework@^1.0.0-alpha.1":
   version "1.0.0-alpha.1"
@@ -145,32 +145,37 @@
   resolved "https://registry.yarnpkg.com/@sapphire/ratelimits/-/ratelimits-1.1.2.tgz#84c6ba386c99afa0bfe7ae7ce4403752463bac4f"
   integrity sha512-wmBfqUMIdeJGSkARZva86NFfBKWy4NyzRplIVITF/DbYKnMqfzD1yKOosxhUBlotuIbf4LnHH86N6UXVW6VaTQ==
 
-"@sapphire/stopwatch@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.2.tgz#7941d248e9290cc8cd33c395ffa04291dcc959a0"
-  integrity sha512-EGSpOd6vkBpTsQIluwYH7LJijvUGnDy8feL5LFoJh3OvBiCg+4EOhJaNvQOHnc4JFfZF90hSgv8NzQh6lEsTjQ==
+"@sapphire/stopwatch@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.3.tgz#068b437da474d636ddba74a2d86506753d9480ae"
+  integrity sha512-rrfv1u8zhEncC95Ronkvgeqaj7jBVptfOLOPWFmAOG4iPBuU6qCjpKxHj/hvNlxGCtjtSh8cUmo4BUZRBOtiPQ==
 
-"@sapphire/time-utilities@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.2.tgz#436fa4a647c25dd3010bfa2ad2149fa5bcfa4768"
-  integrity sha512-3YXc7uDvMOobRXqzBydG+K77ZO28jjpl/WXEHIk0S8N87mlJp8dyyokH9//tPZXK4gGf9vT7CVHunBu7sJ12EQ==
+"@sapphire/time-utilities@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.3.tgz#7676687932a95606325960e84ee23a6f3fecbda4"
+  integrity sha512-8DXVKEo3/40sKPROi0QHhRbjkMrJ44E9daJ5IQXQ7w55Zy0kUqR/DuQ22eET1tftpzXhLvXEv7Nbb/NUxUxTgA==
   dependencies:
-    "@sapphire/utilities" "^1.3.0"
+    "@sapphire/utilities" "^1.3.1"
 
-"@sapphire/ts-config@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-1.1.0.tgz#b4dc337d98f9cfc086a2e6e0ab545af0a5bfa90e"
-  integrity sha512-EQbQr461Ahn8tR/zWaOkciorFoq49dHpPpVY257EckUDGeRJ9Nwgpo9IfN2hnPjlnMqxbSV8awvLnwaLcEl4iQ==
+"@sapphire/ts-config@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-1.1.1.tgz#f813e54ea5dbee7905cbfb65126760bd13f11ce9"
+  integrity sha512-NZj5ixLUSbWINpv7q4XzLY6I6EpKTVtkwX97qlflLcYEhbLIWfJQpjAtqTHR/W7wnQuGKqeDKMd5i8Ixk/s7/A==
 
-"@sapphire/type@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-1.1.2.tgz#a86e59c53764425ba5c682c0e77a0db5e2f0fc24"
-  integrity sha512-POONQUiiupl8DbgIbdM2Ip4WuDgV0l20MIYJLbXKhh86gox5GSrqNT1u4LSbWS95GCq0r7WZqFOYwwzTki++Pw==
+"@sapphire/type@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-1.1.3.tgz#14bd34461785fae5161c046689b65094b2caa44a"
+  integrity sha512-gs5RlTjVpzfZQeX1T6b0O9lAuAMwNLLxMypeXPBNY9C1MHpF+bXc3raooat/bCcLhESsogKZZke0CC6gJxK59w==
 
 "@sapphire/utilities@^1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.3.0.tgz#3f02fe2d30e3a2866049704c9246e2cccd50b261"
   integrity sha512-FehDDQYSOPpuTDHas0VcNbm9coaWxGOO2ZE+iX8OUyLs79oaLMX3o1HIw5Ab0cSqs88y79aAKpldk2dFj4nD9w==
+
+"@sapphire/utilities@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.3.1.tgz#32f2af73b0ac0131bad579439ce33fb7d5c1e624"
+  integrity sha512-4HBXS2q3le89rDgjN6r+wPi5T+s1Dd1iGo+OUwSo8rEM7Fp7ukZwdYwDz5cWQ0FWlC3VIHBtdoMosafuX1UfKQ==
 
 "@sqltools/formatter@1.2.2":
   version "1.2.2"
@@ -200,10 +205,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.16.tgz#3cc351f8d48101deadfed4c9e4f116048d437b4b"
   integrity sha512-naXYePhweTi+BMv11TgioE2/FXU4fSl29HAH1ffxVciNsH3rYXjNP2yM8wqmSm7jS20gM8TIklKiTen+1iVncw==
 
-"@types/node@^14.14.17":
-  version "14.14.17"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.17.tgz#29fab92f3986c0e379968ad3c2043683d8020dbb"
-  integrity sha512-G0lD1/7qD60TJ/mZmhog76k7NcpLWkPVGgzkRy3CTlnFu4LUQh5v2Wa661z6vnXmD8EQrnALUyf0VRtrACYztw==
+"@types/node@^14.14.19":
+  version "14.14.19"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.19.tgz#5135176a8330b88ece4e9ab1fdcfc0a545b4bab4"
+  integrity sha512-4nhBPStMK04rruRVtVc6cDqhu7S9GZai0fpXgPXrFpcPX6Xul8xnrjSdGB4KPBVYG/R5+fXWdCM8qBoiULWGPQ==
 
 "@types/ws@^7.4.0":
   version "7.4.0"
@@ -690,10 +695,10 @@ eslint-visitor-keys@^2.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-2.0.0.tgz#21fdc8fbcd9c795cc0321f0563702095751511a8"
   integrity sha512-QudtT6av5WXels9WjIM7qz1XD1cWGvX4gGXvp/zBn9nXG02D0utdU3Em2m/QjTnrsk6bBjmCygl3rmj118msQQ==
 
-eslint@^7.16.0:
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.16.0.tgz#a761605bf9a7b32d24bb7cde59aeb0fd76f06092"
-  integrity sha512-iVWPS785RuDA4dWuhhgXTNrGxHHK3a8HLSMBgbbU59ruJDubUraXN8N5rn7kb8tG6sjg74eE0RA3YWT51eusEw==
+eslint@^7.17.0:
+  version "7.17.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.17.0.tgz#4ccda5bf12572ad3bf760e6f195886f50569adb0"
+  integrity sha512-zJk08MiBgwuGoxes5sSQhOtibZ75pz0J35XTRlZOk9xMffhpA9BTbQZxoXZzOl5zMbleShbGwtw+1kGferfFwQ==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@eslint/eslintrc" "^0.2.2"
@@ -902,10 +907,10 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-fuse.js@^6.4.4:
-  version "6.4.4"
-  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.4.4.tgz#68b92aad73f2a00980c34afaf5a727761c314c3b"
-  integrity sha512-tw9+6zGBerQG207qz4r9TJRA4xhVWiB/4UTA8cw8b2X5v7t94YbgxZ0/9ey9X7268D28HKHlWn10Q0s+kHe+xw==
+fuse.js@^6.4.5:
+  version "6.4.5"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.4.5.tgz#bf960ddd4827c8eadf230ceae4b7cf90b104503e"
+  integrity sha512-AIHjOhexWVqs/jWqun6jTUfdXB3Bm1uShoirHvTZImD2kHEQZ1zOmoDEqIPs8N1LnnwXJeG0T+r9ilEeJzlaoA==
 
 get-caller-file@^2.0.1, get-caller-file@^2.0.5:
   version "2.0.5"
