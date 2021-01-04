@@ -1,3 +1,4 @@
+// Emoji argument is from Dominus (https://github.com/RealShadowNova/dominus) Copyright 2021 RealShadowNova, used under the Apache-2.0 License
 import { EmojiRegex, TwemojiRegex } from '@sapphire/discord-utilities';
 import { Argument, PieceContext } from '@sapphire/framework';
 import type { EmojiResolvable } from 'discord.js';
