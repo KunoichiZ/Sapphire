@@ -13,7 +13,7 @@ Discord bot for the Pokemon Crossroads Discord Channel
 ## Credits
 
 -   All of the dependencies listed in [package.json](./package.json).
--   [Dominus](https://github.com/RealShadowNova/dominus) for the help command.
+-   [Dominus](https://github.com/RealShadowNova/dominus) for the help command and emoji argument.
 -   [Evlyn](https://github.com/skyra-project/evlyn) for the OwnerOnly precondition.
 -   [Godfather](https://github.com/Soumil07/godfather) for the piece & user arguments, info, ping, prefix, stats, and reload commands, mentionPrefixOnly event, SapphireCommand, and AdminOnly precondition.
 -   [Skyra](https://github.com/skyra-project/skyra) for the Pokémon commands and all related data.
