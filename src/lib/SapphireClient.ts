@@ -1,12 +1,12 @@
 import { SapphireClient } from '@sapphire/framework';
 import type { ClientOptions, Guild, Message } from 'discord.js';
 import { getCustomRepository } from 'typeorm';
-import type GuildSettings from '#lib/orm/entities/GuildSettings';
-import GuildSettingRepository from '#lib/orm/repositories/GuildSettingRepository';
+import type { GuildEntity } from '#orm/entities/GuildSettings';
+import GuildRepository from '#orm/repositories/GuildSettingRepository';
 import { PGSQL_ENABLED, PREFIX } from '#root/config';
 
 export class SBClient extends SapphireClient {
-	public settingsCache = new Map<string, GuildSettings>();
+	public settingsCache = new Map<string, GuildEntity>();
 	private _version = [1, 0, 0];
 
 	public constructor(options?: ClientOptions) {
@@ -24,7 +24,7 @@ export class SBClient extends SapphireClient {
 
 	public async fetchGuildPrefix(guild: Guild) {
 		if (!PGSQL_ENABLED) return PREFIX;
-		const guildSettings: GuildSettings = await getCustomRepository(GuildSettingRepository).ensure(this, guild);
+		const guildSettings: GuildEntity = await getCustomRepository(GuildRepository).ensure(this, guild);
 		return guildSettings.prefix;
 	}
 

@@ -1,10 +1,11 @@
-import { Entity, Column, PrimaryColumn, BaseEntity } from 'typeorm';
+import { PREFIX } from '#root/config';
+import { Column, Entity, BaseEntity, PrimaryColumn } from 'typeorm';
 
-@Entity({ name: 'guild_settings' })
-export default class Guild extends BaseEntity {
-	@PrimaryColumn('bigint')
+@Entity('guild')
+export class GuildEntity extends BaseEntity {
+	@PrimaryColumn('varchar', { length: 19 })
 	public id!: string;
 
-	@Column({ default: '-' })
-	public prefix!: string;
+	@Column('varchar', { length: 10, default: PREFIX })
+	public prefix = PREFIX;
 }
