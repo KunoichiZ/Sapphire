@@ -7,7 +7,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 	aliases: ['nick', 'n'],
 	category: 'Moderation',
 	description: 'Nicknames the selected member with the provided nickname',
-	preconditions: ['OwnerOnly', 'AdminOnly']
+	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })
 export default class NicknameCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {

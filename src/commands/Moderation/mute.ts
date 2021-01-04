@@ -8,7 +8,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 	aliases: ['m'],
 	category: 'Moderation',
 	description: 'Mutes the selected member',
-	preconditions: ['OwnerOnly', 'AdminOnly']
+	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })
 export default class MuteCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {

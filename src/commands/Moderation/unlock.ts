@@ -7,7 +7,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 	aliases: ['ul'],
 	category: 'Moderation',
 	description: 'Unlocks the channel',
-	preconditions: ['OwnerOnly', 'AdminOnly']
+	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })
 export default class UnlockCommand extends SapphireCommand {
 	public async run(message: Message) {

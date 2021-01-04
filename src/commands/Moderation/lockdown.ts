@@ -7,7 +7,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 	aliases: ['ld', 'lock'],
 	category: 'Moderation',
 	description: 'Locks down the channel',
-	preconditions: ['OwnerOnly', 'AdminOnly']
+	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })
 export default class LockdownCommand extends SapphireCommand {
 	public async run(message: Message) {

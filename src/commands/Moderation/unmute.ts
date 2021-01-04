@@ -8,7 +8,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 	aliases: ['um'],
 	category: 'Moderation',
 	description: 'Unmutes the selected member',
-	preconditions: ['OwnerOnly', 'AdminOnly']
+	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })
 export default class UnmuteCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
