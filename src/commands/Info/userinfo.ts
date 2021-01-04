@@ -8,7 +8,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 	category: 'Info',
 	description: 'Displays information about a specific user.'
 })
-export default class InfoCommand extends SapphireCommand {
+export default class UserinfoCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
 		const user = await args.pick('user');
 
