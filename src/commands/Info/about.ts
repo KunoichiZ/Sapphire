@@ -8,7 +8,7 @@ import { BrandingColors, Character, Team, AtSea, Relatives, Released, Borrowed, 
 	category: 'Info',
 	description: "Shows you useful information about the bot's character."
 })
-export default class InfoCommand extends SapphireCommand {
+export default class AboutCommand extends SapphireCommand {
 	public async run(message: Message) {
 		const avatarURL = this.context.client.user?.displayAvatarURL({ format: 'png' }) as string;
 		const aboutEmbed = new MessageEmbed()
