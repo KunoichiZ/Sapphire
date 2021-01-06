@@ -9,9 +9,8 @@ export class UserEvent extends Event<'ready'> {
 	public async run() {
 		if (PGSQL_ENABLED) {
 			await connect().then((value) => {
-				console.log(`Connected to the ${value.options.database} database.`);
-				// console.log(value.entityMetadatas[0].columns);
-			});
+                console.log(`Connected to the ${value.options.database} database.`);
+            });
 
 			console.log(`
             ${black('        ▄███████████▄        ')}
