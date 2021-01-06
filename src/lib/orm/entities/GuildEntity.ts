@@ -6,6 +6,6 @@ export default class GuildEntity extends BaseEntity {
 	@PrimaryColumn('varchar')
 	public id!: string;
 
-	@Column({ default: PREFIX })
+	@Column('varchar', { default: PREFIX })
 	public prefix!: string;
 }
