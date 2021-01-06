@@ -13,7 +13,7 @@ export default class AvatarCommand extends SapphireCommand {
 	public async run(message: Message) {
 		const changelogEmbed = new MessageEmbed();
 		changelogEmbed.setColor('#11806a').setAuthor(`${this.context.client.user?.username}'s changelog`).setDescription(stripIndents`
-        **Rewrite to Sapphire from Sheriff Magnezone, using the Sapphire Discord.js Bot Framework`)
+        *Rewrite to Sapphire from Sheriff Magnezone, using the Sapphire Discord.js Bot Framework`)
 		.addField('Source Code', '[Sapphire Source Code](https://github.com/KunoichiZ/Sapphire/)');
 
 		return message.channel.send(changelogEmbed);
