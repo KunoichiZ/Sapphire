@@ -1,7 +1,7 @@
 {
 	"name": "sapphire",
-	"version": "0.0.0",
-	"description": "testing sapphire and discord",
+	"version": "1.0.0",
+	"description": "Sheriff Magnezone rewrite to Sapphire",
 	"main": "dist/Sapphire.js",
 	"author": "KunoichiZ",
 	"license": "Apache-2.0",
