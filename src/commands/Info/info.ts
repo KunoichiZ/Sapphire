@@ -14,7 +14,7 @@ export default class InfoCommand extends SapphireCommand {
 			`Sapphire v${this.context.client.version} is a Pokémon based Discord Bot for the Pokémon Crossroads Discord server`,
 			' ',
 			'**Sapphire features:**',
-			"• Look up a Pokémon's dex entries, stats, abilities",
+			'• Look up a Pokémon\'s dex entries, stats, abilities',
 			'• Look up items and moves'
 		];
 
