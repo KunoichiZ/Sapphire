@@ -10,15 +10,15 @@ import UserEntity from '#orm/entities/UserEntity';
 })
 export default class FindSwitchFCCommand extends SapphireCommand {
     public async run(message: Message, args: Args) {
-        const user = await args.pick('user');
-		let member = await message.guild!.members.fetch(user?.id).catch(() => null);
-        let userSettings = await this.getUser(user?.id as string);
+        const user = await args.pick('user').catch(() => null);
+        let member;
+        let userSettings;
         const fcEmbed = new MessageEmbed();
-        let switchFC = userSettings.switchFC;
-        let goFC = userSettings.goFC;
-        if(member?.id === message.author.id) {
+        let switchFC = '';
+        let goFC = '';
+        if(user === null) {
             userSettings = await this.getUser(message.author.id as string);
-            member = await message.guild!.members.fetch(message.author.id).catch(() => null);
+            member = await message.guild!.members.fetch(message.author.id);
             switchFC = userSettings.switchFC;
             goFC = userSettings.goFC;
             fcEmbed
@@ -26,25 +26,35 @@ export default class FindSwitchFCCommand extends SapphireCommand {
                 .setAuthor(member?.user.tag, member?.user.displayAvatarURL())
                 .setTitle('**Friend Code(s) Found**')
                 .addField('Switch Friend Code', switchFC)
-            if(goFC !== '') {
+            if(goFC !== null) {
                 fcEmbed.addField('Pokémon Go Friend Code', goFC);
             }
             return message.channel.send(fcEmbed);
-        } else if(userSettings.switchFC) {
+        } else if(user.id != message.author.id){
+            member = await message.guild!.members.fetch(user.id);
+            userSettings = await this.getUser(user.id as string);
             switchFC = userSettings.switchFC;
             goFC = userSettings.goFC;
-            console.log(goFC);
-            fcEmbed
+            if(switchFC === 'NULL') {
+                switchFC = 'No friend code added'
+                fcEmbed
                 .setColor(message.member?.displayHexColor as string)
                 .setAuthor(member?.user.tag, member?.user.displayAvatarURL())
                 .setTitle('**Friend Code(s) Found**')
                 .addField('Switch Friend Code', switchFC)
-            if(goFC !== '') {
+            } else {
+                fcEmbed
+                .setColor(message.member?.displayHexColor as string)
+                .setAuthor(member?.user.tag, member?.user.displayAvatarURL())
+                .setTitle('**Friend Code(s) Found**')
+                .addField('Switch Friend Code', switchFC)
+            }
+            if(goFC !== 'NULL') {
                 fcEmbed.addField('Pokémon Go Friend Code', goFC);
             }
             return message.channel.send(fcEmbed);
         } else {
-            return message.channel.send('Member is not in the database!')
+            return message.channel.send('Member is not in the database!');
         }
     }
 
