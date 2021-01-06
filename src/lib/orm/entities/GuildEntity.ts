@@ -1,5 +1,6 @@
-import { Entity, Column, PrimaryColumn, BaseEntity } from 'typeorm';
+import { Entity, Column, PrimaryColumn, BaseEntity, OneToMany } from 'typeorm';
 import { PREFIX } from '#root/config';
+import WarnEntity from './WarnEntity';
 
 @Entity('guilds')
 export default class GuildEntity extends BaseEntity {
@@ -8,4 +9,7 @@ export default class GuildEntity extends BaseEntity {
 
 	@Column('varchar', { default: PREFIX })
 	public prefix!: string;
+
+	@OneToMany(() => WarnEntity, infraction => infraction.guild)
+	public warns!: WarnEntity[];
 }
