@@ -60,7 +60,8 @@ LICENSE @KunoichiZ
 package.json @KunoichiZ
 yarn.lock @KunoichiZ
 README @KunoichiZ
-/src/lib/utils/get
+/src/lib/utils/get @KunoichiZ
+/src/commands/Owner/create @KunoichiZ
 
 # kyranet & favna
 /src/commands/Pokémon/ability @favna @kyranet
