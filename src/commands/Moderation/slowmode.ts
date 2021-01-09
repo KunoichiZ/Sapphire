@@ -2,6 +2,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions, Args } from '@sapphire/framework';
 import { Message, MessageEmbed, TextChannel } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
+import { getGuild } from '#utils/get';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['slow'],
@@ -18,7 +19,8 @@ export default class BanCommand extends SapphireCommand {
         let reason = await args.rest('string').catch(() => null);
         reason = reason !== null ? reason : 'No reason given by staff';
         const slowmodeEmbed = new MessageEmbed();
-        const modlogsChannel = this.context.client.channels.cache.get('683163930344161310') as TextChannel;
+        const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
+        const modLogsChannel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
 
         if(time === 'off') {
             duration = 0;
@@ -34,7 +36,7 @@ export default class BanCommand extends SapphireCommand {
         .addField('Reason', reason);
 
         message.channel.send(`Slowmode set to ${duration}, reason: ${reason}`);
-        return modlogsChannel.send(slowmodeEmbed);
+        return modLogsChannel.send(slowmodeEmbed);
 
     }
 }

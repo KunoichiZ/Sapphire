@@ -2,6 +2,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions, Args } from '@sapphire/framework';
 import { Message, MessageEmbed, TextChannel } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
+import { getGuild } from '#utils/get';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['k'],
@@ -24,7 +25,8 @@ export default class KickCommand extends SapphireCommand {
 		if (reason && reason.length > 1000) throw 'Reason maximum char length is 1000.';
         member.kick(reason)
 
-		const modlogsChannel = this.context.client.channels.cache.get('683163930344161310') as TextChannel;
+		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
+        let channel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
         const kickEmbed = new MessageEmbed()
         .setColor(message.member?.displayHexColor as string)
         .setDescription(`
@@ -34,6 +36,6 @@ export default class KickCommand extends SapphireCommand {
         );
     
         message.channel.send(`Successfully kicked ${member.user.tag} (${member.id}, reason: ${reason}`);
-        return modlogsChannel.send(kickEmbed);
+        return channel.send(kickEmbed);
     }
 }

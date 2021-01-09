@@ -3,6 +3,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions, Args } from '@sapphire/framework';
 import { Message, MessageEmbed, TextChannel, Role } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
+import { getGuild } from '#utils/get';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['um'],
@@ -13,7 +14,8 @@ import SapphireCommand from '#lib/SapphireCommand';
 export default class UnmuteCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
 		const user = await args.pick('user');
-		const modlogsChannel = this.context.client.channels.cache.get('683163930344161310') as TextChannel;
+		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
+        let channel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
 		const member = await message.guild!.members.fetch(user.id).catch(() => null);
 
 		if (member?.manageable) {
@@ -26,7 +28,7 @@ export default class UnmuteCommand extends SapphireCommand {
 					.setAuthor(message.author.tag, message.author.displayAvatarURL())
 					.setDescription(`**Action:** Unmuted <@${member?.id}>`);
 				message.channel.send(muteEmbed);
-				return modlogsChannel.send(muteEmbed);
+				return channel.send(muteEmbed);
 			} else {
 				return message.channel.send('User is not currently muted!');
 			}

@@ -2,6 +2,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions, Args } from '@sapphire/framework';
 import { Message, MessageEmbed, TextChannel } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
+import { getGuild } from '#utils/get';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['nick', 'n'],
@@ -17,7 +18,8 @@ export default class NicknameCommand extends SapphireCommand {
 		if (nickname && nickname.length > 1000) throw 'Reason maximum char length is 1000.';
 		const member = await message.guild!.members.fetch(user?.id).catch(() => null);
 		if (!member) throw '**Member not found.** Please make sure the user is in this guild.';
-		const modlogsChannel = this.context.client.channels.cache.get('683163930344161310') as TextChannel;
+		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
+        let channel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
 		const oldName = member.displayName;
 		const nicknameEmbed = new MessageEmbed();
 		member.setNickname(nickname);
@@ -31,6 +33,6 @@ export default class NicknameCommand extends SapphireCommand {
 			message.delete();
 		}
 
-		modlogsChannel.send(nicknameEmbed);
+		channel.send(nicknameEmbed);
 	}
 }

@@ -2,6 +2,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions, Args } from '@sapphire/framework';
 import { Message, MessageEmbed, TextChannel } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
+import { getGuild } from '#utils/get';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['b'],
@@ -24,7 +25,8 @@ export default class BanCommand extends SapphireCommand {
 		if (reason && reason.length > 1000) throw 'Reason maximum char length is 1000.';
         member.ban({ reason: reason as string })
         // member.ban(reason !== '' ? reason : 'No reason given by staff');
-		const modlogsChannel = this.context.client.channels.cache.get('683163930344161310') as TextChannel;
+		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
+        let channel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
         const banEmbed = new MessageEmbed()
         .setColor(message.member?.displayHexColor as string)
         .setDescription(`
@@ -34,6 +36,6 @@ export default class BanCommand extends SapphireCommand {
         );
     
         message.channel.send(`Successfully banned ${member.user.tag} (${member.id}, reason: ${reason}`);
-        return modlogsChannel.send(banEmbed);
+        return channel.send(banEmbed);
     }
 }

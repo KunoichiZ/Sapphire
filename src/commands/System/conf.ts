@@ -6,6 +6,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 import { GuildEntity, ConfigurableGuildKeys } from '#orm/entities/GuildEntity';
 import { BrandingColors } from '#utils/Branding';
 import { cast } from '#utils/cast';
+import { getGuild } from '#utils/get';
 
 @ApplyOptions<CommandOptions>({
 	category: 'System',
@@ -18,7 +19,7 @@ export default class ConfCommand extends SapphireCommand {
 
 		if (!action) message.channel.send('Action not found. Run `conf help` for more information on actions.');
 
-        const guildSettings = await this.getGuild(message.guild?.id as string);
+        const guildSettings = await getGuild(message.guild?.id as string);
         const actions = ['set', 'show', 'help', 'keys'];
 
         if(actions.includes(action as string)) {
@@ -74,12 +75,6 @@ export default class ConfCommand extends SapphireCommand {
 		guildEntity[key] = value;
 		await guildEntity.save();
 		return channel.send(`Successfully set key to \`${value}\`. To view current configurations run \`conf show\``);
-    }
-
-    private async getGuild(id: string): Promise<GuildEntity> {
-        const guild = await GuildEntity.findOne({ id });
-        if (guild) return guild;
-        return GuildEntity.create({ id }).save();
     }
 
     private async resolveValue(guild: Guild, key: ConfigurableGuildKeys, value: string){

@@ -2,6 +2,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions } from '@sapphire/framework';
 import { Message, MessageEmbed, TextChannel } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
+import { getGuild } from '#utils/get';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['ld', 'lock'],
@@ -14,7 +15,8 @@ export default class LockdownCommand extends SapphireCommand {
 		const lockEmbed = new MessageEmbed();
 		const channel = message.guild?.channels.cache.find((channel) => channel.id === message.channel.id) as TextChannel;
 		const everyone = message.guild?.roles.everyone.id as string;
-		const modlogsChannel = this.context.client.channels.cache.get('683163930344161310') as TextChannel;
+		let modLogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
+        let modlogsChannel = message.guild?.channels.cache.find(channel => channel.name === modLogsChannel) as TextChannel;
 		const prefix = await this.context.client.fetchPrefix(message);
 		channel.overwritePermissions(
 			[
