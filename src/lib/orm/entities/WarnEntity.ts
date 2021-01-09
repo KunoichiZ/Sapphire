@@ -18,4 +18,7 @@ export default class WarnEntity extends BaseEntity {
 
 	@ManyToOne(() => UserEntity, member => member.warns, { eager: true })
 	public member!: UserEntity;
+
+	@Column('timestamp without time zone', { name: 'createdAt', default: new Date() })
+	public createdAt = new Date();
 }

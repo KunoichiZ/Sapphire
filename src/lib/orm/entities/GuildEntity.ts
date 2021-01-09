@@ -37,7 +37,7 @@ export class GuildEntity extends BaseEntity {
 	public members!: UserEntity[];
 
 	public async increaseTotalCases() {
-		this.totalWarns = this.totalWarns + 1;
+		this.totalWarns += 1;
 		await this.save();
 		return this.totalWarns;
 	}
