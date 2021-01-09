@@ -4,6 +4,7 @@
 /src/lib/util/durationFormat @RealShadowNova
 /src/lib/util/cast @RealShadowNova
 /src/commands/System/conf @RealShadowNova
+/src/commands/Moderation/warn @RealShadowNova
 
 # Soumil07
 /src/arguments/piece @Soumil07
