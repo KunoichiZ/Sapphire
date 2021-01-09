@@ -1,5 +1,6 @@
-import { Entity, Column, PrimaryColumn, BaseEntity, OneToMany } from 'typeorm';
+import { Entity, Column, PrimaryColumn, BaseEntity, OneToMany, ManyToOne } from 'typeorm';
 import WarnEntity from './WarnEntity';
+import { GuildEntity } from './GuildEntity';
 
 @Entity('users')
 export default class UserEntity extends BaseEntity {
@@ -14,4 +15,7 @@ export default class UserEntity extends BaseEntity {
 
 	@OneToMany(() => WarnEntity, warn => warn.member)
 	public warns!: WarnEntity[];
+
+	@ManyToOne(() => GuildEntity, guild => guild.members, { eager: true })
+	public guild!: GuildEntity;
 }

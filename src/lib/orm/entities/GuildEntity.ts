@@ -1,6 +1,7 @@
 import { Entity, Column, PrimaryColumn, BaseEntity, OneToMany } from 'typeorm';
 import { PREFIX } from '#root/config';
 import WarnEntity from './WarnEntity';
+import UserEntity from './UserEntity';
 
 export const DefaultConfigurableGuildValues = {
 	prefix: () => PREFIX,
@@ -14,10 +15,13 @@ export class GuildEntity extends BaseEntity {
 	@PrimaryColumn('varchar')
 	public id!: string;
 
+	@Column('integer', { default: 0 })
+	public totalWarns!: number;
+
 	@Column('varchar', { default: PREFIX })
 	public prefix!: string;
 
-	@OneToMany(() => WarnEntity, infraction => infraction.guild)
+	@OneToMany(() => WarnEntity, warn => warn.guild)
 	public warns!: WarnEntity[];
 
 	@Column('varchar')
@@ -28,6 +32,15 @@ export class GuildEntity extends BaseEntity {
 
 	@Column('varchar')
 	public modlogsChannel!: string;
+
+	@OneToMany(() => UserEntity, user => user.guild)
+	public members!: UserEntity[];
+
+	public async increaseTotalCases() {
+		this.totalWarns = this.totalWarns + 1;
+		await this.save();
+		return this.totalWarns;
+	}
 }
 
 export enum ConfigurableGuildKeys {
