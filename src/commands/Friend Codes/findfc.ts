@@ -2,7 +2,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 import type { Args, CommandOptions } from '@sapphire/framework';
 import { Message, MessageEmbed } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
-import UserEntity from '#orm/entities/UserEntity';
+import { getUser } from '#utils/get';
 
 @ApplyOptions<CommandOptions>({
     category: 'Friend Code',
@@ -17,7 +17,7 @@ export default class FindSwitchFCCommand extends SapphireCommand {
         let switchFC = '';
         let goFC = '';
         if(user === null) {
-            userSettings = await this.getUser(message.author.id as string);
+            userSettings = await getUser(message.author.id as string);
             member = await message.guild!.members.fetch(message.author.id);
             switchFC = userSettings.switchFC;
             goFC = userSettings.goFC;
@@ -32,7 +32,7 @@ export default class FindSwitchFCCommand extends SapphireCommand {
             return message.channel.send(fcEmbed);
         } else if(user.id != message.author.id){
             member = await message.guild!.members.fetch(user.id);
-            userSettings = await this.getUser(user.id as string);
+            userSettings = await getUser(user.id as string);
             switchFC = userSettings.switchFC;
             goFC = userSettings.goFC;
             if(switchFC === 'NULL') {
@@ -56,11 +56,5 @@ export default class FindSwitchFCCommand extends SapphireCommand {
         } else {
             return message.channel.send('Member is not in the database!');
         }
-    }
-
-    async getUser(id: string): Promise<UserEntity> {
-        const user = await UserEntity.findOne({ id });
-        if (user) return user;
-        return UserEntity.create({ id }).save();
     }
 }
