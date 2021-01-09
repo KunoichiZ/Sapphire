@@ -7,8 +7,9 @@
 Discord bot for the Pokemon Crossroads Discord Channel
 
 ### Libraries used:
-* [Discord.js](https://discord.js.org/#/)
-* [Sapphire Framework](https://github.com/sapphire-project/framework)
+
+-   [Discord.js](https://discord.js.org/#/)
+-   [Sapphire Framework](https://github.com/sapphire-project/framework)
 
 ## Credits
 
