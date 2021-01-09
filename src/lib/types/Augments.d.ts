@@ -1,4 +1,3 @@
-import { GuildEntity } from '#lib/orm/entities/GuildEntity';
 import { Piece } from '@sapphire/framework';
 import { EmojiResolvable } from 'discord.js';
 
@@ -6,7 +5,7 @@ declare module 'discord.js' {
 	interface Client {
 		readonly version: string;
 		readonly invite: string;
-		settingsCache: Map<string, GuildEntity>;
+		fetchGuildPrefix(guild: Guild): Promise<string>;
 	}
 }
 

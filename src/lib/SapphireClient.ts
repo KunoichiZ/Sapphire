@@ -1,10 +1,9 @@
 import { SapphireClient } from '@sapphire/framework';
-import type { ClientOptions, Message } from 'discord.js';
-import type { GuildEntity } from '#lib/orm/entities/GuildEntity';
-import { PREFIX } from '#root/config';
+import type { ClientOptions, Message, Guild } from 'discord.js';
+import { getGuild } from '#utils/get';
+import { PREFIX, PGSQL_ENABLED } from '#root/config';
 
 export class SBClient extends SapphireClient {
-	public settingsCache = new Map<string, GuildEntity>();
 	private _version = [1, 0, 0];
 
 	public constructor(options?: ClientOptions) {
@@ -12,7 +11,7 @@ export class SBClient extends SapphireClient {
 		this.registerUserDirectories();
 		this.fetchPrefix = async (message: Message) => {
 			if (!message.guild) return [PREFIX, ''];
-			return PREFIX;
+			return this.fetchGuildPrefix(message.guild);
 		};
 	}
 
@@ -23,5 +22,11 @@ export class SBClient extends SapphireClient {
 	public get version() {
 		const versionStr = this._version.join('.');
 		return versionStr;
+	}
+
+	public async fetchGuildPrefix(guild: Guild) {
+		if (!PGSQL_ENABLED) return PREFIX;
+		const guildSettings = await getGuild(guild.id);
+		return guildSettings.prefix;
 	}
 }
