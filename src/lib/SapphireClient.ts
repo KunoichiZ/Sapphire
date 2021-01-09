@@ -1,6 +1,6 @@
 import { SapphireClient } from '@sapphire/framework';
 import type { ClientOptions, Message } from 'discord.js';
-import type GuildEntity from '#lib/orm/entities/GuildEntity';
+import type { GuildEntity } from '#lib/orm/entities/GuildEntity';
 import { PREFIX } from '#root/config';
 
 export class SBClient extends SapphireClient {

@@ -1,4 +1,4 @@
-import GuildEntity from '#lib/orm/entities/GuildEntity';
+import { GuildEntity } from '#lib/orm/entities/GuildEntity';
 import { Piece } from '@sapphire/framework';
 import { EmojiResolvable } from 'discord.js';
 
