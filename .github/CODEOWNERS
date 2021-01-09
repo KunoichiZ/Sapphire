@@ -1,0 +1,110 @@
+# RealShadowNova
+/src/arguments/emoji @RealShadowNova
+/src/commands/General/Chat Bot Info/help @RealShadowNova
+/src/lib/util/durationFormat @RealShadowNova
+
+# Soumil07
+/src/arguments/piece @Soumil07
+/src/arguments/user @Soumil07
+/src/commands/Info/ping @Soumil07
+/src/commands/Info/info @Soumil07
+/src/commands/Info/stats @Soumil07
+/src/commands/System/reload @Soumil07
+/src/events/mentionPrefixOnly @Soumil07
+/src/lib/orm/ormConfig @Soumil07
+/src/preconditions/AdminOnly @Soumil07
+
+# KunoichiZ
+/src/commands/Friend Codes/ @KunoichiZ
+/src/commands/Info/about @KunoichiZ
+/src/commands/Info/avatar @KunoichiZ
+/src/commands/Info/changelog @KunoichiZ
+/src/commands/Info/emoji @KunoichiZ
+/src/commands/Info/emojiinfo @KunoichiZ
+/src/commands/Info/server @KunoichiZ
+/src/commands/Info/uptime @KunoichiZ
+/src/commands/Info/userinfo @KunoichiZ
+/src/commands/Misc/8ball @KunoichiZ
+/src/commands/Misc/coinflip @KunoichiZ
+/src/commands/Misc/dice @KunoichiZ
+/src/commands/Misc/fortune @KunoichiZ
+/src/commands/Moderation/ @KunoichiZ
+/src/commands/Roles/ @KunoichiZ
+/src/commands/Rules/ @KunoichiZ
+/src/commands/Test/ @KunoichiZ
+/src/events/ready @KunoichiZ
+/src/lib/data/fortunes @KunoichiZ
+/src/lib/data/predictions @KunoichiZ
+/src/lib/orm/entities/GuildEntity @KunoichiZ
+/src/lib/orm/entities/UserEntity @KunoichiZ
+/src/lib/orm/entities/WarnEntity @KunoichiZ
+/src/lib/types/Augments.d @KunoichiZ
+/src/lib/types/Types @KunoichiZ
+/src/lib/util/Branding @KunoichiZ
+/src/preconditions/GuildOnly @KunoichiZ
+/src/preconditions/ModeratorOnly @KunoichiZ
+/src/Sapphire @KunoichiZ
+/src/tsconfig @KunoichiZ
+.eslintignore @KunoichiZ
+.gitattributes @KunoichiZ
+.gitignore @KunoichiZ
+LICENSE @KunoichiZ
+/.github/ISSUE_TEMPLATE/bug_report @KunoichiZ
+/.github/ISSUE_TEMPLATE/feature_request @KunoichiZ
+/.github/CODE_OF_CONDUCT @KunoichiZ
+/.github/CODEOWNERS @KunoichiZ
+/.github/PULL_REQUEST_TEMPLATE @KunoichiZ
+package.json @KunoichiZ
+yarn.lock @KunoichiZ
+README @KunoichiZ
+
+# kyranet & favna
+/src/commands/Pokémon/ability @favna @kyranet
+/src/commands/Pokémon/flavor @favna @kyranet
+/src/commands/Pokémon/item @favna @kyranet
+/src/commands/Pokémon/move @favna @kyranet
+/src/commands/Pokémon/pokedex @favna @kyranet
+/src/lib/util/gqlUtil @favna @kyranet
+/src/lib/util/Pokemon @favna @kyranet
+/src/preconditions/OwnerOnly @favna @kyranet
+ormconfig.js @favna @kyranet
+/.github/workflows/continuous-integration.yml @favna @kyranet
+/.github/CONTRIBUTING @favna @kyranet
+
+# cfanoulis
+/src/commands/System/eval @cfanoulis
+/src/commands/System/exec @cfanoulis
+/src/lib/errors/FetchError @cfanoulis
+/src/lib/util/clean @cfanoulis
+/src/lib/util/exec @cfanoulis
+/src/lib/util/util @cfanoulis
+
+# KunoichiZ & favna
+.eslintrc.json @KunoichiZ @favna
+package.json @KunoichiZ @favna
+/src/Sapphire @KunoichiZ @favna
+/src/commands/Test/test @KunoichiZ @favna
+/src/config.example @KunoichiZ @favna
+/src/lib/SapphireClient @KunoichiZ @favna
+/src/lib/util/Branding @KunoichiZ @favna
+/src/tsconfig @KunoichiZ @favna
+
+# Soumil07 & favna
+/src/arguments/user @Soumil07 @favna
+/src/commands/Misc/info @Soumil07 @favna
+/src/commands/Misc/ping @Soumil07 @favna
+/src/commands/Misc stats @Soumil07 @favna
+/src/commands/System/reload @Soumil07 @favna
+/src/events/mentionPrefixOnly @Soumil07 @favna
+
+# RealShadowNova & favna
+/src/commands/General/Chat Bot Info/help @RealShadowNova @favna
+
+# cfanoulis & favna
+/src/commands/System/eval @cfanoulis @favna
+/src/commands/System/exec @cfanoulis @favna
+/src/lib/util/util @cfanoulis @favna
+
+# favna
+tsconfig.base.json @favna
+tsconfig.eslint.json @favna
