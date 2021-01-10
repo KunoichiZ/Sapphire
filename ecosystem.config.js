@@ -1,4 +1,6 @@
-export const apps = [{
-    name: 'Sapphire',
-    script: 'dist/Sapphire.js'
-}];
+module.exports = {
+    apps : [{
+      name: 'Sapphire',
+      script: 'dist/Sapphire.js'
+    }]
+  };
