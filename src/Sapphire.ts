@@ -8,8 +8,8 @@ const main = async () => {
 		defaultPrefix: PREFIX,
 		presence: {
 			activity: {
-				name: 'Pokémon Emerald',
-				type: 'STREAMING'
+				name: 'the Battle Frontier',
+				type: 'COMPETING'
 			}
 		}
 	});
