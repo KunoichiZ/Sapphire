@@ -16,7 +16,7 @@ export class GuildEntity extends BaseEntity {
 	public id!: string;
 
 	@Column('integer', { default: 0 })
-	public totalWarns!: number;
+	public totalwarns!: number;
 
 	@Column('varchar', { default: PREFIX })
 	public prefix!: string;
@@ -37,9 +37,9 @@ export class GuildEntity extends BaseEntity {
 	public members!: UserEntity[];
 
 	public async increaseTotalCases() {
-		this.totalWarns += 1;
+		this.totalwarns += 1;
 		await this.save();
-		return this.totalWarns;
+		return this.totalwarns;
 	}
 }
 

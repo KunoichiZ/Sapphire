@@ -35,7 +35,7 @@ export default class WarnCommand extends SapphireCommand {
         warn.guild = guild;
         warn.reason = reason;
         guild.warns = Object.values(warn);
-        guild.totalWarns = await guild.increaseTotalCases();
+        guild.totalwarns = await guild.increaseTotalCases();
         await warn.save();
         await guild.save();
         console.log(warn.caseID);
