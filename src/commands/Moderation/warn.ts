@@ -40,7 +40,7 @@ export default class WarnCommand extends SapphireCommand {
         await guild.save();
         console.log(warn.caseID);
 
-        const modLogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
+        const modLogsChannel = (await getGuild(message.guild?.id as string)).modlogschannel;
 		let modlogsChannel = message.guild?.channels.cache.find(channel => channel.name === modLogsChannel) as TextChannel;
 
         modlogsChannel.send(

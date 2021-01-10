@@ -14,7 +14,7 @@ import { getGuild } from '#utils/get';
 export default class MuteCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
 		const user = await args.pick('user');
-		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
+		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogschannel;
         let channel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
 		const member = await message.guild!.members.fetch(user.id).catch(() => null);
 

@@ -5,9 +5,9 @@ import UserEntity from './UserEntity';
 
 export const DefaultConfigurableGuildValues = {
 	prefix: () => PREFIX,
-	quoteChannel: 'quotes',
-	announcementChannel: 'discord-announcements',
-	modlogsChannel: 'mod-logs'
+	quotechannel: 'quotes',
+	announcementchannel: 'discord-announcements',
+	modlogschannel: 'mod-logs'
 };
 
 @Entity('guilds')
@@ -25,13 +25,13 @@ export class GuildEntity extends BaseEntity {
 	public warns!: WarnEntity[];
 
 	@Column('varchar')
-	public quoteChannel!: string;
+	public quotechannel!: string;
 
 	@Column('varchar')
-	public announcementChannel!: string;
+	public announcementchannel!: string;
 
 	@Column('varchar')
-	public modlogsChannel!: string;
+	public modlogschannel!: string;
 
 	@OneToMany(() => UserEntity, user => user.guild)
 	public members!: UserEntity[];
@@ -45,7 +45,7 @@ export class GuildEntity extends BaseEntity {
 
 export enum ConfigurableGuildKeys {
 	Prefix = 'prefix',
-	QuoteChannel = 'quoteChannel',
-	ModlogsChannel = 'modlogsChannel',
-	AnnouncementChannel = 'announcementChannel'
+	QuoteChannel = 'quotechannel',
+	ModlogsChannel = 'modlogschannel',
+	AnnouncementChannel = 'announcementchannel'
 }

@@ -18,7 +18,7 @@ export default class NicknameCommand extends SapphireCommand {
 		if (nickname && nickname.length > 1000) throw 'Reason maximum char length is 1000.';
 		const member = await message.guild!.members.fetch(user?.id).catch(() => null);
 		if (!member) throw '**Member not found.** Please make sure the user is in this guild.';
-		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
+		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogschannel;
         let channel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
 		const oldName = member.displayName;
 		const nicknameEmbed = new MessageEmbed();
