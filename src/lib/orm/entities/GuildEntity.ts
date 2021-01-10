@@ -5,9 +5,9 @@ import UserEntity from './UserEntity';
 
 export const DefaultConfigurableGuildValues = {
 	prefix: () => PREFIX,
-	quotechannel: 'quotes',
-	announcementchannel: 'discord-announcements',
-	modlogschannel: 'mod-logs'
+	quoteChannel: 'quotes',
+	announcementChannel: 'discord-announcements',
+	modlogsChannel: 'mod-logs'
 };
 
 @Entity('guilds')
@@ -16,7 +16,7 @@ export class GuildEntity extends BaseEntity {
 	public id!: string;
 
 	@Column('integer', { default: 0 })
-	public totalwarns!: number;
+	public totalWarns!: number;
 
 	@Column('varchar', { default: PREFIX })
 	public prefix!: string;
@@ -25,27 +25,27 @@ export class GuildEntity extends BaseEntity {
 	public warns!: WarnEntity[];
 
 	@Column('varchar')
-	public quotechannel!: string;
+	public quoteChannel!: string;
 
 	@Column('varchar')
-	public announcementchannel!: string;
+	public announcementChannel!: string;
 
 	@Column('varchar')
-	public modlogschannel!: string;
+	public modlogsChannel!: string;
 
 	@OneToMany(() => UserEntity, user => user.guild)
 	public members!: UserEntity[];
 
 	public async increaseTotalCases() {
-		this.totalwarns += 1;
+		this.totalWarns += 1;
 		await this.save();
-		return this.totalwarns;
+		return this.totalWarns;
 	}
 }
 
 export enum ConfigurableGuildKeys {
 	Prefix = 'prefix',
-	QuoteChannel = 'quotechannel',
-	ModlogsChannel = 'modlogschannel',
-	AnnouncementChannel = 'announcementchannel'
+	QuoteChannel = 'quoteChannel',
+	ModlogsChannel = 'modlogsChannel',
+	AnnouncementChannel = 'announcementChannel'
 }

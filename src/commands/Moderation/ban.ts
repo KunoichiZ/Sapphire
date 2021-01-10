@@ -25,7 +25,7 @@ export default class BanCommand extends SapphireCommand {
 		if (reason && reason.length > 1000) throw 'Reason maximum char length is 1000.';
         member.ban({ reason: reason as string })
         // member.ban(reason !== '' ? reason : 'No reason given by staff');
-		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogschannel;
+		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
         let channel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
         const banEmbed = new MessageEmbed()
         .setColor(message.member?.displayHexColor as string)

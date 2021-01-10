@@ -25,7 +25,7 @@ export default class KickCommand extends SapphireCommand {
 		if (reason && reason.length > 1000) throw 'Reason maximum char length is 1000.';
         member.kick(reason)
 
-		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogschannel;
+		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
         let channel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
         const kickEmbed = new MessageEmbed()
         .setColor(message.member?.displayHexColor as string)

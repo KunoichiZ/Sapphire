@@ -10,14 +10,14 @@ import { getGuild } from '#utils/get';
 
 @ApplyOptions<CommandOptions>({
 	category: 'System',
-	description: 'Database creation tool',
-    preconditions: ['OwnerOnly', 'AdminOnly']
+	description: 'Change conf settings',
+    preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })
 export default class ConfCommand extends SapphireCommand {
     public async run(message: Message, args: Args) {
         const action = await args.pick('string').catch(() => null);
 
-		if (!action) message.channel.send('Action not found. Run `conf help` for more information on actions.');
+		// if (!action) message.channel.send('Action not found. Run `conf help` for more information on actions.');
 
         const guildSettings = await getGuild(message.guild?.id as string);
         const actions = ['set', 'show', 'help', 'keys'];
@@ -45,7 +45,7 @@ export default class ConfCommand extends SapphireCommand {
                     return this.show(message, guildSettings);
             }
         } else {
-            return message.channel.send('That is not proper action.');
+            return message.channel.send('Action not found. Run `conf help` for more information on actions.')
         }
         
     }

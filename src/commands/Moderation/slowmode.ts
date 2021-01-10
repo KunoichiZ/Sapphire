@@ -19,7 +19,7 @@ export default class BanCommand extends SapphireCommand {
         let reason = await args.rest('string').catch(() => null);
         reason = reason !== null ? reason : 'No reason given by staff';
         const slowmodeEmbed = new MessageEmbed();
-        const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogschannel;
+        const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
         const modLogsChannel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
 
         if(time === 'off') {

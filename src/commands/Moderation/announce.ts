@@ -13,7 +13,7 @@ import { getGuild } from '#utils/get';
 export default class AnnounceCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
 		const announcement = await args.rest('string');
-		const announcementChannel = (await getGuild(message.guild?.id as string)).announcementchannel;
+		const announcementChannel = (await getGuild(message.guild?.id as string)).announcementChannel;
 		let channel = message.guild?.channels.cache.find(channel => channel.name === announcementChannel) as TextChannel;
 		channel.send(announcement);
 	}
