@@ -10,13 +10,13 @@ export default class WarnEntity extends BaseEntity {
 	@Column('integer', { name: 'caseID' })
 	public caseID!: number;
 
-    @Column('varchar', { name: 'reason', length: 1000, nullable: true })
+	@Column('varchar', { name: 'reason', length: 1000, nullable: true })
 	public reason: string | null = null;
 
-    @ManyToOne(() => GuildEntity, guild => guild.warns, { eager: true })
+	@ManyToOne(() => GuildEntity, (guild) => guild.warns, { eager: true })
 	public guild!: GuildEntity;
 
-	@ManyToOne(() => UserEntity, member => member.warns, { eager: true })
+	@ManyToOne(() => UserEntity, (member) => member.warns, { eager: true })
 	public member!: UserEntity;
 
 	@Column('timestamp without time zone', { name: 'createdAt', default: new Date() })

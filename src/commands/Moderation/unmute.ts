@@ -14,8 +14,8 @@ import { getGuild } from '#utils/get';
 export default class UnmuteCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
 		const user = await args.pick('user');
-		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
-        let channel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
+		const { modlogsChannel } = await getGuild(message.guild?.id as string);
+		const channel = message.guild?.channels.cache.find((channel) => channel.name === modlogsChannel) as TextChannel;
 		const member = await message.guild!.members.fetch(user.id).catch(() => null);
 
 		if (member?.manageable) {

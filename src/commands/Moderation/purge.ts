@@ -19,8 +19,8 @@ export default class PurgeCommand extends SapphireCommand {
 		await (message.channel as TextChannel).bulkDelete(amount > 100 ? 100 : amount);
 
 		// await message.channel.bulkDelete(amount > 100 ? 100 : amount);
-		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
-        let channel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
+		const { modlogsChannel } = await getGuild(message.guild?.id as string);
+		const channel = message.guild?.channels.cache.find((channel) => channel.name === modlogsChannel) as TextChannel;
 		channel.send(`Purged ${amount > 100 ? 100 : amount} messages.`);
 		return message.channel.send(`Purged ${amount > 100 ? 100 : amount} messages.`);
 	}

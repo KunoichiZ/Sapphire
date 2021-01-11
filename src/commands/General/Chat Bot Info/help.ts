@@ -39,7 +39,10 @@ export default class Help2Command extends SapphireCommand {
 	private async menu(message: Message) {
 		const categories = new Set<string>();
 
-		for (const [, command] of this.context.client.commands.filter((command) => command.category.toLowerCase() !== 'system' && command.category.toLowerCase() !== 'owner' &&command.category.toLowerCase() !== 'test'))
+		for (const [, command] of this.context.client.commands.filter(
+			(command) =>
+				command.category.toLowerCase() !== 'system' && command.category.toLowerCase() !== 'owner' && command.category.toLowerCase() !== 'test'
+		))
 			categories.add(command.category);
 
 		return new PaginatedMessage({

@@ -15,8 +15,8 @@ export default class LockdownCommand extends SapphireCommand {
 		const lockEmbed = new MessageEmbed();
 		const channel = message.guild?.channels.cache.find((channel) => channel.id === message.channel.id) as TextChannel;
 		const everyone = message.guild?.roles.everyone.id as string;
-		let modLogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
-        let modlogsChannel = message.guild?.channels.cache.find(channel => channel.name === modLogsChannel) as TextChannel;
+		const modLogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
+		const modlogsChannel = message.guild?.channels.cache.find((channel) => channel.name === modLogsChannel) as TextChannel;
 		const prefix = await this.context.client.fetchPrefix(message);
 		channel.overwritePermissions(
 			[

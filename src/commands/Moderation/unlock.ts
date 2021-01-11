@@ -13,8 +13,8 @@ import { getGuild } from '#utils/get';
 export default class UnlockCommand extends SapphireCommand {
 	public async run(message: Message) {
 		const unlockEmbed = new MessageEmbed();
-		const modlogsChannel = (await getGuild(message.guild?.id as string)).modlogsChannel;
-        let channel = message.guild?.channels.cache.find(channel => channel.name === modlogsChannel) as TextChannel;
+		const { modlogsChannel } = await getGuild(message.guild?.id as string);
+		const channel = message.guild?.channels.cache.find((channel) => channel.name === modlogsChannel) as TextChannel;
 		const everyone = message.guild?.roles.everyone.id as string;
 		const prefix = await this.context.client.fetchPrefix(message);
 		channel.overwritePermissions(

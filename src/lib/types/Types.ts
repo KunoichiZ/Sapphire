@@ -2,7 +2,7 @@ export const enum PreConditions {
 	AdminOnly = 'AdminOnly',
 	GuildOnly = 'GuildOnly',
 	ModeratorOnly = 'ModeratorOnly',
-	OwnerOnly = 'OwnerOnly',
+	OwnerOnly = 'OwnerOnly'
 }
 
 export const enum Permissions {

@@ -21,7 +21,7 @@ export class GuildEntity extends BaseEntity {
 	@Column('varchar', { default: PREFIX })
 	public prefix!: string;
 
-	@OneToMany(() => WarnEntity, warn => warn.guild)
+	@OneToMany(() => WarnEntity, (warn) => warn.guild)
 	public warns!: WarnEntity[];
 
 	@Column('varchar')
@@ -33,7 +33,7 @@ export class GuildEntity extends BaseEntity {
 	@Column('varchar')
 	public modlogsChannel!: string;
 
-	@OneToMany(() => UserEntity, user => user.guild)
+	@OneToMany(() => UserEntity, (user) => user.guild)
 	public members!: UserEntity[];
 
 	public async increaseTotalCases() {

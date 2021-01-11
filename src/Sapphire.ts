@@ -15,9 +15,9 @@ const main = async () => {
 	});
 
 	try {
-    	client.login(TOKENS.BOT_TOKEN);
+		await client.login(TOKENS.BOT_TOKEN);
 		client.on(Constants.Events.DEBUG, console.debug);
-    	client.on(Constants.Events.CLIENT_READY, () => console.log(`${client.user?.tag} (${client.user?.id}) has logged in!`));
+		client.on(Constants.Events.CLIENT_READY, () => console.log(`${client.user?.tag} (${client.user?.id}) has logged in!`));
 	} catch (error) {
 		client.logger.error(error);
 	}

@@ -10,12 +10,12 @@ export default class UserEntity extends BaseEntity {
 	@Column('varchar', { default: '' })
 	public switchFC!: string;
 
-    @Column('varchar', { default: '' })
+	@Column('varchar', { default: '' })
 	public goFC!: string;
 
-	@OneToMany(() => WarnEntity, warn => warn.member)
+	@OneToMany(() => WarnEntity, (warn) => warn.member)
 	public warns!: WarnEntity[];
 
-	@ManyToOne(() => GuildEntity, guild => guild.members, { eager: true })
+	@ManyToOne(() => GuildEntity, (guild) => guild.members, { eager: true })
 	public guild!: GuildEntity;
 }
