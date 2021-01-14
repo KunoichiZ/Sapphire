@@ -1,4 +1,4 @@
-// Help command from Dominus (https://github.com/RealShadowNova/dominus) Copyright 2021 RealShadowNova, used under the Apache-2.0 License
+// Help command from Dominus (https://github.com/dominus-project/dominus) Copyright 2021 RealShadowNova, used under the Apache-2.0 License
 import type { Args, CommandOptions } from '@sapphire/framework';
 import { PaginatedMessage } from '@sapphire/discord.js-utilities';
 import { ApplyOptions } from '@sapphire/decorators';
