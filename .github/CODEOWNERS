@@ -1,4 +1,4 @@
-# RealShadowNova
+# Just RealShadowNova
 /src/arguments/emoji @RealShadowNova
 /src/commands/General/Chat Bot Info/help @RealShadowNova
 /src/lib/util/durationFormat @RealShadowNova
@@ -6,7 +6,7 @@
 /src/commands/System/conf @RealShadowNova
 /src/commands/Moderation/warn @RealShadowNova
 
-# Soumil07
+# Just Soumil07
 /src/arguments/piece @Soumil07
 /src/arguments/user @Soumil07
 /src/commands/Info/ping @Soumil07
@@ -17,7 +17,7 @@
 /src/lib/orm/ormConfig @Soumil07
 /src/preconditions/AdminOnly @Soumil07
 
-# KunoichiZ
+# Just KunoichiZ
 /src/commands/Friend Codes/ @KunoichiZ
 /src/commands/Info/about @KunoichiZ
 /src/commands/Info/avatar @KunoichiZ
@@ -76,7 +76,7 @@ ormconfig.js @favna @kyranet
 /.github/workflows/continuous-integration.yml @favna @kyranet
 /.github/CONTRIBUTING @favna @kyranet
 
-# cfanoulis
+# Just cfanoulis
 /src/commands/System/eval @cfanoulis
 /src/commands/System/exec @cfanoulis
 /src/lib/errors/FetchError @cfanoulis
@@ -110,6 +110,6 @@ package.json @KunoichiZ @favna
 /src/commands/System/exec @cfanoulis @favna
 /src/lib/util/util @cfanoulis @favna
 
-# favna
+# Just favna
 tsconfig.base.json @favna
 tsconfig.eslint.json @favna
