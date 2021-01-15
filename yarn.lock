@@ -150,12 +150,12 @@
   resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.3.tgz#068b437da474d636ddba74a2d86506753d9480ae"
   integrity sha512-rrfv1u8zhEncC95Ronkvgeqaj7jBVptfOLOPWFmAOG4iPBuU6qCjpKxHj/hvNlxGCtjtSh8cUmo4BUZRBOtiPQ==
 
-"@sapphire/time-utilities@^1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.4.tgz#793ffc99b8ebb153ed2732aab296c7a6c245b7cd"
-  integrity sha512-pNnh3lXxRSAha7406fiX9zgBfdTtxCe0v2nfmgn9GIPZWL+wQv80cRfKBy+UW3F9Ts6OOGH052FR7Cgpc4hCcA==
+"@sapphire/time-utilities@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.6.tgz#108c0fe67a7e279f0aa797c04fab52222913fbb5"
+  integrity sha512-HYFVzlEllRaQSpdEKUYpzUPvMUML3tlGNf5BF/Om2vvFxnf6y6Zi/OI86lc4dG6PJ1YcjHInre+yXuMIWnFs/w==
   dependencies:
-    "@sapphire/utilities" "^1.4.0"
+    "@sapphire/utilities" "^1.4.2"
 
 "@sapphire/ts-config@^2.0.0":
   version "2.0.0"
@@ -172,10 +172,10 @@
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.3.0.tgz#3f02fe2d30e3a2866049704c9246e2cccd50b261"
   integrity sha512-FehDDQYSOPpuTDHas0VcNbm9coaWxGOO2ZE+iX8OUyLs79oaLMX3o1HIw5Ab0cSqs88y79aAKpldk2dFj4nD9w==
 
-"@sapphire/utilities@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.4.0.tgz#84472dab230256489b022aa061498ee92cac516e"
-  integrity sha512-px0/yw2n8VPB4lKDElI5KIxOm3Rut9bHSvbzyP8vlEPSJcDfWB9HLCtqlM5sJEDOb+K53G9nxJSeYGf17rZiCg==
+"@sapphire/utilities@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.4.2.tgz#b8c1cc1ef52adca36f2217f3995f185cf01f932b"
+  integrity sha512-OW3KIVu3lswXHZspyMhr0diI2fvE5xzrce+/XI9spUQ+zq2J/3oxxOy0Q3fA6JOERqDeNPwqrtgyWj/PCSL0Kw==
 
 "@sqltools/formatter@1.2.2":
   version "1.2.2"
@@ -192,10 +192,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
   integrity sha512-3c+yGKvVP5Y9TYBEibGNR+kLtijnj7mYrXRg+WpFb2X9xm04g/DXYkfg4hmzJQosc9snFNUPkbYIhu+KAm6jJw==
 
-"@types/node-fetch@^2.5.7":
-  version "2.5.7"
-  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.5.7.tgz#20a2afffa882ab04d44ca786449a276f9f6bbf3c"
-  integrity sha512-o2WVNf5UhWRkxlf6eq+jMZDu7kjgpgJfl4xVNlvryc95O/6F2ld8ztKX+qu+Rjyet93WAWm5LjeX9H5FGkODvw==
+"@types/node-fetch@^2.5.8":
+  version "2.5.8"
+  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.5.8.tgz#e199c835d234c7eb0846f6618012e558544ee2fb"
+  integrity sha512-fbjI6ja0N5ZA8TV53RUqzsKNkl9fv8Oj3T7zxW7FGv1GSH7gwJaNF8dzCjrqKaxKeUpTz4yT1DaJFq/omNpGfw==
   dependencies:
     "@types/node" "*"
     form-data "^3.0.0"
@@ -205,10 +205,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.16.tgz#3cc351f8d48101deadfed4c9e4f116048d437b4b"
   integrity sha512-naXYePhweTi+BMv11TgioE2/FXU4fSl29HAH1ffxVciNsH3rYXjNP2yM8wqmSm7jS20gM8TIklKiTen+1iVncw==
 
-"@types/node@^14.14.20":
-  version "14.14.20"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.20.tgz#f7974863edd21d1f8a494a73e8e2b3658615c340"
-  integrity sha512-Y93R97Ouif9JEOWPIUyU+eyIdyRqQR0I8Ez1dzku4hDx34NWh4HbtIc3WNzwB1Y9ULvNGeu5B8h8bVL5cAk4/A==
+"@types/node@^14.14.21":
+  version "14.14.21"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.21.tgz#d934aacc22424fe9622ebf6857370c052eae464e"
+  integrity sha512-cHYfKsnwllYhjOzuC5q1VpguABBeecUp24yFluHpn/BQaVxB1CuQ1FSRZCzrPxrkIfWISXV2LbeoBthLWg0+0A==
 
 "@types/ws@^7.4.0":
   version "7.4.0"
