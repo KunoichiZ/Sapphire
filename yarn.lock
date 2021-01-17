@@ -177,6 +177,11 @@
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.4.2.tgz#b8c1cc1ef52adca36f2217f3995f185cf01f932b"
   integrity sha512-OW3KIVu3lswXHZspyMhr0diI2fvE5xzrce+/XI9spUQ+zq2J/3oxxOy0Q3fA6JOERqDeNPwqrtgyWj/PCSL0Kw==
 
+"@sapphire/utilities@^1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.4.3.tgz#cf5540ee79fdb63c9af64754c9db6d533f58c812"
+  integrity sha512-OS4Tvimwqa2iKusNeP3rPd3RnoRazbKHh1ANEzwbE6zawSTPstcehmIYJ1G02eDae/45H1nrOg37O67eAY8uOw==
+
 "@sqltools/formatter@1.2.2":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.2.tgz#9390a8127c0dcba61ebd7fdcc748655e191bdd68"
