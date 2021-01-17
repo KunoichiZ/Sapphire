@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@favware/graphql-pokemon": "^5.0.1",
-		"@sapphire/eslint-config": "^2.0.0",
+		"@sapphire/eslint-config": "^2.0.1",
 		"@sapphire/prettier-config": "^1.0.5",
 		"@sapphire/ts-config": "^2.0.0",
 		"@types/node": "^14.14.21",
