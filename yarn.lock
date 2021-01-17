@@ -150,12 +150,12 @@
   resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.3.tgz#068b437da474d636ddba74a2d86506753d9480ae"
   integrity sha512-rrfv1u8zhEncC95Ronkvgeqaj7jBVptfOLOPWFmAOG4iPBuU6qCjpKxHj/hvNlxGCtjtSh8cUmo4BUZRBOtiPQ==
 
-"@sapphire/time-utilities@^1.2.6":
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.6.tgz#108c0fe67a7e279f0aa797c04fab52222913fbb5"
-  integrity sha512-HYFVzlEllRaQSpdEKUYpzUPvMUML3tlGNf5BF/Om2vvFxnf6y6Zi/OI86lc4dG6PJ1YcjHInre+yXuMIWnFs/w==
+"@sapphire/time-utilities@^1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.7.tgz#381cf8e36719fe1b02445c79102498adaaa47b5f"
+  integrity sha512-iNozGuQ5w0BIO+AXGjKmVNtUq9f9bbffrIv0htyVioxIgpiow6aKQpKK6AsnTVh0nVArTxB0RCVxuBG7dwe07A==
   dependencies:
-    "@sapphire/utilities" "^1.4.2"
+    "@sapphire/utilities" "^1.4.3"
 
 "@sapphire/ts-config@^2.0.0":
   version "2.0.0"
@@ -176,6 +176,11 @@
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.4.2.tgz#b8c1cc1ef52adca36f2217f3995f185cf01f932b"
   integrity sha512-OW3KIVu3lswXHZspyMhr0diI2fvE5xzrce+/XI9spUQ+zq2J/3oxxOy0Q3fA6JOERqDeNPwqrtgyWj/PCSL0Kw==
+
+"@sapphire/utilities@^1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.4.3.tgz#cf5540ee79fdb63c9af64754c9db6d533f58c812"
+  integrity sha512-OS4Tvimwqa2iKusNeP3rPd3RnoRazbKHh1ANEzwbE6zawSTPstcehmIYJ1G02eDae/45H1nrOg37O67eAY8uOw==
 
 "@sqltools/formatter@1.2.2":
   version "1.2.2"
