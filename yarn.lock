@@ -145,10 +145,10 @@
   resolved "https://registry.yarnpkg.com/@sapphire/ratelimits/-/ratelimits-1.1.2.tgz#84c6ba386c99afa0bfe7ae7ce4403752463bac4f"
   integrity sha512-wmBfqUMIdeJGSkARZva86NFfBKWy4NyzRplIVITF/DbYKnMqfzD1yKOosxhUBlotuIbf4LnHH86N6UXVW6VaTQ==
 
-"@sapphire/stopwatch@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.3.tgz#068b437da474d636ddba74a2d86506753d9480ae"
-  integrity sha512-rrfv1u8zhEncC95Ronkvgeqaj7jBVptfOLOPWFmAOG4iPBuU6qCjpKxHj/hvNlxGCtjtSh8cUmo4BUZRBOtiPQ==
+"@sapphire/stopwatch@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.4.tgz#0d90c0c6d4a0e9b7e9d06550c302962a0b79599b"
+  integrity sha512-Yee9+KUSLQxfYBxZoGB77LGqAel4Xhl0Vt6/Owc8E2gq4Ogyr73sv8RfdyEWD5lGLBY5NAcSLpI7nC5RVvSS9Q==
 
 "@sapphire/time-utilities@^1.2.6":
   version "1.2.6"
