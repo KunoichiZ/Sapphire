@@ -14,20 +14,14 @@ import { BrandingColors } from '#utils/Branding';
 })
 export default class StatsCommand extends SapphireCommand {
 	public async run(message: Message) {
-		return message.channel.send(await this.buildEmbed(message));
+		return message.channel.send(await this.buildEmbed());
 	}
 
-	private async buildEmbed(message: Message) {
-		const prefix = await this.context.client.fetchPrefix(message);
+	private async buildEmbed() {
 		const { generalStatistics, serverStatistics } = this;
 		return new MessageEmbed()
 			.setColor(BrandingColors.Primary)
 			.setAuthor(this.context.client.user!.username, this.context.client.user!.displayAvatarURL({ format: 'png' }))
-			.setDescription(
-				`To add ${this.context.client.user!.username} to your server, use the \`${
-					Array.isArray(prefix) ? prefix[0] : prefix
-				}invite\` command.`
-			)
 			.addField(
 				'Connected To',
 				[
