@@ -2,7 +2,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions, Args } from '@sapphire/framework';
 import { Message, MessageEmbed, TextChannel } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
-import { getGuild } from '#utils/get';
+import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['nick', 'n'],
@@ -18,21 +18,30 @@ export default class NicknameCommand extends SapphireCommand {
 		if (nickname && nickname.length > 1000) throw 'Reason maximum char length is 1000.';
 		const member = await message.guild!.members.fetch(user?.id).catch(() => null);
 		if (!member) throw '**Member not found.** Please make sure the user is in this guild.';
-		const { modlogsChannel } = await getGuild(message.guild?.id as string);
-		const channel = message.guild?.channels.cache.find((channel) => channel.name === modlogsChannel) as TextChannel;
+
 		const oldName = member.displayName;
 		const nicknameEmbed = new MessageEmbed();
 		member.setNickname(nickname);
 
-		nicknameEmbed.setColor(member.displayHexColor).setDescription(`**Action:** Nickname change\n
-        **Member:** <@${member.id}> (${member.user.tag})\n
-        **Old name:** ${oldName}\n
-        **New name:** ${nickname}\n`);
+		const guildID = message.guild?.id;
+		const selectQuery = `SELECT modlogschannel FROM guilds WHERE id=${guildID}`;
+		POOL.query(selectQuery, (err, res) => {
+			if (err) {
+				console.log(err.stack);
+			}
+			const { modlogschannel } = res.rows[0];
+			const modlogsChannel = message.guild?.channels.cache.find((channel) => channel.name === modlogschannel) as TextChannel;
 
-		if (message.deletable) {
-			message.delete();
-		}
+			nicknameEmbed.setColor(member.displayHexColor).setDescription(`**Action:** Nickname change\n
+			**Member:** <@${member.id}> (${member.user.tag})\n
+			**Old name:** ${oldName}\n
+			**New name:** ${nickname}\n`);
 
-		channel.send(nicknameEmbed);
+			if (message.deletable) {
+				message.delete();
+			}
+
+			modlogsChannel.send(nicknameEmbed);
+		});
 	}
 }

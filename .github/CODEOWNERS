@@ -3,8 +3,10 @@
 /src/commands/General/Chat Bot Info/help @RealShadowNova
 /src/lib/util/durationFormat @RealShadowNova
 /src/lib/util/cast @RealShadowNova
-/src/commands/System/conf @RealShadowNova
-/src/commands/Moderation/warn @RealShadowNova
+
+# RealShadowNova & KunoichiZ
+/src/commands/System/conf @RealShadowNova @KunoichiZ
+/src/commands/Moderation/warn @RealShadowNova @KunoichiZ
 
 # Just Soumil07
 /src/arguments/piece @Soumil07
@@ -14,7 +16,6 @@
 /src/commands/Info/stats @Soumil07
 /src/commands/System/reload @Soumil07
 /src/events/mentionPrefixOnly @Soumil07
-/src/lib/orm/ormConfig @Soumil07
 /src/preconditions/AdminOnly @Soumil07
 
 # Just KunoichiZ
@@ -38,9 +39,6 @@
 /src/events/ready @KunoichiZ
 /src/lib/data/fortunes @KunoichiZ
 /src/lib/data/predictions @KunoichiZ
-/src/lib/orm/entities/GuildEntity @KunoichiZ
-/src/lib/orm/entities/UserEntity @KunoichiZ
-/src/lib/orm/entities/WarnEntity @KunoichiZ
 /src/lib/types/Augments.d @KunoichiZ
 /src/lib/types/Types @KunoichiZ
 /src/lib/util/Branding @KunoichiZ
@@ -72,7 +70,6 @@ README @KunoichiZ
 /src/lib/util/gqlUtil @favna @kyranet
 /src/lib/util/Pokemon @favna @kyranet
 /src/preconditions/OwnerOnly @favna @kyranet
-ormconfig.js @favna @kyranet
 /.github/workflows/continuous-integration.yml @favna @kyranet
 /.github/CONTRIBUTING @favna @kyranet
 
@@ -82,7 +79,6 @@ ormconfig.js @favna @kyranet
 /src/lib/errors/FetchError @cfanoulis
 /src/lib/util/clean @cfanoulis
 /src/lib/util/exec @cfanoulis
-/src/lib/util/util @cfanoulis
 
 # KunoichiZ & favna
 .eslintrc.json @KunoichiZ @favna
@@ -108,7 +104,6 @@ package.json @KunoichiZ @favna
 # cfanoulis & favna
 /src/commands/System/eval @cfanoulis @favna
 /src/commands/System/exec @cfanoulis @favna
-/src/lib/util/util @cfanoulis @favna
 
 # Just favna
 tsconfig.base.json @favna

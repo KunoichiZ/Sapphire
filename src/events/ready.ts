@@ -2,16 +2,11 @@ import { ApplyOptions } from '@sapphire/decorators';
 import { Event, EventOptions } from '@sapphire/framework';
 import { red, black, white } from 'colorette';
 import { PGSQL_ENABLED } from '#root/config';
-import { connect } from '#orm/ormConfig';
 
 @ApplyOptions<EventOptions>({ once: true })
 export class UserEvent extends Event<'ready'> {
-	public async run() {
+	public run() {
 		if (PGSQL_ENABLED) {
-			await connect().then((value) => {
-				console.log(`Connected to the ${value.options.database} database.`);
-			});
-
 			console.log(`
             ${black('        ▄███████████▄        ')}
             ${black('     ▄███')}${red('▓▓▓▓▓▓▓▓▓▓▓')}${black('███▄     ')}

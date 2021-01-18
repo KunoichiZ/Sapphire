@@ -49,6 +49,7 @@
 		"@sapphire/type": "^1.1.4",
 		"@sapphire/utilities": "^1.4.3",
 		"@types/common-tags": "^1.8.0",
+		"@types/pg": "^7.14.8",
 		"bufferutil": "^4.0.3",
 		"chokidar": "^3.5.1",
 		"colorette": "^1.2.1",
@@ -56,7 +57,6 @@
 		"discord.js": "^12.5.1",
 		"node-fetch": "^2.6.1",
 		"pg": "^8.5.1",
-		"typeorm": "^0.2.30",
 		"utf-8-validate": "^5.0.4",
 		"ws": "^7.4.2",
 		"zlib-sync": "^0.1.7"
@@ -64,7 +64,6 @@
 	"imports": {
 		"#data/*": "./dist/lib/data/*.js",
 		"#lib/*": "./dist/lib/*.js",
-		"#orm/*": "./dist/lib/orm/*.js",
 		"#root/*": "./dist/*.js",
 		"#utils/*": "./dist/lib/util/*.js"
 	},

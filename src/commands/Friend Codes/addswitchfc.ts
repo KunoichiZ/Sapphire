@@ -1,9 +1,10 @@
+/* eslint-disable no-negated-condition */
 /* eslint-disable no-else-return */
 import { ApplyOptions } from '@sapphire/decorators';
 import type { Args, CommandOptions } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
-import { getUser } from '#utils/get';
+import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	category: 'Friend Codes',
@@ -12,15 +13,33 @@ import { getUser } from '#utils/get';
 export default class AddSwitchFCCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
 		const switchFC = await args.restResult('string');
-		const userSettings = await getUser(message.author.id as string);
+
+		const id = message.author.id as string;
+		const selectQuery = `SELECT id FROM users WHERE id=${id}`;
+		const insertInfoQuery = {
+			text: 'INSERT INTO users(id) VALUES($1)',
+			values: [id]
+		};
+		const updateQuery = `UPDATE users SET switchfc = '${switchFC.value}' WHERE id = ${id}`;
 		if (!switchFC.success) {
-			return message.channel.send(`You did not add a Nintendo Switch FC!`);
-		} else if (userSettings.switchFC) {
-			return message.channel.send(`You've already added a Nintendo Switch FC!`);
+			message.channel.send(`You did not add a Nintendo Switch FC!`);
 		} else {
-			userSettings.switchFC = switchFC.value;
-			await userSettings.save();
-			return message.channel.send(`Your Nintendo Switch FC been set to: ${userSettings.switchFC}`);
+			POOL.query(selectQuery, (err, res) => {
+				if (err) {
+					console.log(err.stack);
+				} else if (res.rows[0] === undefined) {
+					POOL.query(insertInfoQuery);
+					POOL.query(updateQuery, (err) => {
+						if (err) {
+							console.log(err.stack);
+						} else {
+							message.channel.send(`Your Nintendo Switch FC been set to: ${switchFC.value}`);
+						}
+					});
+				} else {
+					message.channel.send("You've already added a Nintendo Switch FC!");
+				}
+			});
 		}
 	}
 }

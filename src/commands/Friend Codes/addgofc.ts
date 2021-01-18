@@ -1,26 +1,39 @@
-/* eslint-disable no-else-return */
+/* eslint-disable no-negated-condition */
 import { ApplyOptions } from '@sapphire/decorators';
 import type { Args, CommandOptions } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
-import { getUser } from '#utils/get';
+import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	category: 'Friend Codes',
 	description: 'Sets your Pokémon GO FC'
 })
-export default class AddGOFCCommand extends SapphireCommand {
+export default class AddGoFCCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
 		const goFC = await args.restResult('string');
-		const userSettings = await getUser(message.author.id as string);
+
+		const id = message.author.id as string;
+		const selectQuery = `SELECT id FROM users WHERE id=${id}`;
+		const updateQuery = `UPDATE users SET gofc = '${goFC.value}' WHERE id = ${id}`;
 		if (!goFC.success) {
-			return message.channel.send(`You did not add a Pokémon GO FC!`);
-		} else if (userSettings.goFC) {
-			return message.channel.send(`You've already added a Pokémon GO FC!`);
+			message.channel.send(`You did not add a Pokémon GO FC!`);
 		} else {
-			userSettings.goFC = goFC.value;
-			await userSettings.save();
-			return message.channel.send(`Your Pokémon GO been set to: ${userSettings.goFC}`);
+			POOL.query(selectQuery, (err, res) => {
+				if (err) {
+					console.log(err.stack);
+				} else if (res.rows[0].gofc === undefined) {
+					POOL.query(updateQuery, (err) => {
+						if (err) {
+							console.log(err.stack);
+						} else {
+							message.channel.send(`Your Pokémon GO been set to: ${goFC.value}`);
+						}
+					});
+				} else {
+					message.channel.send("You've already added a Pokémon GO FC!");
+				}
+			});
 		}
 	}
 }
