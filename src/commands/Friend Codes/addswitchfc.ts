@@ -16,7 +16,7 @@ export default class AddSwitchFCCommand extends SapphireCommand {
 
 		const id = message.author.id as string;
 		const selectQuery = `SELECT id FROM users WHERE id=${id}`;
-		const insertInfoQuery = {
+		const insertIntoQuery = {
 			text: 'INSERT INTO users(id) VALUES($1)',
 			values: [id]
 		};
@@ -28,7 +28,7 @@ export default class AddSwitchFCCommand extends SapphireCommand {
 				if (err) {
 					console.log(err.stack);
 				} else if (res.rows[0] === undefined) {
-					POOL.query(insertInfoQuery);
+					POOL.query(insertIntoQuery);
 					POOL.query(updateQuery, (err) => {
 						if (err) {
 							console.log(err.stack);
