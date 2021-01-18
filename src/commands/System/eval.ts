@@ -8,7 +8,7 @@ import { Message, MessageEmbed } from 'discord.js';
 import { inspect } from 'util';
 import SapphireCommand from '#lib/SapphireCommand';
 import { clean } from '#utils/clean';
-import { fetch, FetchMethods, FetchResultTypes } from '#utils/util';
+import { fetch, FetchMethods, FetchResultTypes } from '#utils/Pokemon';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['ev'],

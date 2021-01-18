@@ -5,7 +5,7 @@ import { codeBlock } from '@sapphire/utilities';
 import { Message, MessageAttachment } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
 import { exec } from '#utils/exec';
-import { fetch, FetchMethods, FetchResultTypes } from '#utils/util';
+import { fetch, FetchMethods, FetchResultTypes } from '#utils/Pokemon';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['execute'],
