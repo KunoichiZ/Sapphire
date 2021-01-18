@@ -1,7 +1,7 @@
 import 'reflect-metadata';
-import { SBClient } from '#lib/SapphireClient';
-import { PREFIX, TOKENS } from '#root/config';
 import { Constants } from 'discord.js';
+import { SBClient } from '#lib/SapphireClient';
+import { POOL, PREFIX, TOKENS } from '#root/config';
 
 const main = async () => {
 	const client = new SBClient({
@@ -14,13 +14,13 @@ const main = async () => {
 		}
 	});
 
-	try {
-		await client.login(TOKENS.BOT_TOKEN);
-		client.on(Constants.Events.DEBUG, console.debug);
-		client.on(Constants.Events.CLIENT_READY, () => console.log(`${client.user?.tag} (${client.user?.id}) has logged in!`));
-	} catch (error) {
-		client.logger.error(error);
-	}
+	await POOL.connect((err: any) => {
+		if (err) throw err;
+		console.log('Connected to PostgresSQL');
+	});
+	client.on(Constants.Events.DEBUG, console.debug);
+	client.on(Constants.Events.CLIENT_READY, () => console.log(`${client.user?.tag} (${client.user?.id}) has logged in!`));
+	return client.login(TOKENS.BOT_TOKEN);
 };
 
 main();
