@@ -1,4 +1,5 @@
 import type { ClientOptions } from 'discord.js';
+import { Pool } from 'pg';
 
 export const NAME = '';
 export const PREFIX = '';
@@ -23,3 +24,14 @@ export const PGSQL_DATABASE_PASSWORD = '';
 export const PGSQL_DATABASE_USER = '';
 export const PGSQL_DATABASE_PORT = 5432;
 export const PGSQL_DATABASE_HOST = 'localhost';
+
+export const PGSQL_DATABASE_URL = `postgresql://${PGSQL_DATABASE_USER}:${PGSQL_DATABASE_PASSWORD}@${PGSQL_DATABASE_HOST}:${PGSQL_DATABASE_PORT}/${PGSQL_DATABASE_NAME}`;
+
+export const POOL = new Pool({
+	connectionString: PGSQL_DATABASE_URL,
+	port: PGSQL_DATABASE_PORT,
+	host: PGSQL_DATABASE_HOST,
+	database: PGSQL_DATABASE_NAME,
+	user: PGSQL_DATABASE_USER,
+	password: PGSQL_DATABASE_PASSWORD
+});
