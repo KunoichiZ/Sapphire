@@ -2,7 +2,6 @@ import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions, Args } from '@sapphire/framework';
 import { Timestamp } from '@sapphire/time-utilities';
 import { Message, MessageEmbed } from 'discord.js';
-// import type { Message } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
