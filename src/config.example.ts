@@ -7,6 +7,11 @@ export const OWNER_ID = '';
 export const CLIENT_ID = '';
 export const CLIENT_SECRET = '';
 
+export const DEV_NAME = '';
+export const DEV_PREFIX = '';
+export const DEV_CLIENT_ID = '';
+export const DEV_CLIENT_SECRET = '';
+
 export const CLIENT_OPTIONS: ClientOptions = {
 	messageCacheLifetime: 120,
 	messageCacheMaxSize: 20,
@@ -15,7 +20,8 @@ export const CLIENT_OPTIONS: ClientOptions = {
 };
 
 export const TOKENS = {
-	BOT_TOKEN: ''
+	BOT_TOKEN: '',
+	DEV_BOT_TOKEN: ''
 };
 
 export const PGSQL_ENABLED = false;

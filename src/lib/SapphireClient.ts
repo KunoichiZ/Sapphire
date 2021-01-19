@@ -1,7 +1,7 @@
 /* eslint-disable no-else-return */
 import { SapphireClient } from '@sapphire/framework';
 import type { ClientOptions, Guild, Message } from 'discord.js';
-import { PGSQL_ENABLED, POOL, PREFIX } from '#root/config';
+import { DEV, DEV_PREFIX, PGSQL_ENABLED, POOL, PREFIX } from '#root/config';
 
 export class SBClient extends SapphireClient {
 	private _version = [1, 0, 0];
@@ -26,6 +26,7 @@ export class SBClient extends SapphireClient {
 
 	public async fetchGuildPrefix(guild: Guild) {
 		if (!PGSQL_ENABLED) return PREFIX;
+		if (DEV) return DEV_PREFIX;
 		const id = guild?.id as string;
 		const selectQuery = `SELECT prefix FROM guilds WHERE id=${id}`;
 		let prefix = '';
