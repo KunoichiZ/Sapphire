@@ -7,6 +7,7 @@ export const OWNER_ID = '';
 export const CLIENT_ID = '';
 export const CLIENT_SECRET = '';
 
+export const DEV = true;
 export const DEV_NAME = '';
 export const DEV_PREFIX = '';
 export const DEV_CLIENT_ID = '';
