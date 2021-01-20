@@ -107,10 +107,10 @@
   dependencies:
     "@sapphire/discord-utilities" "^2.0.1"
 
-"@sapphire/eslint-config@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-2.0.1.tgz#5f202a6ea070eabdbaf60aed0af204829bfccfe6"
-  integrity sha512-agDGE0zLgyWRcFU9gmmKqWZWTwqFrkBuIQr3J5zeIkRGao7YW/72+XnEXRKbz3gBbawnPC4/17p2Lf75vdp9/Q==
+"@sapphire/eslint-config@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-2.1.0.tgz#bce6ad2779783d16e12b0f7f2150342ae41f291d"
+  integrity sha512-oTo7URwshIF3rvm17GTvnDw9cM6Ux26kYQNMMv3Q8GRMHiK33eod199vxacaKlrf8wgboszDcttYd5hctk/KNA==
 
 "@sapphire/event-iterator@^1.1.4":
   version "1.1.4"
@@ -200,15 +200,15 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.16.tgz#3cc351f8d48101deadfed4c9e4f116048d437b4b"
   integrity sha512-naXYePhweTi+BMv11TgioE2/FXU4fSl29HAH1ffxVciNsH3rYXjNP2yM8wqmSm7jS20gM8TIklKiTen+1iVncw==
 
-"@types/node@^14.14.21":
-  version "14.14.21"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.21.tgz#d934aacc22424fe9622ebf6857370c052eae464e"
-  integrity sha512-cHYfKsnwllYhjOzuC5q1VpguABBeecUp24yFluHpn/BQaVxB1CuQ1FSRZCzrPxrkIfWISXV2LbeoBthLWg0+0A==
+"@types/node@^14.14.22":
+  version "14.14.22"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.22.tgz#0d29f382472c4ccf3bd96ff0ce47daf5b7b84b18"
+  integrity sha512-g+f/qj/cNcqKkc3tFqlXOYjrmZA+jNBiDzbP3kH+B+otKFqAdPgVTGP1IeKRdMml/aE69as5S4FqtxAbl+LaMw==
 
-"@types/pg@^7.14.8":
-  version "7.14.8"
-  resolved "https://registry.yarnpkg.com/@types/pg/-/pg-7.14.8.tgz#9dccd8267431d80fe3e7329466e9dce8babd83d6"
-  integrity sha512-ZOpHcmngTbd7fXS+wMM4SpYDQYDddzR9KfkDu1yPcEKWcHMAFT1T1oTB3X2Ip1dBIfeNY4eQEKsWLt74+TGq6A==
+"@types/pg@^7.14.9":
+  version "7.14.9"
+  resolved "https://registry.yarnpkg.com/@types/pg/-/pg-7.14.9.tgz#5f09544d0b5b19fca48b63dd15644c475555ba60"
+  integrity sha512-ThTOEwOvYM++zRSGiajRqKyTQboCEJE2VI+30d93WX94sQ7CnrcJ7CICT9oC+QD8Co9JTYJkKEfEXSb5DjUOFA==
   dependencies:
     "@types/node" "*"
     pg-types "^2.2.0"
