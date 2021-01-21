@@ -100,10 +100,10 @@
   dependencies:
     twemoji-parser "^13.0.0"
 
-"@sapphire/discord.js-utilities@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-1.2.0.tgz#0ec4c162d371de022e6ebeca86ba86e2d5fb4ed1"
-  integrity sha512-0EXzqrzVS9iTdcood1BkXG7X5jkgkZj2UigGw2Y8SvaqSVJm5l+gY8QPDTkr9S90ULPep/+w3ce9Ox/ovMiaCQ==
+"@sapphire/discord.js-utilities@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-1.3.0.tgz#e19e23d13c6f5caaabd4095436370fb8ab9df1b4"
+  integrity sha512-GhAxuGwjtul9xODw+SXZ+rhMI4mFomuEsrgLZeZpt4qsKpZJ5MAB4Z6Ck3k7fIkrR2fePWD/K4BbVPNGRcQ6Jw==
   dependencies:
     "@sapphire/discord-utilities" "^2.0.1"
 
@@ -524,6 +524,11 @@ dir-glob@^3.0.1:
   integrity sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==
   dependencies:
     path-type "^4.0.0"
+
+discord-api-types@^0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.12.1.tgz#98fd362ff71681bd4daa97e28a30ece87ae67f38"
+  integrity sha512-x8dhQqPZUtIEKjDHMdA6D3aAsZUMoeo58fAgFA5WOAdSh+uVyRsvny4+25b+RIRasG2Zf2UpDUsx8NKO5zk/6g==
 
 discord.js@^12.5.1:
   version "12.5.1"
