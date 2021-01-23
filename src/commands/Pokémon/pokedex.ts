@@ -2,9 +2,11 @@ import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions, Args } from '@sapphire/framework';
 import { toTitleCase } from '@sapphire/utilities';
 import type { AbilitiesEntry, DexDetails, GenderEntry, StatsEntry } from '@favware/graphql-pokemon';
-import { Message, MessageEmbed } from 'discord.js';
-import { fetchGraphQLPokemon, getPokemonDetailsByFuzzy, parseBulbapediaURL, resolveColor } from '#utils/Pokemon';
+import { MessageEmbed } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
+import { UserPaginatedMessage } from '#lib/structures/UserPaginatedMessage';
+import type { GuildMessage } from '#lib/types';
+import { fetchGraphQLPokemon, getPokemonDetailsByFuzzy, parseBulbapediaURL, resolveColor } from '#utils/Pokemon';
 
 enum BaseStats {
 	hp = 'HP',
@@ -17,14 +19,16 @@ enum BaseStats {
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['dex', 'pokemon', 'mon', 'poke', 'dexter'],
-	category: 'Pokémon',
+	fullCategory: ['Pokémon'],
 	description: 'Gets data for any given Pokémon'
 })
 export default class PokedexCommand extends SapphireCommand {
-	public async run(message: Message, args: Args) {
+	public async run(message: GuildMessage, args: Args) {
 		const pokemon = await args.rest('string');
 		const pokeDetails = await this.fetchAPI(pokemon.toLowerCase());
-		return message.channel.send(this.buildDisplay(message, pokeDetails));
+		const display = await this.buildDisplay(message, pokeDetails) //
+			.start(message, message.author);
+		return display;
 	}
 
 	private async fetchAPI(pokemon: string) {
@@ -36,7 +40,7 @@ export default class PokedexCommand extends SapphireCommand {
 		}
 	}
 
-	private buildDisplay(message: Message, pokeDetails: DexDetails) {
+	private buildDisplay(message: GuildMessage, pokeDetails: DexDetails) {
 		const abilities = this.getAbilities(pokeDetails.abilities);
 		const baseStats = this.getBaseStats(pokeDetails.baseStats);
 		const evoChain = this.getEvoChain(pokeDetails);
@@ -126,28 +130,62 @@ export default class PokedexCommand extends SapphireCommand {
 			`[Smogon](${pokeDetails.smogonPage})`
 		].join(' | ');
 
-		const display = new MessageEmbed()
-			.setColor(resolveColor(pokeDetails.color))
-			.setAuthor(`#${pokeDetails.num} - ${toTitleCase(pokeDetails.species)}`, 'https://cdn.kunoichiz.me/cdn/images/dex.png')
-			.setThumbnail(pokeDetails.sprite)
-			.addField('Types', pokeDetails.types.join(', '), true)
-			.addField('Abilities', abilities.join(', '), true)
-			.addField('Gender Ratio', this.parseGenderRatio(pokeDetails.gender), true)
-			.addField('Evolution Chain', evoChain)
-			.addField('Base Stats', `${baseStats.join(', ')} (*Base Stat Total*: **${pokeDetails.baseStatsTotal}**)`)
-			.addField('Height', `${pokeDetails.height}m`, true)
-			.addField('Weight', `${pokeDetails.weight}kg`, true)
-			.addField('Egg Groups', pokeDetails.eggGroups?.join(', ') || '', true)
-			.addField('Smogon Tier', pokeDetails.smogonTier, true)
-			.addField('Flavor Texts', `\`(${pokeDetails.flavorTexts[0].game})\` ${pokeDetails.flavorTexts[0].flavor}`)
-			.addField('External Resources', externalResourceData);
+		const display = new UserPaginatedMessage({
+			template: new MessageEmbed()
+				.setColor(resolveColor(pokeDetails.color))
+				.setAuthor(`#${pokeDetails.num} - ${toTitleCase(pokeDetails.species)}`, 'https://cdn.kunoichiz.me/cdn/images/dex.png')
+				.setThumbnail(pokeDetails.sprite)
+		})
+			.addPageEmbed((embed) =>
+				embed
+					.addField('Types', pokeDetails.types.join(', '), true)
+					.addField('Abilities', abilities.join(', '), true)
+					.addField('Gender Ratio', this.parseGenderRatio(pokeDetails.gender), true)
+					.addField('Evolution Chain', evoChain)
+					.addField('Base Stats', `${baseStats.join(', ')} (*Base Stat Total*: **${pokeDetails.baseStatsTotal}**)`)
+					.addField('External Resources', externalResourceData)
+			)
+			.addPageEmbed((embed) =>
+				embed
+					.addField('Height', `${pokeDetails.height}m`, true)
+					.addField('Weight', `${pokeDetails.weight}kg`, true)
+					.addField('Egg Groups', pokeDetails.eggGroups?.join(', ') || '', true)
+					.addField('External Resources', externalResourceData)
+			)
+			.addPageEmbed((embed) =>
+				embed
+					.addField('Smogon Tier', pokeDetails.smogonTier, true)
+					.addField('Flavor Texts', `\`(${pokeDetails.flavorTexts[0].game})\` ${pokeDetails.flavorTexts[0].flavor}`)
+					.addField('External Resources', externalResourceData)
+			);
+
+		// If there are any cosmetic formes or other formes then add a page for them
+		// If the pokémon doesn't have the formes then the API will default them to `null`
+		if (pokeDetails.cosmeticFormes || pokeDetails.otherFormes) {
+			display.addPageEmbed((embed) => {
+				// If the pokémon has other formes
+				if (pokeDetails.otherFormes) {
+					embed.addField('Other forme(s)', pokeDetails.otherFormes);
+				}
+
+				// If the pokémon has cosmetic formes
+				if (pokeDetails.cosmeticFormes) {
+					embed.addField('Cosmetic Formes', pokeDetails.cosmeticFormes);
+				}
+
+				// Add the external resource field
+				embed.addField('External Resources', externalResourceData);
+
+				return embed;
+			});
+		}
 
 		return display;
 	}
 }
 
 interface PokemonToDisplayArgs {
-	message: Message;
+	message: GuildMessage;
 	pokeDetails: DexDetails;
 	abilities: string[];
 	baseStats: string[];
