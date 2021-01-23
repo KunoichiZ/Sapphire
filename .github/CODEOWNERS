@@ -72,6 +72,7 @@ README @KunoichiZ
 /src/preconditions/OwnerOnly @favna @kyranet
 /.github/workflows/continuous-integration.yml @favna @kyranet
 /.github/CONTRIBUTING @favna @kyranet
+/src/lib/structures/UserPaginatedMessage @favna @kyranet
 
 # Just cfanoulis
 /src/commands/System/eval @cfanoulis
