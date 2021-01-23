@@ -11,7 +11,7 @@ import { cast } from '#utils/cast';
 import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
-	category: 'System',
+	fullCategory: ['System'],
 	description: 'Change conf settings',
 	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })

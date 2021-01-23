@@ -5,7 +5,7 @@ import { Message, MessageEmbed } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Info',
+	fullCategory: ['Info'],
 	description: 'Displays information about a specific user.'
 })
 export default class UserinfoCommand extends SapphireCommand {

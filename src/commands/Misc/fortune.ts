@@ -6,7 +6,7 @@ import { fortunes } from '#data/fortunes';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['eightball'],
-	category: 'Misc',
+	fullCategory: ['Misc'],
 	description: 'Ask the eightball a question, get a random response.'
 })
 export default class EightBallCommand extends SapphireCommand {

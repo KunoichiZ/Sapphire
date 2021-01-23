@@ -6,7 +6,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['r'],
-	category: 'System',
+	fullCategory: ['System'],
 	preconditions: ['OwnerOnly']
 })
 export default class extends SapphireCommand {

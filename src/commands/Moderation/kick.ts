@@ -7,7 +7,7 @@ import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['k'],
-	category: 'Moderation',
+	fullCategory: ['Moderation'],
 	description: 'Kicks a member from the server',
 	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })

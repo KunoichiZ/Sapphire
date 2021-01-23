@@ -12,7 +12,7 @@ import { fetch, FetchMethods, FetchResultTypes } from '#utils/Pokemon';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['ev'],
-	category: 'System',
+	fullCategory: ['System'],
 	description: 'Evaluates arbitary JavaScript',
 	detailedDescription: 'Reserved only for owners',
 	preconditions: ['OwnerOnly']

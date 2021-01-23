@@ -9,7 +9,7 @@ import { format } from '#utils/durationFormat';
 import { BrandingColors } from '#utils/Branding';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Info',
+	fullCategory: ['Info'],
 	description: 'View bot statistics'
 })
 export default class StatsCommand extends SapphireCommand {

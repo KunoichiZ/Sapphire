@@ -5,7 +5,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['roll', 'die'],
-	category: 'Misc',
+	fullCategory: ['Misc'],
 	description: 'Roll a 6-sided die'
 })
 export default class DiceCommand extends SapphireCommand {

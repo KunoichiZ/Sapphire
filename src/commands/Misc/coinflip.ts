@@ -5,7 +5,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['coin'],
-	category: 'Misc',
+	fullCategory: ['Misc'],
 	description: 'Flip a coin'
 })
 export default class CoinflipCommand extends SapphireCommand {

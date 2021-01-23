@@ -5,7 +5,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['listemoji'],
-	category: 'Info',
+	fullCategory: ['Info'],
 	description: "Displays the server's emoji"
 })
 export default class EmojiCommand extends SapphireCommand {

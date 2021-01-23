@@ -6,7 +6,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['give'],
-	category: 'Roles',
+	fullCategory: ['Roles'],
 	description: 'Remove the specified role from the user'
 })
 export default class RemoveRoleCommand extends SapphireCommand {

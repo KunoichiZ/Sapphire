@@ -7,7 +7,7 @@ import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['slow'],
-	category: 'Moderation',
+	fullCategory: ['Moderation'],
 	description: 'Bans a member from the server',
 	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })

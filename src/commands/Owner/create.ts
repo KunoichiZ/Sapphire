@@ -6,7 +6,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 import { POOL, PREFIX } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Owner',
+	fullCategory: ['Owner'],
 	description: 'Adds the server to the database',
 	preconditions: ['OwnerOnly']
 })

@@ -6,7 +6,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Friend Codes',
+	fullCategory: ['Friend Codes'],
 	description: 'Gets a Nintendo Switch FC'
 })
 export default class FindSwitchFCCommand extends SapphireCommand {

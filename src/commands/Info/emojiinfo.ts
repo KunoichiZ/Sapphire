@@ -5,7 +5,7 @@ import { Message, MessageEmbed } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Info',
+	fullCategory: ['Info'],
 	description: 'Displays information about the selected emoji'
 })
 export default class EmojiInfoCommand extends SapphireCommand {

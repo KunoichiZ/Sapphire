@@ -6,7 +6,7 @@ import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['purge', 'nuke', 'sweep'],
-	category: 'Moderation',
+	fullCategory: ['Moderation'],
 	description: 'Prunes a certain amount of messages',
 	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })

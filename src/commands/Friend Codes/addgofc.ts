@@ -6,7 +6,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Friend Codes',
+	fullCategory: ['Friend Codes'],
 	description: 'Sets your Pokémon GO FC'
 })
 export default class AddGoFCCommand extends SapphireCommand {

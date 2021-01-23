@@ -8,7 +8,7 @@ import { BrandingColors } from '#utils/Branding';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['commands', 'cmd', 'cmds', 'h'],
-	category: 'Chat Bot Info',
+	fullCategory: ['General', 'Chat Bot Info'],
 	description: 'Shows you this command!',
 	detailedDescription: 'You may also provide a command, which will return info about that command',
 	preconditions: []

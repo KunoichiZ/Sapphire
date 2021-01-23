@@ -5,7 +5,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 import { format } from '#utils/durationFormat';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Info',
+	fullCategory: ['Info'],
 	description: "Shows you the bot's uptime"
 })
 export default class UptimeCommand extends SapphireCommand {

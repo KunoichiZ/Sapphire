@@ -7,7 +7,7 @@ import { BrandingColors } from '#utils/Branding';
 import { CLIENT_ID, OWNER_ID, POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Moderation',
+	fullCategory: ['Moderation'],
 	description: 'Warn a user in the guild.',
 	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })

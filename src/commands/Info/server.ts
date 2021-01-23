@@ -6,7 +6,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 import { BrandingColors } from '#utils/Branding';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Info',
+	fullCategory: ['Info'],
 	description: 'Shows you information about the server'
 })
 export default class BasicCommand extends SapphireCommand {

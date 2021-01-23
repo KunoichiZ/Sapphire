@@ -9,7 +9,7 @@ import { fetch, FetchMethods, FetchResultTypes } from '#utils/Pokemon';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['execute'],
-	category: 'System',
+	fullCategory: ['System'],
 	description: 'Execute a command on the host system',
 	detailedDescription: 'Reserved only for owners',
 	preconditions: ['OwnerOnly']

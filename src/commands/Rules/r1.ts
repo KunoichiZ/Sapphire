@@ -5,7 +5,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 import { BrandingColors } from '#utils/Branding';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Rules',
+	fullCategory: ['Rules'],
 	description: 'Displays the first rule of the server'
 })
 export default class Rule1Command extends SapphireCommand {

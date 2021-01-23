@@ -6,7 +6,7 @@ import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['news', 'announcement'],
-	category: 'Moderation',
+	fullCategory: ['Moderation'],
 	description: 'Creates an announcement',
 	preconditions: ['OwnerOnly']
 })

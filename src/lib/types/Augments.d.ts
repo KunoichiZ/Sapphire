@@ -17,10 +17,11 @@ declare module '@sapphire/framework' {
 	}
 
 	interface Command {
+		fullCategory: string[];
 		category: string;
 	}
 
 	interface CommandOptions {
-		category: string;
+		fullCategory: string[];
 	}
 }

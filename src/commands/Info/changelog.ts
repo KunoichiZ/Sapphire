@@ -6,7 +6,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['cl', 'log'],
-	category: 'Info',
+	fullCategory: ['Info'],
 	description: 'Displays the changelog'
 })
 export default class AvatarCommand extends SapphireCommand {

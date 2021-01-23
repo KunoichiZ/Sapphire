@@ -6,7 +6,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['give'],
-	category: 'Roles',
+	fullCategory: ['Roles'],
 	description: 'Gives the user the specified role'
 })
 export default class GiveRoleCommand extends SapphireCommand {

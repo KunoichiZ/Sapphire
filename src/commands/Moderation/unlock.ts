@@ -6,7 +6,7 @@ import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['ul'],
-	category: 'Moderation',
+	fullCategory: ['Moderation'],
 	description: 'Unlocks the channel',
 	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })

@@ -5,7 +5,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['t'],
-	category: 'Test',
+	fullCategory: ['Test'],
 	preconditions: ['OwnerOnly']
 })
 export default class TestCommand extends SapphireCommand {

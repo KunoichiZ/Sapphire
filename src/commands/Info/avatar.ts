@@ -5,7 +5,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['icon'],
-	category: 'Info',
+	fullCategory: ['Info'],
 	description: 'Displays the avatar of the entered user'
 })
 export default class AvatarCommand extends SapphireCommand {

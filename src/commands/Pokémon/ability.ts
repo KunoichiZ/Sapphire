@@ -9,7 +9,7 @@ import { BrandingColors } from '#utils/Branding';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['abilities', 'pokeability'],
-	category: 'Pokémon',
+	fullCategory: ['Pokémon'],
 	description: 'Gets ability data for any given Pokémon'
 })
 export default class AbilityCommand extends SapphireCommand {

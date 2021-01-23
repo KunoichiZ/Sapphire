@@ -5,7 +5,7 @@ import type { Message } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Info',
+	fullCategory: ['Info'],
 	description: 'Shows you useful information about the bot.'
 })
 export default class InfoCommand extends SapphireCommand {

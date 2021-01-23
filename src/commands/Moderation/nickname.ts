@@ -6,7 +6,7 @@ import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['nick', 'n'],
-	category: 'Moderation',
+	fullCategory: ['Moderation'],
 	description: 'Nicknames the selected member with the provided nickname',
 	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })

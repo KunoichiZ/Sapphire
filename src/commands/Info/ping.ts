@@ -5,7 +5,7 @@ import type { Message } from 'discord.js';
 import SapphireCommand from '#lib/SapphireCommand';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Info',
+	fullCategory: ['Info'],
 	description: 'Runs a connection test to Discord.'
 })
 export default class PingCommand extends SapphireCommand {

@@ -7,7 +7,7 @@ import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['m'],
-	category: 'Moderation',
+	fullCategory: ['Moderation'],
 	description: 'Mutes the selected member',
 	preconditions: ['OwnerOnly', 'AdminOnly', 'ModeratorOnly']
 })

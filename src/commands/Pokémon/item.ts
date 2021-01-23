@@ -8,7 +8,7 @@ import { BrandingColors } from '#utils/Branding';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['pokeitem', 'bag'],
-	category: 'Pokémon',
+	fullCategory: ['Pokémon'],
 	description: 'Gets data for any given Pokémon item'
 })
 export default class ItemCommand extends SapphireCommand {

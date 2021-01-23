@@ -5,7 +5,7 @@ import SapphireCommand from '#lib/SapphireCommand';
 import { BrandingColors, Character, Team, AtSea, Relatives, Released, Borrowed, Befriended } from '#utils/Branding';
 
 @ApplyOptions<CommandOptions>({
-	category: 'Info',
+	fullCategory: ['Info'],
 	description: "Shows you useful information about the bot's character."
 })
 export default class AboutCommand extends SapphireCommand {
