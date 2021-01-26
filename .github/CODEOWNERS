@@ -3,6 +3,7 @@
 /src/commands/General/Chat Bot Info/help @RealShadowNova
 /src/lib/util/durationFormat @RealShadowNova
 /src/lib/util/cast @RealShadowNova
+/src/commands/System/eval @RealShadowNova
 
 # RealShadowNova & KunoichiZ
 /src/commands/System/conf @RealShadowNova @KunoichiZ
@@ -103,7 +104,6 @@ package.json @KunoichiZ @favna
 /src/commands/General/Chat Bot Info/help @RealShadowNova @favna
 
 # cfanoulis & favna
-/src/commands/System/eval @cfanoulis @favna
 /src/commands/System/exec @cfanoulis @favna
 
 # Just favna
