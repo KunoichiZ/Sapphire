@@ -5,6 +5,7 @@ import { DEV, DEV_PREFIX, PGSQL_ENABLED, POOL, PREFIX } from '#root/config';
 
 export class SBClient extends SapphireClient {
 	private _version = [1, 0, 0];
+	public ownerID: string | undefined = undefined;
 
 	public constructor(options?: ClientOptions) {
 		super(options);

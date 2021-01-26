@@ -6,6 +6,7 @@ declare module 'discord.js' {
 		readonly version: string;
 		readonly invite: string;
 		fetchGuildPrefix(guild: Guild): Promise<string>;
+		ownerID: string | undefined;
 	}
 }
 
