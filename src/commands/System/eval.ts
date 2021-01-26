@@ -1,14 +1,11 @@
-// Eval command from Gitcord (https://github.com/gitcord-project) Copyright 2020 Charalampos Fanoulis, used under the MIT license
-import { Stopwatch } from '@sapphire/stopwatch';
-import { Type } from '@sapphire/type';
+// Help command from Dominus (https://github.com/dominus-project/dominus) Copyright 2021 RealShadowNova, used under the Apache-2.0 License
 import { ApplyOptions } from '@sapphire/decorators';
 import type { Args, CommandOptions } from '@sapphire/framework';
-import { codeBlock, isThenable } from '@sapphire/utilities';
-import { Message, MessageEmbed } from 'discord.js';
+import { Type } from '@sapphire/type';
+import { codeBlock } from '@sapphire/utilities';
+import type { Message } from 'discord.js';
 import { inspect } from 'util';
 import SapphireCommand from '#lib/SapphireCommand';
-import { clean } from '#utils/clean';
-import { fetch, FetchMethods, FetchResultTypes } from '#utils/Pokemon';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['ev'],
@@ -17,78 +14,66 @@ import { fetch, FetchMethods, FetchResultTypes } from '#utils/Pokemon';
 	detailedDescription: 'Reserved only for owners',
 	preconditions: ['OwnerOnly']
 })
-export default class EvalCommand extends SapphireCommand {
-	public async run(message: Message, args: Args) {
-		const code = await args.pick('string');
-		const { success, result, time, type } = await this.eval(code);
+export default class extends SapphireCommand {
+    public async run(message: Message, args: Args) {
+        const code = await args.rest('string').catch(() => null);
+        if (!code) throw 'Code not found. You must provide some code to evaluate.';
+        const language = args.getOption('language') ?? args.getOption('lang') ?? args.getFlags('json') ? 'json' : 'js';
+        const { success, type, time, result } = await this.eval(message, args, code);
 
-		return result.length > 2000
-			? this.resultToHastebin(message, success, time, result, type)
-			: message.channel.send(
-					new MessageEmbed()
-						.setColor(success ? 0x00ff00 : 0xff0000)
-						.setTitle(success ? `Success!` : `Something went... horribly wrong`)
-						.addField('Result:', codeBlock('js', result.padEnd(20, ' ')))
-						.addField('Type:', codeBlock('ts', type))
-						.setFooter(time, 'https://github.com/twitter/twemoji/blob/master/assets/72x72/23f1.png?raw=true')
-			  );
-	}
+        if (!success) return message.channel.send(`**Ouput**:${codeBlock('', result)}\n**Type**:${codeBlock('ts', type.toString())}\n${time}`);
 
-	// Eval the input
-	private async eval(code: string) {
-		const stopwatch = new Stopwatch();
+        const footer = codeBlock('ts', type.toString());
+
+        return message.channel.send(`**Output**:\n${codeBlock(language, result)}\n**Type**:${footer}\n${time}`);
+    }
+
+    private async eval(message: Message, args: Args, code: string) {
+		let time = Date.now();
 		let success: boolean | undefined = undefined;
 		let syncTime: string | undefined = undefined;
 		let asyncTime: string | undefined = undefined;
 		let result: unknown | undefined = undefined;
-		let thenable = false;
 		let type: Type | undefined = undefined;
 		try {
+			if (args.getFlags('async')) code = `(async () => {\n${code}\n})();`;
+
+			// @ts-expect-error 6133
+			const msg = message;
+
 			// eslint-disable-next-line no-eval
 			result = eval(code);
-			syncTime = stopwatch.toString();
-			type = new Type(result);
-			if (isThenable(result)) {
-				thenable = true;
-				stopwatch.restart();
+			syncTime = (Date.now() - time).toString();
+			if (args.getFlags('async')) {
+				time = Date.now();
 				result = await result;
-				asyncTime = stopwatch.toString();
+				asyncTime = (Date.now() - time).toString();
 			}
+			type = new Type(result);
 			success = true;
 		} catch (error) {
-			if (!syncTime) syncTime = stopwatch.toString();
-			if (thenable && !asyncTime) asyncTime = stopwatch.toString();
+			if (!syncTime) syncTime = (Date.now() - time).toString();
+			if (args.getFlags('async') && !asyncTime) asyncTime = (Date.now() - time).toString();
 			if (!type!) type = new Type(error);
 			result = error;
 			success = false;
 		}
 
-		stopwatch.stop();
 		if (typeof result !== 'string') {
-			result = result instanceof Error ? result.stack : inspect(result, { depth: 0 });
+			result =
+				result instanceof Error
+					? result.stack
+					: args.getFlags('json')
+					? JSON.stringify(result, null, 2)
+					: inspect(result, {
+							depth: args.getOption('depth') ? parseInt(args.getOption('depth') ?? '', 10) || 0 : 0,
+							showHidden: args.getFlags('showHidden')
+					  });
 		}
-		return { success, type: type!, time: this.formatTime(syncTime, asyncTime ?? ''), result: clean(result as string) };
+		return { success, type, time: this.formatTime(syncTime, asyncTime ?? ''), result };
 	}
 
-	private formatTime(syncTime: string, asyncTime?: string) {
-		return asyncTime ? `${asyncTime}<${syncTime}>` : `${syncTime}`;
-	}
-
-	private async resultToHastebin(message: Message, success: boolean, time: string, result: string, type: Type) {
-		const { key } = (await fetch('https://hasteb.in/documents', { method: FetchMethods.Post, body: result }, FetchResultTypes.JSON)) as {
-			key: string;
-		};
-		return message.channel.send(
-			new MessageEmbed()
-				.setColor(success ? 0x00ff00 : 0xff0000)
-				.setTitle(success ? `Success!` : `Something went... horribly wrong`)
-				.setDescription(
-					success
-						? `The result was too big for Discord, so I posted it on Hastebin: https://hasteb.in/${key}.js`
-						: `Well that didn't run greatly. I couldn't even fit the result here. I've thrown it on Hastebin: https://hasteb.in/${key}.js`
-				)
-				.addField('Type:', codeBlock('ts', type))
-				.setFooter(`Took ${time}`, 'https://github.com/twitter/twemoji/blob/master/assets/72x72/23f1.png?raw=true')
-		);
+	private formatTime(syncTime: string, asyncTime: string) {
+		return asyncTime ? `⏱ ${asyncTime}<${syncTime}>ms` : `⏱ ${syncTime}ms`;
 	}
 }
