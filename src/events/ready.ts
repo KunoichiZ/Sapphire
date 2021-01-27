@@ -6,7 +6,7 @@ import { DEV, PGSQL_ENABLED } from '#root/config';
 @ApplyOptions<EventOptions>({ once: true })
 export class UserEvent extends Event<'ready'> {
 	public async run() {
-        if (this.context.client.ownerID === undefined) {
+		if (this.context.client.ownerID === undefined) {
 			const application = await this.context.client.fetchApplication();
 			this.context.client.ownerID = application.owner?.id;
 		}

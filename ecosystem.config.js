@@ -1,6 +1,8 @@
 module.exports = {
-    apps : [{
-      name: 'Sapphire',
-      script: 'dist/Sapphire.js'
-    }]
-  };
+	apps: [
+		{
+			name: 'Sapphire',
+			script: 'dist/Sapphire.js'
+		}
+	]
+};
