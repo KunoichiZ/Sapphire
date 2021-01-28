@@ -7,7 +7,7 @@ import { POOL } from '#root/config';
 
 @ApplyOptions<CommandOptions>({
 	fullCategory: ['Friend Codes'],
-	description: 'Gets a Nintendo Switch FC'
+	description: 'Gets the Friend Code from the specified user'
 })
 export default class FindSwitchFCCommand extends SapphireCommand {
 	public async run(message: Message, args: Args) {
