@@ -6,6 +6,8 @@ import { DEV, DEV_PREFIX, POOL, PREFIX, TOKENS } from '#root/config';
 const main = () => {
 	const client = new SBClient({
 		defaultPrefix: DEV ? DEV_PREFIX : PREFIX,
+		regexPrefix: DEV ? /^(hey +)?ruby[, ]/i : /^(hey +)?sapphire[, ]/i,
+		caseInsensitiveCommands: true,
 		presence: {
 			activity: {
 				name: 'the Battle Frontier',
