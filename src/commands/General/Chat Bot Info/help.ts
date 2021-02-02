@@ -42,6 +42,8 @@ export default class HelpCommand extends SapphireCommand {
 	private async menu(message: Message) {
 		const categories = new Set<string>();
 
+		this._commands = this.context.client.stores.get('commands');
+
 		for (const [, command] of this._commands.filter(
 			(command) =>
 				command.category.toLowerCase() !== 'system' && command.category.toLowerCase() !== 'owner' && command.category.toLowerCase() !== 'test'
