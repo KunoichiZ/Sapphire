@@ -3,7 +3,7 @@ import { Constants } from 'discord.js';
 import { SBClient } from '#lib/SapphireClient';
 import { DEV, DEV_PREFIX, POOL, PREFIX, TOKENS } from '#root/config';
 
-const main = async () => {
+const main = () => {
 	const client = new SBClient({
 		defaultPrefix: DEV ? DEV_PREFIX : PREFIX,
 		presence: {
@@ -18,7 +18,7 @@ const main = async () => {
 		client.on(Constants.Events.CLIENT_READY, () => console.log(`${client.user?.tag} (${client.user?.id}) has logged in!`));
 		client.login(TOKENS.DEV_BOT_TOKEN);
 	} else {
-		await POOL.connect((err: any) => {
+		POOL.connect((err: any) => {
 			if (err) throw err;
 			console.log('Connected to PostgresSQL');
 			client.on(Constants.Events.DEBUG, console.debug);
