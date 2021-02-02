@@ -4,12 +4,12 @@ import type { ClientOptions, Guild, Message } from 'discord.js';
 import { DEV, DEV_PREFIX, PGSQL_ENABLED, POOL, PREFIX } from '#root/config';
 
 export class SBClient extends SapphireClient {
-	private _version = [1, 0, 0];
 	public ownerID: string | undefined = undefined;
+	private _version = [1, 0, 0];
 
 	public constructor(options?: ClientOptions) {
 		super(options);
-		this.registerUserDirectories();
+		this.stores.registerUserDirectories();
 		this.fetchPrefix = (message: Message) => {
 			if (!message.guild) return [PREFIX, ''];
 			return this.fetchGuildPrefix(message.guild);
