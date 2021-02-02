@@ -1,5 +1,5 @@
 // Help command from Dominus (https://github.com/dominus-project/dominus) Copyright 2021 RealShadowNova, used under the Apache-2.0 License
-import type { Args, CommandOptions } from '@sapphire/framework';
+import type { Args, CommandOptions, CommandStore } from '@sapphire/framework';
 import { PaginatedMessage } from '@sapphire/discord.js-utilities';
 import { ApplyOptions } from '@sapphire/decorators';
 import { Message, MessageEmbed, APIMessage, TextChannel, NewsChannel } from 'discord.js';
@@ -13,15 +13,18 @@ import { BrandingColors } from '#utils/Branding';
 	detailedDescription: 'You may also provide a command, which will return info about that command',
 	preconditions: []
 })
-export default class Help2Command extends SapphireCommand {
+export default class HelpCommand extends SapphireCommand {
+	private _commands!: CommandStore;
+
 	public async run(message: Message, args: Args) {
 		const commandName = await args.pick('string').catch(() => null);
 
 		if (!commandName) return this.menu(message);
 
+		this._commands = this.context.client.stores.get('commands');
+
 		const command =
-			this.context.client.commands.get(commandName.toLowerCase()) ||
-			this.context.client.commands.find((command) => command.aliases.includes(commandName.toLowerCase()));
+			this._commands.get(commandName.toLowerCase()) || this._commands.find((command) => command.aliases.includes(commandName.toLowerCase()));
 
 		if (!command) throw 'Command not found. To view all commands run `help`';
 
@@ -39,7 +42,7 @@ export default class Help2Command extends SapphireCommand {
 	private async menu(message: Message) {
 		const categories = new Set<string>();
 
-		for (const [, command] of this.context.client.commands.filter(
+		for (const [, command] of this._commands.filter(
 			(command) =>
 				command.category.toLowerCase() !== 'system' && command.category.toLowerCase() !== 'owner' && command.category.toLowerCase() !== 'test'
 		))
@@ -52,7 +55,7 @@ export default class Help2Command extends SapphireCommand {
 						.setColor(BrandingColors.Primary)
 						.setTitle(category)
 						.setDescription(
-							this.context.client.commands
+							this._commands
 								.filter((command) => command.category.toLowerCase() === category.toLowerCase())
 								.map((command) => `\`${command.name}\` → ${command.description || 'No description was provided.'}`)
 						)
