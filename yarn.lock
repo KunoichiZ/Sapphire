@@ -110,10 +110,10 @@
   resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.1.4.tgz#8788008089d203826a7a4ca82beeaea6cadfdda9"
   integrity sha512-EHwTmVcOllTfpKtZwgAqF+rNzxB5lTU0OsIhY2MnhIL8+GxSc6TNiIiN3231Z0Rxtp2uA1r/3+lEInnuQoqEaA==
 
-"@sapphire/framework@^1.0.0-alpha.5":
-  version "1.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-1.0.0-alpha.5.tgz#294a633d3a53c89c56429ac9ec64a56ff87f8fa7"
-  integrity sha512-HIA7p1KVSc+0AlXPp3+66vbi9DWsWVc+vcaYD/V5EXtR4RBEHTJG169Jalj6Xi+C3JrRbzxZRg9GT8rvyQwcZA==
+"@sapphire/framework@^1.0.0-alpha.9":
+  version "1.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-1.0.0-alpha.9.tgz#168ec3c6e0c9b092bceb576934f634adbe6594fa"
+  integrity sha512-jJYM7/AFai6Nsx4YQTPc450Y80Ks81FQPowcsMBCnoOsYALGynmWtpAcRH5gcn8DXYOThJWGioDRjWkTX9BvlQ==
   dependencies:
     "@sapphire/discord-utilities" "^2.0.1"
     "@sapphire/discord.js-utilities" "^1.4.0"
