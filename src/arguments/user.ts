@@ -1,4 +1,4 @@
-// User argument is from godfather (https://github.com/Soumil07/godfather) Copyright 2020 Soumil07, used under the AGPL-3.0 License
+// User argument is from godfather (https://github.com/Stitch07/godfather) Copyright 2020 Stitch07, used under the AGPL-3.0 License
 import { Argument, ArgumentContext, AsyncArgumentResult } from '@sapphire/framework';
 import type { User } from 'discord.js';
 

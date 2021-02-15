@@ -21,9 +21,9 @@ export default class extends SapphireCommand {
 		const language = args.getOption('language') ?? args.getOption('lang') ?? args.getFlags('json') ? 'json' : 'js';
 		const { success, type, time, result } = await this.eval(message, args, code);
 
-		if (!success) return message.channel.send(`**Ouput**:${codeBlock('', result)}\n**Type**:${codeBlock('ts', type.toString())}\n${time}`);
+		if (!success) return message.channel.send(`**Ouput**:${codeBlock('', result)}\n**Type**:${codeBlock('ts', type?.toString())}\n${time}`);
 
-		const footer = codeBlock('ts', type.toString());
+		const footer = codeBlock('ts', type?.toString());
 
 		return message.channel.send(`**Output**:\n${codeBlock(language, result)}\n**Type**:${footer}\n${time}`);
 	}

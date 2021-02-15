@@ -1,4 +1,4 @@
-// AdminOnly precondition is from godfather (https://github.com/Soumil07/godfather) Copyright 2021 Soumil07, used under the AGPL-3.0 License
+// AdminOnly precondition is from godfather (https://github.com/Stitch07/godfather) Copyright 2021 Stitch07, used under the AGPL-3.0 License
 import { Precondition } from '@sapphire/framework';
 import { Message, Permissions } from 'discord.js';
 

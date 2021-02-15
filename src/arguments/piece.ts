@@ -1,4 +1,4 @@
-// Piece argument is from godfather (https://github.com/Soumil07/godfather) Copyright 2020 Soumil07, used under the AGPL-3.0 License
+// Piece argument is from godfather (https://github.com/Stitch07/godfather) Copyright 2020 Stitch07, used under the AGPL-3.0 License
 import { Argument, ArgumentResult, Piece } from '@sapphire/framework';
 
 export default class extends Argument<Piece> {

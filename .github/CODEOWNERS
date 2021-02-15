@@ -9,15 +9,15 @@
 /src/commands/System/conf @RealShadowNova @KunoichiZ
 /src/commands/Moderation/warn @RealShadowNova @KunoichiZ
 
-# Just Soumil07
-/src/arguments/piece @Soumil07
-/src/arguments/user @Soumil07
-/src/commands/Info/ping @Soumil07
-/src/commands/Info/info @Soumil07
-/src/commands/Info/stats @Soumil07
-/src/commands/System/reload @Soumil07
-/src/events/mentionPrefixOnly @Soumil07
-/src/preconditions/AdminOnly @Soumil07
+# Just Stitch07
+/src/arguments/piece @Stitch07
+/src/arguments/user @Stitch07
+/src/commands/Info/ping @Stitch07
+/src/commands/Info/info @Stitch07
+/src/commands/Info/stats @Stitch07
+/src/commands/System/reload @Stitch07
+/src/events/mentionPrefixOnly @Stitch07
+/src/preconditions/AdminOnly @Stitch07
 
 # Just KunoichiZ
 /src/commands/Friend Codes/ @KunoichiZ
@@ -92,13 +92,13 @@ package.json @KunoichiZ @favna
 /src/lib/util/Branding @KunoichiZ @favna
 /src/tsconfig @KunoichiZ @favna
 
-# Soumil07 & favna
-/src/arguments/user @Soumil07 @favna
-/src/commands/Misc/info @Soumil07 @favna
-/src/commands/Misc/ping @Soumil07 @favna
-/src/commands/Misc stats @Soumil07 @favna
-/src/commands/System/reload @Soumil07 @favna
-/src/events/mentionPrefixOnly @Soumil07 @favna
+# Stitch07 & favna
+/src/arguments/user @Stitch07 @favna
+/src/commands/Misc/info @Stitch07 @favna
+/src/commands/Misc/ping @Stitch07 @favna
+/src/commands/Misc stats @Stitch07 @favna
+/src/commands/System/reload @Stitch07 @favna
+/src/events/mentionPrefixOnly @Stitch07 @favna
 
 # RealShadowNova & favna
 /src/commands/General/Chat Bot Info/help @RealShadowNova @favna

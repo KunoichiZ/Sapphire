@@ -1,4 +1,4 @@
-// Command file from godfather (https://github.com/Soumil07/godfather) Copyright 2020 Soumil07, used under the AGPL-3.0 License
+// Command file from godfather (https://github.com/Stitch07/godfather) Copyright 2020 Stitch07, used under the AGPL-3.0 License
 import { Command, CommandOptions, PieceContext } from '@sapphire/framework';
 import { sep } from 'path';
 
