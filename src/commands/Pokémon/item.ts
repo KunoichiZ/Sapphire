@@ -16,10 +16,12 @@ export default class ItemCommand extends SapphireCommand {
 		const item = await args.rest('string');
 		const itemDetails = await this.fetchAPI(item.toLowerCase());
 		const externalResourceData = [
-			`[Bulbapedia](${parseBulbapediaURL(itemDetails.bulbapediaPage)} )`,
+			`[Bulbapedia](${parseBulbapediaURL(itemDetails.bulbapediaPage)})`,
 			`[Serebii](${itemDetails.serebiiPage})`,
-			`[Smogon](${itemDetails.smogonPage})`
-		].join(' | ');
+			itemDetails.smogonPage ? `[Smogon](${itemDetails.smogonPage})` : undefined
+		]
+			.filter(Boolean)
+			.join(' | ');
 		return message.channel.send(
 			new MessageEmbed()
 				.setColor(BrandingColors.Primary)
