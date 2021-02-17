@@ -119,10 +119,10 @@
   resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-2.1.1.tgz#c18217d00b4a0a8b62da24ebb9875d856d474510"
   integrity sha512-OoM2KYco1+HF+z/WjaAPhPhvEPGA8ddrn8ATLWvOvs4JiACRYbUGIMQrxRgb5afvEKIacLlGUKi/emZa8G9s+Q==
 
-"@sapphire/event-iterator@^1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.1.4.tgz#8788008089d203826a7a4ca82beeaea6cadfdda9"
-  integrity sha512-EHwTmVcOllTfpKtZwgAqF+rNzxB5lTU0OsIhY2MnhIL8+GxSc6TNiIiN3231Z0Rxtp2uA1r/3+lEInnuQoqEaA==
+"@sapphire/event-iterator@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.1.5.tgz#ddd45da1d955796ebc9025bb8d5c310f06cb15f8"
+  integrity sha512-A+h6i4qEzqymWkOy9SEpb1bHEkKUgXTw478kW+XCBTwoHowV6ybktgFTaozSMO5XixHFGN561rb0NjiKzCp8CA==
 
 "@sapphire/framework@^1.0.0-alpha.10":
   version "1.0.0-alpha.10"
