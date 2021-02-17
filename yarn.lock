@@ -114,10 +114,10 @@
   dependencies:
     "@sapphire/discord-utilities" "^2.0.3"
 
-"@sapphire/eslint-config@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-2.1.1.tgz#c18217d00b4a0a8b62da24ebb9875d856d474510"
-  integrity sha512-OoM2KYco1+HF+z/WjaAPhPhvEPGA8ddrn8ATLWvOvs4JiACRYbUGIMQrxRgb5afvEKIacLlGUKi/emZa8G9s+Q==
+"@sapphire/eslint-config@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-2.1.2.tgz#1fbb908045cfa5b3e2c553ff3fc3afe940f9ec50"
+  integrity sha512-lMphSKfCzRcAmGZF+VmcHd8inJiUIIIShv6c0+r3WWFY0lRxrZvcElKNSO8rjBOMUNMTfdqlXP8IRCg+SDdq8g==
 
 "@sapphire/event-iterator@^1.1.4":
   version "1.1.4"
