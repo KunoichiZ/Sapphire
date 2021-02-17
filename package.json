@@ -44,7 +44,7 @@
 		"@sapphire/event-iterator": "^1.1.4",
 		"@sapphire/framework": "^1.0.0-alpha.10",
 		"@sapphire/plugin-subcommands": "^1.0.1",
-		"@sapphire/stopwatch": "^1.0.4",
+		"@sapphire/stopwatch": "^1.0.5",
 		"@sapphire/time-utilities": "^1.2.8",
 		"@sapphire/type": "^1.1.4",
 		"@sapphire/utilities": "^1.4.4",
