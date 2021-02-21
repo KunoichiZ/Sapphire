@@ -22,7 +22,7 @@
 		"watch": "tsc-watch -b src --onSuccess \"node dist/Sapphire.js\""
 	},
 	"devDependencies": {
-		"@favware/graphql-pokemon": "^5.1.1",
+		"@favware/graphql-pokemon": "^5.1.2",
 		"@sapphire/eslint-config": "^2.1.2",
 		"@sapphire/prettier-config": "^1.0.7",
 		"@sapphire/ts-config": "^2.0.1",
