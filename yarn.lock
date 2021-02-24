@@ -163,10 +163,10 @@
   resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.5.tgz#3a85f02e151525ab4980a19ce479e6fb3f117a45"
   integrity sha512-2NeVF7IWeiQCwQprkChIdQNR/7BWTBz/pOZH9dHgDqE31ENbkIIcm7H6IEfvMTwfOmbHMOyICAv8HrxrWOOwig==
 
-"@sapphire/time-utilities@^1.2.9":
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.9.tgz#638bc4ab5a24da5d0be6e0d091326bdc2f672b05"
-  integrity sha512-heR7TA7W0CWO8FTs9ODD1JC0lmAWqOpDXxR2GL1SQmhE/HvAaUjyJEMcu60fLeC5Tigq8sE6mDpJDFm14ph7tw==
+"@sapphire/time-utilities@^1.2.10":
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.10.tgz#a7659723571508a905cc2a2279ff8a3246bc1635"
+  integrity sha512-+9mvo8c4oD/J+eprJ262G44Mn8o8MF8pjAzVR1A/VuSc5yxPXBiG7X/ZIPJCy9BTE8Y1972c3DlMLIlTnEOIpg==
   dependencies:
     "@sapphire/utilities" "^1.4.5"
 
