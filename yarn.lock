@@ -106,10 +106,10 @@
   dependencies:
     "@sapphire/discord-utilities" "^2.0.4"
 
-"@sapphire/discord.js-utilities@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-1.5.0.tgz#80249d69640372a1e0762777ced68c4178cc948a"
-  integrity sha512-AuQA4ej/MSbyIEp8ORVcdYVJi8LyQT0RLdNqMbW/1NUzxfq7H6pPjC5CI9O1ZZppqcmt2iXPYJoN7ABaHHfqWQ==
+"@sapphire/discord.js-utilities@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-1.5.1.tgz#b1e1887f9b44df884d2e6d95f46231b2cb7a0c57"
+  integrity sha512-7XL9npEED8TPPE3cxTTwAsOKeRWb92mmutJ5JfzpEstgzrf5p78G9AjC5mGMuNWaLMaF5iSgOfgbFKUAUhhdUA==
   dependencies:
     "@sapphire/discord-utilities" "^2.0.5"
 
