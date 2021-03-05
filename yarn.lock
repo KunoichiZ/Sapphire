@@ -212,10 +212,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.31.tgz#72286bd33d137aa0d152d47ec7c1762563d34055"
   integrity sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g==
 
-"@types/pg@^7.14.10":
-  version "7.14.10"
-  resolved "https://registry.yarnpkg.com/@types/pg/-/pg-7.14.10.tgz#95c01de1a54e45d78058b9b5b4c365102e4113f7"
-  integrity sha512-m6G0mrpj71YgVgHJF0cIHC3OZTKiQSUzTkMj869a+YWXF2tdbmO2PmIpNnDkiFPhHWcoGq2bk5P2e0CZX0F9Mg==
+"@types/pg@^7.14.11":
+  version "7.14.11"
+  resolved "https://registry.yarnpkg.com/@types/pg/-/pg-7.14.11.tgz#daf5555504a1f7af4263df265d91f140fece52e3"
+  integrity sha512-EnZkZ1OMw9DvNfQkn2MTJrwKmhJYDEs5ujWrPfvseWNoI95N8B4HzU/Ltrq5ZfYxDX/Zg8mTzwr6UAyTjjFvXA==
   dependencies:
     "@types/node" "*"
     pg-protocol "^1.2.0"
