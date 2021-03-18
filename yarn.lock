@@ -166,12 +166,12 @@
   dependencies:
     tslib "2.x"
 
-"@sapphire/time-utilities@^1.2.10":
-  version "1.2.10"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.10.tgz#a7659723571508a905cc2a2279ff8a3246bc1635"
-  integrity sha512-+9mvo8c4oD/J+eprJ262G44Mn8o8MF8pjAzVR1A/VuSc5yxPXBiG7X/ZIPJCy9BTE8Y1972c3DlMLIlTnEOIpg==
+"@sapphire/time-utilities@^1.2.11":
+  version "1.2.11"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.11.tgz#7458b335adcfaece6aa386df23c763eaeaaf03ae"
+  integrity sha512-T83QrsyfVf66xlP5xkKN8zLN0EndhVp4vUcI7j/uq+jGrwTXQvRiYXdB6jbjf4GfeMxdjOWJKWYP6BIwz4whAw==
   dependencies:
-    "@sapphire/utilities" "^1.4.5"
+    "@sapphire/utilities" "^1.4.6"
 
 "@sapphire/ts-config@^2.0.1":
   version "2.0.1"

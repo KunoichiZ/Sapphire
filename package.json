@@ -45,7 +45,7 @@
 		"@sapphire/framework": "^1.0.0-alpha.11",
 		"@sapphire/plugin-subcommands": "^1.0.1",
 		"@sapphire/stopwatch": "^1.0.6",
-		"@sapphire/time-utilities": "^1.2.10",
+		"@sapphire/time-utilities": "^1.2.11",
 		"@sapphire/type": "^1.1.6",
 		"@sapphire/utilities": "^1.4.6",
 		"@types/common-tags": "^1.8.0",
