@@ -140,10 +140,12 @@
     "@discordjs/collection" "^0.1.6"
     tslib "^2.1.0"
 
-"@sapphire/plugin-subcommands@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-1.0.1.tgz#f71d56b2ac018fbb79fb2214d810c48e96b173ad"
-  integrity sha512-ik5TQvWYM/ORnbDLl2WNI9zADKfq5Eo93CF0KcetZoYU6XsQ3UFxFy0bPCG4KfaEmyG+DDX760C8tCZ73Uzq2g==
+"@sapphire/plugin-subcommands@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-1.0.2.tgz#b0141bd1cc6be3484d95b781bdd5068475edfe80"
+  integrity sha512-lZsryyXOIoQA6JytQIZVQkEYW5+cimeAPiibatqA04Nbg1ntuCFSr8kXnWUzaEA7zz8Gbo2373PyW96yq5kuDg==
+  dependencies:
+    tslib "^2.1.0"
 
 "@sapphire/prettier-config@^1.0.8":
   version "1.0.8"
