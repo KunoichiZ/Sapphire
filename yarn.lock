@@ -157,10 +157,12 @@
   resolved "https://registry.yarnpkg.com/@sapphire/ratelimits/-/ratelimits-1.1.5.tgz#04bbc9488d890d30e9b6541cab04f26663f97d0f"
   integrity sha512-7HzQrW3naxZTq1LN0oGzGX/xVDFWMWnfmPA1Z1erEO1DPd3hEo+CD6V/bEd3vWh7/XBAX5L+KMvlenvMQNy3wg==
 
-"@sapphire/stopwatch@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.5.tgz#3a85f02e151525ab4980a19ce479e6fb3f117a45"
-  integrity sha512-2NeVF7IWeiQCwQprkChIdQNR/7BWTBz/pOZH9dHgDqE31ENbkIIcm7H6IEfvMTwfOmbHMOyICAv8HrxrWOOwig==
+"@sapphire/stopwatch@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.6.tgz#30f4d28c89b28abf7dc47ec567a6eacfd1e7bd85"
+  integrity sha512-3bmR7v1KwarClleVqxCf7LmP8t3sujXW6zl+lzP00TAmvXyhgN1VgwGwYUeTnNd77WGU7jh6538TrNZaEykphQ==
+  dependencies:
+    tslib "2.x"
 
 "@sapphire/time-utilities@^1.2.10":
   version "1.2.10"
@@ -1462,6 +1464,11 @@ tsc-watch@^4.2.9:
     ps-tree "^1.2.0"
     string-argv "^0.1.1"
     strip-ansi "^6.0.0"
+
+tslib@2.x:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
 tslib@^1.8.1:
   version "1.14.1"
