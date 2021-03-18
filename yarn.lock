@@ -176,10 +176,10 @@
   resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-2.0.1.tgz#88ab57663285b60746bb39daefef62e767d3de71"
   integrity sha512-WEjctyHS69i4h0xsM9cOZz05AJB4Xed99PLz1s0npBmgpcIgGJGOfglPNHe/AqmhjOW8pdSBjFJejaUU5RoImg==
 
-"@sapphire/type@^1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-1.1.5.tgz#3c7e5b37b36e82df6ca53437d03d6d43fc9f2681"
-  integrity sha512-1IZvaatSo3MmqmsWueYnMCHvGEk1K/3TS5GwVu4dc2Eb2Hgj1ao/7Sv4Ag8KdJV0FgrcL8l4IFvyXslkWbj6Kg==
+"@sapphire/type@^1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-1.1.6.tgz#d65cb5696d1a067b2f4624865a2a51a671ffdfaa"
+  integrity sha512-JryIy9P2DSxjbUWXFrtcV8IE+/iL6Ik4KmUbCoWwyYVCS3N2sQ1SOI/fx3ip3JOXPITumGzuxTsTqJW1vuE9Rw==
 
 "@sapphire/utilities@^1.4.5":
   version "1.4.5"
