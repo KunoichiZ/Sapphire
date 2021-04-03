@@ -55,7 +55,7 @@
 		"colorette": "^1.2.2",
 		"common-tags": "^1.8.0",
 		"discord-api-types": "^0.13.3",
-		"discord.js": "^12.5.2",
+		"discord.js": "^12.5.3",
 		"node-fetch": "^2.6.1",
 		"pg": "^8.5.1",
 		"reflect-metadata": "^0.1.13",
