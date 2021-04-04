@@ -181,10 +181,10 @@
     tslib "2.x"
     typescript "4.x"
 
-"@sapphire/type@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-1.1.6.tgz#d65cb5696d1a067b2f4624865a2a51a671ffdfaa"
-  integrity sha512-JryIy9P2DSxjbUWXFrtcV8IE+/iL6Ik4KmUbCoWwyYVCS3N2sQ1SOI/fx3ip3JOXPITumGzuxTsTqJW1vuE9Rw==
+"@sapphire/type@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-1.1.7.tgz#149abfbe9072b2af03c991af823d58b78c72759b"
+  integrity sha512-JzxmwjAahDbwq4VdytmLUv4PpbqUpvWnbhoSbZ5AqejG5YjXgM7t/QI1n7ih7841mIptO2Xp0eAOwZxeTQ8hNw==
 
 "@sapphire/utilities@^1.4.6":
   version "1.4.6"
