@@ -173,10 +173,10 @@
   resolved "https://registry.yarnpkg.com/@sapphire/ratelimits/-/ratelimits-1.1.6.tgz#6783a266daab7cf05d0760b8fde2f7693b4fb45c"
   integrity sha512-oiXNeRKF5avC8ytL58A4PYnjtm2bwD3OX+lhxWcTJHkI4Frmxz8/DBcGR+3aZPnYXXvKVIa2CN8XXjxRERDt2A==
 
-"@sapphire/stopwatch@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.7.tgz#3bd3a347730a1b0116203f3ba1ee5c748a01fa7e"
-  integrity sha512-XNrocse7wK5n4T+G/Y8s+UMXwCjHFQ439GkJpapw+WJQSNHkPLMed6HeDvzCUqM8162Y8TbubRPjp113gJ1hFQ==
+"@sapphire/stopwatch@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.0.8.tgz#e88a852e907c0b2a07caa1bf05cd5cce3efa530a"
+  integrity sha512-sFlusZwBC5oguGjHQ/tV8g2j+LK5USBF3f7dVHMLHZ+n9lfaaSgsoWypr2fjqYnbiw09Oy+r9mysnur958XOxA==
   dependencies:
     tslib "2.x"
 
