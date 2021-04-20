@@ -161,10 +161,10 @@
   dependencies:
     tslib "^2.1.0"
 
-"@sapphire/prettier-config@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.0.9.tgz#0c97f001bd0e83f7a6e36f49effbbd36b3c25eb8"
-  integrity sha512-cHhrCVYMfeE1MYxL1vzeKmguyX8w3nIMMJcoxCzKBEuO2AzwqcrzZOZW9y7+TMWCe32lXrp9kp+zU4JshhGXXw==
+"@sapphire/prettier-config@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.0.10.tgz#454ea22fea175d5fbdb6b6dd29ddaf7c5e098033"
+  integrity sha512-3L++84Z901wf1o8NnAcr5DmirRKyWYpKkPQmzytzXY6xajhXTk5bdPEsL7EyE5FGQRVE79cYzi5wL1NMv+trsA==
   dependencies:
     prettier "2.x"
 
@@ -204,11 +204,6 @@
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.4.6.tgz#3fbc8b8682cb10c872e3f883864e49dbcf147e9f"
   integrity sha512-cSpifhuXlmIIEZQCMPU4psDzXE9WumdTGI7JgWmH+FbQkbJ2Hn1pxITMnLwOEPH96ypXFf9V4sOqr9kIxk2V6w==
-
-"@sapphire/utilities@^1.4.7":
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.4.7.tgz#4668b57918fe773502087e63025f5ec84f670059"
-  integrity sha512-9x7LwCuhJJ+oWPpbQqU7EKUHNwBnB0ew52qKv7Og2ruSqyKrrBRdNZYhXqiXeC2JTlHwhE9v+pcc1YTm0L4oAg==
 
 "@sapphire/utilities@^1.4.8":
   version "1.4.8"
