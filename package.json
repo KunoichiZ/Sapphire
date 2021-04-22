@@ -24,8 +24,8 @@
 	"devDependencies": {
 		"@favware/graphql-pokemon": "^5.1.2",
 		"@sapphire/eslint-config": "^3.0.4",
-		"@sapphire/prettier-config": "^1.0.10",
-		"@sapphire/ts-config": "^2.1.2",
+		"@sapphire/prettier-config": "^1.1.0",
+		"@sapphire/ts-config": "^2.2.0",
 		"@types/node": "^14.14.41",
 		"@types/node-fetch": "^2.5.10",
 		"@types/ws": "^7.4.1",
@@ -40,10 +40,10 @@
 	},
 	"dependencies": {
 		"@sapphire/decorators": "^2.0.10",
-		"@sapphire/discord.js-utilities": "^1.5.5",
+		"@sapphire/discord.js-utilities": "^1.5.6",
 		"@sapphire/event-iterator": "^1.1.8",
 		"@sapphire/framework": "^1.0.0-alpha.11",
-		"@sapphire/plugin-subcommands": "^1.0.3",
+		"@sapphire/plugin-subcommands": "^1.0.4",
 		"@sapphire/stopwatch": "^1.1.0",
 		"@sapphire/time-utilities": "^1.2.13",
 		"@sapphire/type": "^1.1.8",
