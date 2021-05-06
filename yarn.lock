@@ -205,11 +205,6 @@
     nan "^2.14.2"
     tslib "^2.2.0"
 
-"@sapphire/utilities@^1.4.8":
-  version "1.4.8"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.4.8.tgz#f07e10db04ddb6cd79923644c267fe2dcb6c4f0b"
-  integrity sha512-bUfE0ufmq4gJQvzpZukCZz/9HAFGfF7AFU36yeI8rCizU8cr2rzXpMoewdii0ieiZilBUnTW0Q0uDBuIcyOHdw==
-
 "@sapphire/utilities@^1.5.1":
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.5.1.tgz#6fd9d70a55704a9a5b197e4479a610c8be865b6c"
