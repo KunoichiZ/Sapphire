@@ -210,10 +210,10 @@
     tslib "2.2.0"
     typescript "4.2.4"
 
-"@sapphire/type@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-2.0.2.tgz#2d86a848db505bda05a56c1c03a0857fe5c97fdc"
-  integrity sha512-452UJ+EI6PaZwCwIMMKcWVmq+04/WVdGn6qVNs4vaPpQk+FfVvNY7WZMKyERBUg2RQW4PTkyG2phlTSmEWI+WQ==
+"@sapphire/type@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-2.0.4.tgz#adf5f7d7b9b1b8c7a291df276722b5a888b412e0"
+  integrity sha512-QxPQMgxF6dDnsnOKWuOJ3ujthpgAKIGC4xSQJ/Y52durQY/yIJ+g0v2wGI8cxY6AdcQlUmEz3ajg+WWoq49DCA==
   dependencies:
     "@discordjs/node-pre-gyp" "^0.3.2"
     nan "^2.14.2"
