@@ -176,10 +176,10 @@
   dependencies:
     tslib "^2.2.0"
 
-"@sapphire/prettier-config@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.1.3.tgz#0213211b55b3325255d3ea91939e3f62370eb715"
-  integrity sha512-2LTPNjMlb8aIcaPbnSytLhU0RYAHPPZMW4igakJ2bUY2lVkdMzSQmokbsGOQdb9Uor1MKK7MWaa34YdLLb04aQ==
+"@sapphire/prettier-config@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.1.4.tgz#40dc70a4ae96e1b7753c37f0d548d6de6af824fd"
+  integrity sha512-leSrlNGb9yFXBpXy6z+ovPr1npGR4D2KjBezQyFDEA0Kuo03lRmjVSmwgsvT4xBHGaXE5oWltCuOrFqc52BGwQ==
   dependencies:
     prettier "2.x"
 
@@ -1868,11 +1868,6 @@ type-fest@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
   integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
-
-typescript@^4.3.2:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.2.tgz#399ab18aac45802d6f2498de5054fcbbe716a805"
-  integrity sha512-zZ4hShnmnoVnAHpVHWpTcxdv7dWP60S2FsydQLV8V5PbS3FifjWFFRiHSWpDJahly88PRyV5teTSLoq4eG7mKw==
 
 typescript@^4.3.4:
   version "4.3.4"
