@@ -67,10 +67,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@favware/graphql-pokemon@^5.5.2":
-  version "5.5.2"
-  resolved "https://registry.yarnpkg.com/@favware/graphql-pokemon/-/graphql-pokemon-5.5.2.tgz#3e966188abc5d23b620036256cc311f0bb4ea498"
-  integrity sha512-+IAw+EYNGnYOfPd3TzZm2Oi4cqldOEU7NvRwyRT6Q2Kg8QYs/xmsYGXnvQrQ1Ju9rqxVtROP/hpXZiwuK4bhgA==
+"@favware/graphql-pokemon@^5.5.5":
+  version "5.5.5"
+  resolved "https://registry.yarnpkg.com/@favware/graphql-pokemon/-/graphql-pokemon-5.5.5.tgz#0ff209c15109a93db0512604b04203309084d7a3"
+  integrity sha512-LPuxsQw/gniN6UgX6d7R8FNnHuE0SWtemRRiMT48Acs9hyXhr/hb/b5MiPjTbhFzW6BirHUJmZg85mRJcvq/yQ==
   dependencies:
     graphql "^15.5.0"
 
@@ -223,11 +223,6 @@
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.5.1.tgz#6fd9d70a55704a9a5b197e4479a610c8be865b6c"
   integrity sha512-pcV0VqLrAlfPi5MU5RzN16vCC3sjKALfL/iuz8g1SMmfbDaZny0k68QXbGp9Rd7AGyrHy6AKMhsNA3SMyb3pFA==
-
-"@sapphire/utilities@^1.5.3":
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.5.3.tgz#d83991aa833057f81c137932c3c89bb5a2486a4f"
-  integrity sha512-fwsnjtKaXHapR9umm1F8gSwRz5guA37heAoq8AF+TY84Ykw8xWHrPReL1Yh5gNfLTss3L1QsnUmb5zueJHkMDA==
 
 "@sapphire/utilities@^1.6.0":
   version "1.6.0"
