@@ -229,6 +229,11 @@
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.6.0.tgz#6cd53c5034dc62c2429d9ee53649fbaf1a5ac5b0"
   integrity sha512-xEoV/yFXRlvEbZbK9iPEBr5L8tQLYAjHluJ5MJiyiWx4i8khLe4tE7Tb/Zu/IR/a3lI2iRWfqqWBMA8sxiPTig==
 
+"@sapphire/utilities@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.6.1.tgz#33b2c9b10f78b7466869f39c8739050909f977f3"
+  integrity sha512-aOfw3yPuy51GxgyMHIHeLSaw4bN8+we2VSsojmX4HBLV687emy70AzPm98c2D8oOf6EqYzW9i1g8Rfbbh1ANqQ==
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
