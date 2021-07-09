@@ -49,7 +49,7 @@
 		"@sapphire/type": "^2.0.11",
 		"@sapphire/utilities": "^1.6.1",
 		"@types/common-tags": "^1.8.1",
-		"@types/pg": "^8.6.0",
+		"@types/pg": "^8.6.1",
 		"bufferutil": "^4.0.3",
 		"chokidar": "^3.5.2",
 		"colorette": "^1.2.2",
