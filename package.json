@@ -40,7 +40,7 @@
 	},
 	"dependencies": {
 		"@sapphire/decorators": "^2.1.5",
-		"@sapphire/discord.js-utilities": "^1.6.0",
+		"@sapphire/discord.js-utilities": "^2.0.0",
 		"@sapphire/event-iterator": "^1.2.4",
 		"@sapphire/framework": "^1.0.0-alpha.11",
 		"@sapphire/plugin-subcommands": "^1.0.6",
