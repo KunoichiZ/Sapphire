@@ -152,12 +152,14 @@
   dependencies:
     "@sapphire/discord-utilities" "^2.1.1"
 
-"@sapphire/discord.js-utilities@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-1.6.0.tgz#6941c2c205a9db4dd5b571e52147c6eedf05b9a8"
-  integrity sha512-G30HSAerfuIFyJw7jZ2W5ix4RKo3/2HOXIg8h78tELPRcc2rRiKnl36c/VYaVv9WbsxwHahvnfg0v+9K+122rA==
+"@sapphire/discord.js-utilities@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-2.0.1.tgz#edd8d3501c356922f283ea4079ef6bef5753b43d"
+  integrity sha512-0eExGXvI1hXnd8oW37TPp91wIbR2zyarSFm7feZRvJGw2B1cfe7yQoezBB+hadkz2yX2wBEKYzEAwT3ecMkPzQ==
   dependencies:
     "@sapphire/discord-utilities" "^2.1.5"
+    "@sapphire/time-utilities" "^1.3.7"
+    "@sapphire/utilities" "^2.0.0"
 
 "@sapphire/eslint-config@^3.2.2":
   version "3.2.2"
