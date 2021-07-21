@@ -39,7 +39,7 @@
 		"typescript": "^4.3.5"
 	},
 	"dependencies": {
-		"@sapphire/decorators": "^2.1.5",
+		"@sapphire/decorators": "^2.2.0",
 		"@sapphire/discord.js-utilities": "^1.6.0",
 		"@sapphire/event-iterator": "^1.2.4",
 		"@sapphire/framework": "^1.0.0-alpha.11",
