@@ -57,7 +57,7 @@
 		"discord-api-types": "^0.20.2",
 		"discord.js": "^12.5.3",
 		"node-fetch": "^2.6.1",
-		"pg": "^8.6.0",
+		"pg": "^8.7.1",
 		"reflect-metadata": "^0.1.13",
 		"utf-8-validate": "^5.0.5",
 		"ws": "^7.5.3",
