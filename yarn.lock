@@ -253,13 +253,12 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
   integrity sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA==
 
-"@types/node-fetch@^2.5.12":
-  version "2.5.12"
-  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.5.12.tgz#8a6f779b1d4e60b7a57fb6fd48d84fb545b9cc66"
-  integrity sha512-MKgC4dlq4kKNa/mYrwpKfzQMB5X3ee5U6fSprkKpToBqBmX4nFZL9cW5jl6sWn+xpRJ7ypWh2yyqqr8UUCstSw==
+"@types/node-fetch@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-3.0.3.tgz#9d969c9a748e841554a40ee435d26e53fa3ee899"
+  integrity sha512-HhggYPH5N+AQe/OmN6fmhKmRRt2XuNJow+R3pQwJxOOF9GuwM7O2mheyGeIrs5MOIeNjDEdgdoyHBOrFeJBR3g==
   dependencies:
-    "@types/node" "*"
-    form-data "^3.0.0"
+    node-fetch "*"
 
 "@types/node@*":
   version "14.14.22"
@@ -1069,15 +1068,6 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.1.1.tgz#c4b489e80096d9df1dfc97c79871aea7c617c469"
   integrity sha512-zAoAQiudy+r5SvnSw3KJy5os/oRJYHzrzja/tBDqrZtNhUw8bt6y8OBzMWcjWr+8liV8Eb6yOhw8WZ7VFZ5ZzA==
 
-form-data@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/form-data/-/form-data-3.0.0.tgz#31b7e39c85f1355b7139ee0c647cf0de7f83c682"
-  integrity sha512-CKMFDglpbMi6PyN+brwB9Q/GOw0eAnsrEZDgcsH5Krhz5Od/haKHAX0NmQfha2zPPz0JpWzA7GJHGSnvCRLWsg==
-  dependencies:
-    asynckit "^0.4.0"
-    combined-stream "^1.0.8"
-    mime-types "^2.1.12"
-
 from@~0:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/from/-/from-0.1.7.tgz#83c60afc58b9c56997007ed1a768b3ab303a44fe"
@@ -1426,18 +1416,18 @@ node-cleanup@^2.1.2:
   resolved "https://registry.yarnpkg.com/node-cleanup/-/node-cleanup-2.1.2.tgz#7ac19abd297e09a7f72a71545d951b517e4dde2c"
   integrity sha1-esGavSl+Caf3KnFUXZUbUX5N3iw=
 
-node-fetch@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
-  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
-
-node-fetch@^3.0.0:
+node-fetch@*, node-fetch@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-3.0.0.tgz#79da7146a520036f2c5f644e4a26095f17e411ea"
   integrity sha512-bKMI+C7/T/SPU1lKnbQbwxptpCrG9ashG+VkytmXCPZyuM9jB6VU+hY0oi4lC8LxTtAeWdckNCTa3nrGsAdA3Q==
   dependencies:
     data-uri-to-buffer "^3.0.1"
     fetch-blob "^3.1.2"
+
+node-fetch@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-gyp-build@^4.2.0:
   version "4.2.3"
