@@ -209,12 +209,12 @@
   dependencies:
     tslib "2.x"
 
-"@sapphire/time-utilities@^1.3.8":
-  version "1.3.8"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.3.8.tgz#70297b2b3321ada652ed424e9f32a82235ca2f9d"
-  integrity sha512-pmEoy24pW0xENjIGgws0r4TgeY7eemqkgDp35vRk9K4vi+RiEu9WMYfur1EI422mocQJNtfyQUo7mBKkBhSkTw==
+"@sapphire/time-utilities@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.4.1.tgz#8cad0841805cd7ae1c37fd02b6426817ea2dcd58"
+  integrity sha512-xytS0MoBje3h56vEwEvERXGq4qEdKLfBrYilJFWg2rrn6+L0nTbg1kf4Kvi/Ut8/v7nJK08CpHrQ5NpQubq+Tg==
   dependencies:
-    "@sapphire/utilities" "^2.0.1"
+    "@sapphire/utilities" "^3.0.1"
 
 "@sapphire/ts-config@^3.1.0":
   version "3.1.0"
@@ -242,6 +242,11 @@
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-2.0.1.tgz#c436c5b2b72679c89a40abe46d2f9301d03e63e2"
   integrity sha512-KgJsgQ1cnfVKqscrMX4GH29mIVhVQkF8kSTIRCB+hgCCRfIvUU5peE4g/cegnesPS5eMiQqV+NWk7cNwhjextQ==
+
+"@sapphire/utilities@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.0.1.tgz#0b9d57e9411dde6298fbaf0ed7892575a52ae86e"
+  integrity sha512-O5DH3GnIJNgIwyMp8XTwlhlTXPbpWRaQRUZ1mw7x0d+dcmAa+rP4XpaHgp53M8wIKIcwuqMBMXjHicFu85XEaQ==
 
 "@types/common-tags@^1.8.1":
   version "1.8.1"
