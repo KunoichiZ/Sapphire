@@ -109,12 +109,12 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@sapphire/decorators@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-3.0.0.tgz#830c3e31460f23fa4bc9a6e603ddf4fd5a77fb62"
-  integrity sha512-XsTFKOojyycCY+j8iwnXpZ9Rk5l/kUwdsRJ8y0Kbtu9apvtYIFRCPE1Nj/6ANhhpwuiRCmDTgXavOemmAQiVkQ==
+"@sapphire/decorators@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-3.0.1.tgz#f6cebcb464880968817d9cf1349adbde25b39ea7"
+  integrity sha512-5uP/Es/bbUK3PeKRhptDvp6k+KiLoYQvOAzlPFjkCRzkHLzAD66bXX2D0x94LULXI1/Y7N0jmFHF7Ni3vWfIxA==
   dependencies:
-    tslib "2.x"
+    tslib "^2.3.1"
 
 "@sapphire/discord-utilities@^2.1.1":
   version "2.1.1"
