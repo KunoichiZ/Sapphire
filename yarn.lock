@@ -133,10 +133,10 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@sapphire/decorators@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-3.0.1.tgz#f6cebcb464880968817d9cf1349adbde25b39ea7"
-  integrity sha512-5uP/Es/bbUK3PeKRhptDvp6k+KiLoYQvOAzlPFjkCRzkHLzAD66bXX2D0x94LULXI1/Y7N0jmFHF7Ni3vWfIxA==
+"@sapphire/decorators@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-3.1.0.tgz#c3885d355985be1588f424b902fda273a0cb783d"
+  integrity sha512-eiJOZO1veXomzFDn0NzdOIVuduaZvT6QoWgf+wLNxJQZzQanODlj5nz2kR6odYx61KpFszj4Y5RNjmIVS/g+Yg==
   dependencies:
     tslib "^2.3.1"
 
