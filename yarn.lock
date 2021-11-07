@@ -151,10 +151,10 @@
     prettier "^2.4.1"
     typescript "^4.4.4"
 
-"@sapphire/event-iterator@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.3.2.tgz#e4a87173d53e3ab926597a12b05fe76323f13f31"
-  integrity sha512-QekkQcKWEEyycuGQ+UJwgM71yi5vloPvUaDEExlSiOhswuwgqPT7JfKjenl4MM5R4uAxmnw34yeUzKCp1NvgTw==
+"@sapphire/event-iterator@^1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.3.3.tgz#5251873d7d8eddadab3c1e5d5c7405cc8fbeefb2"
+  integrity sha512-y8OzGUrSw2FDHt/R1LnY8yb9aEIt70W0/TpcxpOEivfa6d3rlqcz+8DVZ2/Obx5nAw4yzHP6m9yy7LEvGax28g==
 
 "@sapphire/framework@^1.0.0-alpha.11":
   version "1.0.2"
