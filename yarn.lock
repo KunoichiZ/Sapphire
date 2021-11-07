@@ -117,10 +117,10 @@
   dependencies:
     twemoji-parser "^13.0.0"
 
-"@sapphire/discord-utilities@^2.1.5":
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord-utilities/-/discord-utilities-2.1.5.tgz#8b70b3949266d5b643a57c893985623f03297e8a"
-  integrity sha512-GQ1n+UCF3jsn1KmNLzEbjy6+ecfJPvWBaD7CZmQoXl385mTx4M2jen2w/guylJcScrsnUnbu6hgB3vSfkHXlFg==
+"@sapphire/discord-utilities@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord-utilities/-/discord-utilities-2.2.3.tgz#40bcde9034f7e0d43a3e147fd20c4d7e7b70ab88"
+  integrity sha512-iWuUtNFO7yBqzE+l7ecfR4G2tpZds0gIdPbG1Mt6jVdKFG659ZNJuCnC5duiPJkcfVtmzkFmwtwZbZAmQjwoRA==
   dependencies:
     twemoji-parser "^13.1.0"
 
@@ -131,12 +131,15 @@
   dependencies:
     "@sapphire/discord-utilities" "^2.1.1"
 
-"@sapphire/discord.js-utilities@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-1.6.0.tgz#6941c2c205a9db4dd5b571e52147c6eedf05b9a8"
-  integrity sha512-G30HSAerfuIFyJw7jZ2W5ix4RKo3/2HOXIg8h78tELPRcc2rRiKnl36c/VYaVv9WbsxwHahvnfg0v+9K+122rA==
+"@sapphire/discord.js-utilities@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-4.1.1.tgz#b9c2375a62eb418294b5a92e8b8638e131c4e532"
+  integrity sha512-DrnR+HKE8f9cKcVb0WcBbMQKrl1M8CBAqQLamL318x6DibhXjFlStuCUsm5ijK4R/mJEWwjW17spfkuYxsrTiA==
   dependencies:
-    "@sapphire/discord-utilities" "^2.1.5"
+    "@sapphire/discord-utilities" "^2.2.3"
+    "@sapphire/time-utilities" "^1.4.7"
+    "@sapphire/utilities" "^3.0.7"
+    tslib "^2.3.1"
 
 "@sapphire/eslint-config@^4.0.2":
   version "4.0.2"
