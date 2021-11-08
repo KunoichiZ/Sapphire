@@ -46,12 +46,12 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@favware/graphql-pokemon@^5.5.9":
-  version "5.5.9"
-  resolved "https://registry.yarnpkg.com/@favware/graphql-pokemon/-/graphql-pokemon-5.5.9.tgz#be7f3a3547080c5c44c96d62b5771c26928b810c"
-  integrity sha512-WG9jGm+zJRZ5C4pyyFN+HArFiZYQRCA2C+ezEhTnDi8VVO+MjDYN8tzc45R7y0rbPUeU6tHVPnEkZYrT11x94g==
+"@favware/graphql-pokemon@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@favware/graphql-pokemon/-/graphql-pokemon-6.2.1.tgz#0f9d802a2ce3cefbcd1db05c692459c936fc05b5"
+  integrity sha512-UYJzVqKXysnXntEyYyQWhQvekWAgc86E7ePhxV3lvTFkU98EjUW5cxsca70jMkBvytUNb/HrmrskFTwTL5ZFnQ==
   dependencies:
-    graphql "^15.5.1"
+    graphql "15.7.2"
 
 "@humanwhocodes/config-array@^0.6.0":
   version "0.6.0"
@@ -966,10 +966,10 @@ globby@^11.0.4:
     merge2 "^1.3.0"
     slash "^3.0.0"
 
-graphql@^15.5.1:
-  version "15.5.1"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.5.1.tgz#f2f84415d8985e7b84731e7f3536f8bb9d383aad"
-  integrity sha512-FeTRX67T3LoE3LWAxxOlW2K3Bz+rMYAC18rRguK4wgXaTZMiJwSUwDmPFo3UadAKbzirKIg5Qy+sNJXbpPRnQw==
+graphql@15.7.2:
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.7.2.tgz#85ab0eeb83722977151b3feb4d631b5f2ab287ef"
+  integrity sha512-AnnKk7hFQFmU/2I9YSQf3xw44ctnSFCfp3zE0N6W174gqe9fWG/2rKaKxROK7CcI3XtERpjEKFqts8o319Kf7A==
 
 has-flag@^4.0.0:
   version "4.0.0"
