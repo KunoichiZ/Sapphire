@@ -60,7 +60,7 @@
 		"pg": "^8.7.1",
 		"reflect-metadata": "^0.1.13",
 		"utf-8-validate": "^5.0.7",
-		"ws": "^8.2.3",
+		"ws": "^8.3.0",
 		"zlib-sync": "^0.1.7"
 	},
 	"imports": {
