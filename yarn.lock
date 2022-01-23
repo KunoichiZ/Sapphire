@@ -123,10 +123,10 @@
   dependencies:
     "@sapphire/discord-utilities" "^2.1.5"
 
-"@sapphire/eslint-config@^4.0.10":
-  version "4.0.10"
-  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-4.0.10.tgz#5a4d74c725eaa36900bee64772335f00ec7e12fe"
-  integrity sha512-aFYx6j+rxYiPKkVwnFcqfeJ3lU7HkIydBNe6cLCgwnIxndL/E/XBzHMkwTw+iktot954EqNDjc4vFV5C0d0IGQ==
+"@sapphire/eslint-config@^4.0.11":
+  version "4.0.11"
+  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-4.0.11.tgz#a5738916fd705035920a2b73119d09065e012998"
+  integrity sha512-RlEVXwsaG+Srtw8C/ltt2gYiOAdL3EXqTXlxE3YkRHWWGdm9qIFoC9IMax18R2whnEwXMxd54fUBJAUTeJIuQA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.9.1"
     "@typescript-eslint/parser" "^5.9.1"
