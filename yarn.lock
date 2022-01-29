@@ -197,13 +197,13 @@
   dependencies:
     "@sapphire/utilities" "^3.2.1"
 
-"@sapphire/ts-config@^3.1.8":
-  version "3.1.8"
-  resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-3.1.8.tgz#83d57518db75a71f2a4b37dc499b97051b4ffd78"
-  integrity sha512-LAmX2/wlbG75FamaZbHsQL7XUMqgL4AYpYdBuboOScSsH3VpY4k3NrY5dgenzm02RF7XG5mTZ6Z0/dUtjCk51g==
+"@sapphire/ts-config@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-3.2.0.tgz#bdfa5be6bde95c1f1c63806ef2fa6c4282aace4f"
+  integrity sha512-X8XHoZqGRT1ouB9qB5gKI8GfOr/OGvD6wq/+n3ObvstAr/kSgzkPUl30uc9toQ3wD4OZHOvB34ZBGdne7ejybQ==
   dependencies:
     tslib "^2.3.1"
-    typescript "^4.5.4"
+    typescript "^4.5.5"
 
 "@sapphire/type@^2.1.2":
   version "2.1.2"
