@@ -88,10 +88,10 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@sapphire/decorators@^3.1.6":
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-3.1.6.tgz#f75ecc3fb35f229485521e096061609f78afc8a5"
-  integrity sha512-lDYrlJ85lw07NIPpOmn9FQmKEzzzzBRo9hha7G4XY/enpzj8OubJCtaNEvXuULXceitXdfd1CjwM13oP2jAhkw==
+"@sapphire/decorators@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-4.1.0.tgz#de0cdd6870dc5357e21be3418c958e1d1b17d625"
+  integrity sha512-ZmCrV1d0BH0Hq2qXQgPSr/TgmsLUZA95e5kw4vwuz7s2HuU88dS9YZIMThI8lCAGbrrDPqO2lPX7tKDcPUUddw==
   dependencies:
     tslib "^2.3.1"
 
@@ -218,11 +218,6 @@
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.5.1.tgz#6fd9d70a55704a9a5b197e4479a610c8be865b6c"
   integrity sha512-pcV0VqLrAlfPi5MU5RzN16vCC3sjKALfL/iuz8g1SMmfbDaZny0k68QXbGp9Rd7AGyrHy6AKMhsNA3SMyb3pFA==
-
-"@sapphire/utilities@^3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.2.1.tgz#dbbffef1daf0fdc29481881aaac940a87341067e"
-  integrity sha512-y00aaBzKNwCIVE2a444zdPvHZmStpbVXE7iRC1NsbF1USXnQtNhgAGxq0PWZkBzHxpD9boKsUNS2Z+XzTXZvvQ==
 
 "@sapphire/utilities@^3.3.0":
   version "3.3.0"
