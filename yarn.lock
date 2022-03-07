@@ -123,18 +123,18 @@
   dependencies:
     "@sapphire/discord-utilities" "^2.1.5"
 
-"@sapphire/eslint-config@^4.2.2":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-4.2.2.tgz#b811c48a41fbf056ca8df7f23a27109fc3b9c86c"
-  integrity sha512-sY5ne7vTGdleW5cBLYt8PwhoXuAb+FAzf5Fu9diU15K0IeRjw4+5OU/8l1HtCXXWlNhC5ZrVH/2vQeyRiajACA==
+"@sapphire/eslint-config@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-4.3.0.tgz#30936038061a415de7c3484b103316de021cd6ce"
+  integrity sha512-u19KAUnhCmlBzZD/y6fW0/fw8UG/+s2kqBraQ5bpnMIlt+pDCRBtVFlVJ6JVAltIyCMNmI4Qx4WoScuTe864pw==
   dependencies:
-    "@typescript-eslint/eslint-plugin" "^5.12.1"
-    "@typescript-eslint/parser" "^5.12.1"
+    "@typescript-eslint/eslint-plugin" "^5.13.0"
+    "@typescript-eslint/parser" "^5.13.0"
     eslint "^8.10.0"
-    eslint-config-prettier "^8.4.0"
+    eslint-config-prettier "^8.5.0"
     eslint-plugin-prettier "^4.0.0"
     prettier "^2.5.1"
-    typescript "^4.5.5"
+    typescript "^4.6.2"
 
 "@sapphire/event-iterator@^1.5.0":
   version "1.5.0"
@@ -267,7 +267,7 @@
   dependencies:
     "@types/node" "*"
 
-"@typescript-eslint/eslint-plugin@^5.12.1", "@typescript-eslint/eslint-plugin@^5.13.0":
+"@typescript-eslint/eslint-plugin@^5.13.0":
   version "5.13.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.13.0.tgz#2809052b85911ced9c54a60dac10e515e9114497"
   integrity sha512-vLktb2Uec81fxm/cfz2Hd6QaWOs8qdmVAZXLdOBX6JFJDhf6oDZpMzZ4/LZ6SFM/5DgDcxIMIvy3F+O9yZBuiQ==
@@ -282,7 +282,7 @@
     semver "^7.3.5"
     tsutils "^3.21.0"
 
-"@typescript-eslint/parser@^5.12.1", "@typescript-eslint/parser@^5.13.0":
+"@typescript-eslint/parser@^5.13.0":
   version "5.13.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.13.0.tgz#0394ed8f2f849273c0bf4b811994d177112ced5c"
   integrity sha512-GdrU4GvBE29tm2RqWOM0P5QfCtgCyN4hXICj/X9ibKED16136l9ZpoJvCL5pSKtmJzA+NRDzQ312wWMejCVVfg==
@@ -658,11 +658,6 @@ escape-string-regexp@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
-
-eslint-config-prettier@^8.4.0:
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.4.0.tgz#8e6d17c7436649e98c4c2189868562921ef563de"
-  integrity sha512-CFotdUcMY18nGRo5KGsnNxpznzhkopOcOo0InID+sgQssPrzjvsyKZPvOgymTFeHrFuC3Tzdf2YndhXtULK9Iw==
 
 eslint-config-prettier@^8.5.0:
   version "8.5.0"
