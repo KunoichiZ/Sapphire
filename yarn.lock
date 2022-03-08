@@ -171,10 +171,10 @@
   dependencies:
     tslib "^2.3.1"
 
-"@sapphire/prettier-config@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.3.0.tgz#e8df83150ed686839ce016de1037a28ef9747c78"
-  integrity sha512-4sJGcguVA4DAj2leIFwnKpHer0xwQWssmPxpBUSQkGYgS7oA64DIFG9XKI9+z0G5nMqP3BcVnlhNhKAd+PFXTA==
+"@sapphire/prettier-config@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.4.0.tgz#d1c765b646a99e04b168d8e92932dbd15ed7f807"
+  integrity sha512-D57x61d5u/HuH0EHwaRpjAycE8jK6RQ1PAuRjtYAGoW2NRzm3S8O6nY1iu/vTT6iIIzDJ4JEwbFa504a6uoq0w==
   dependencies:
     prettier "^2.5.1"
 
