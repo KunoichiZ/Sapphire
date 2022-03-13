@@ -88,10 +88,10 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@sapphire/decorators@^3.1.6":
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-3.1.6.tgz#f75ecc3fb35f229485521e096061609f78afc8a5"
-  integrity sha512-lDYrlJ85lw07NIPpOmn9FQmKEzzzzBRo9hha7G4XY/enpzj8OubJCtaNEvXuULXceitXdfd1CjwM13oP2jAhkw==
+"@sapphire/decorators@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-4.3.1.tgz#f7d5fd4596b06ee8c394a3e16a9edd2b5ebeea1c"
+  integrity sha512-Zj3iTt4lru1TA9f0HjJ6WWrs200QNIF4gTUbS3IV/1gaGJ7UHogKt0tAWC2uT74snxP//MRsbXKhEqJi7cHEUg==
   dependencies:
     tslib "^2.3.1"
 
