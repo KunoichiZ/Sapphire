@@ -197,13 +197,13 @@
   dependencies:
     "@sapphire/utilities" "^3.6.1"
 
-"@sapphire/ts-config@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-3.2.0.tgz#bdfa5be6bde95c1f1c63806ef2fa6c4282aace4f"
-  integrity sha512-X8XHoZqGRT1ouB9qB5gKI8GfOr/OGvD6wq/+n3ObvstAr/kSgzkPUl30uc9toQ3wD4OZHOvB34ZBGdne7ejybQ==
+"@sapphire/ts-config@^3.3.4":
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-3.3.4.tgz#dabab6a3c1a862ea753b8d4e67a6ac07e9f5d7a7"
+  integrity sha512-mWEUxCXh3cHKI7C8HJ049exVTMNaq+A/lJEDfM5ENSQ/OOZHd5DdmXn2jrYqFWbTRCHa0Vp2FAmACWBwePsBtg==
   dependencies:
     tslib "^2.3.1"
-    typescript "^4.5.5"
+    typescript "^4.6.3"
 
 "@sapphire/type@^2.2.0":
   version "2.2.0"
@@ -1854,11 +1854,6 @@ type-fest@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
   integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
-
-typescript@^4.5.5:
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.5.tgz#d8c953832d28924a9e3d37c73d729c846c5896f3"
-  integrity sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==
 
 typescript@^4.6.2:
   version "4.6.2"
