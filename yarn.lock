@@ -102,12 +102,12 @@
   dependencies:
     twemoji-parser "^13.0.0"
 
-"@sapphire/discord-utilities@^2.1.5":
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord-utilities/-/discord-utilities-2.1.5.tgz#8b70b3949266d5b643a57c893985623f03297e8a"
-  integrity sha512-GQ1n+UCF3jsn1KmNLzEbjy6+ecfJPvWBaD7CZmQoXl385mTx4M2jen2w/guylJcScrsnUnbu6hgB3vSfkHXlFg==
+"@sapphire/discord-utilities@^2.10.3":
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord-utilities/-/discord-utilities-2.10.3.tgz#1005c816bbf66e6ad99a0a882e95a8f622c79854"
+  integrity sha512-75IqUu/CqyL1wxhkYyeDRWrtqHY2D+ZOJ/KDu8S96KYzHVQNKCbOAXvBzLs3yn/sgy0dmBtKuvt3/xxo8FLV+g==
   dependencies:
-    twemoji-parser "^13.1.0"
+    twemoji-parser "^14.0.0"
 
 "@sapphire/discord.js-utilities@^1.5.7":
   version "1.5.7"
@@ -116,12 +116,15 @@
   dependencies:
     "@sapphire/discord-utilities" "^2.1.1"
 
-"@sapphire/discord.js-utilities@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-1.6.0.tgz#6941c2c205a9db4dd5b571e52147c6eedf05b9a8"
-  integrity sha512-G30HSAerfuIFyJw7jZ2W5ix4RKo3/2HOXIg8h78tELPRcc2rRiKnl36c/VYaVv9WbsxwHahvnfg0v+9K+122rA==
+"@sapphire/discord.js-utilities@^4.9.5":
+  version "4.9.5"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-4.9.5.tgz#a555ec70edaa679b8ab8527878fed39365814e51"
+  integrity sha512-hrAr3MlVyf3opp85CdzIUY68BPq07VFi69t2/YDGFLjtcmFcnXcAf0Ilgq0NHPaDpMgDAo1LYwEFQJ5NjT0vcA==
   dependencies:
-    "@sapphire/discord-utilities" "^2.1.5"
+    "@sapphire/discord-utilities" "^2.10.3"
+    "@sapphire/time-utilities" "^1.7.4"
+    "@sapphire/utilities" "^3.6.2"
+    tslib "^2.3.1"
 
 "@sapphire/eslint-config@^4.3.4":
   version "4.3.4"
@@ -1712,10 +1715,10 @@ twemoji-parser@^13.0.0:
   resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-13.0.0.tgz#bd9d1b98474f1651dc174696b45cabefdfa405af"
   integrity sha512-zMaGdskpH8yKjT2RSE/HwE340R4Fm+fbie4AaqjDa4H/l07YUmAvxkSfNl6awVWNRRQ0zdzLQ8SAJZuY5MgstQ==
 
-twemoji-parser@^13.1.0:
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-13.1.0.tgz#65e7e449c59258791b22ac0b37077349127e3ea4"
-  integrity sha512-AQOzLJpYlpWMy8n+0ATyKKZzWlZBJN+G0C+5lhX7Ftc2PeEVdUU/7ns2Pn2vVje26AIZ/OHwFoUbdv6YYD/wGg==
+twemoji-parser@^14.0.0:
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-14.0.0.tgz#13dabcb6d3a261d9efbf58a1666b182033bf2b62"
+  integrity sha512-9DUOTGLOWs0pFWnh1p6NF+C3CkQ96PWmEFwhOVmT3WbecRC+68AIqpsnJXygfkFcp4aXbOp8Dwbhh/HQgvoRxA==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
