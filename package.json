@@ -52,7 +52,7 @@
 		"@types/pg": "^8.6.5",
 		"bufferutil": "^4.0.6",
 		"chokidar": "^3.5.3",
-		"colorette": "^2.0.16",
+		"colorette": "^2.0.17",
 		"common-tags": "^1.8.2",
 		"discord-api-types": "^0.33.2",
 		"discord.js": "^12.5.3",
