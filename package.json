@@ -54,7 +54,7 @@
 		"chokidar": "^3.5.3",
 		"colorette": "^2.0.17",
 		"common-tags": "^1.8.2",
-		"discord-api-types": "^0.33.4",
+		"discord-api-types": "^0.33.5",
 		"discord.js": "^12.5.3",
 		"node-fetch": "^3.2.5",
 		"pg": "^8.7.3",
