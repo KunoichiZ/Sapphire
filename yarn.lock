@@ -190,12 +190,12 @@
   dependencies:
     tslib "^2.3.1"
 
-"@sapphire/time-utilities@^1.7.4":
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.4.tgz#5f47de3741b77ae9752e8e45958461d92bc4420a"
-  integrity sha512-/MKy56iGYuOfZfXGxZ2RG0otk9j3P0VRC6ACSnizalEXbe0YFXX7JcxPPBF1yp2j1p5Y7eUW+FTExfvEgnWnzg==
+"@sapphire/time-utilities@^1.7.5":
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.5.tgz#e5d22db355f4ce10f9e4dd8a46227a9bab56800e"
+  integrity sha512-QLYUCIhnntEWZugY+E0/2fmFPn/ARV1ZP0LLUcowBpC7+U4NmDi12iQ9dJmM+14PmI45J2nUWFJ7ocKCMfCr5g==
   dependencies:
-    "@sapphire/utilities" "^3.6.2"
+    "@sapphire/utilities" "^3.7.0"
 
 "@sapphire/ts-config@^3.2.0":
   version "3.2.0"
@@ -218,11 +218,6 @@
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.5.1.tgz#6fd9d70a55704a9a5b197e4479a610c8be865b6c"
   integrity sha512-pcV0VqLrAlfPi5MU5RzN16vCC3sjKALfL/iuz8g1SMmfbDaZny0k68QXbGp9Rd7AGyrHy6AKMhsNA3SMyb3pFA==
-
-"@sapphire/utilities@^3.6.2":
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.6.2.tgz#ec238e3e789dd5b04009a5cefecd3a64a4bb985d"
-  integrity sha512-Rmwq5QxWxuAYCrtIXo2a9UW1Fa5Pmmfc20QSRRp+rz/CXzel1R3171DjvT7iZTAfuxwUFp2FYG6IaywoSIyjFA==
 
 "@sapphire/utilities@^3.7.0":
   version "3.7.0"
