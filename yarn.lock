@@ -176,12 +176,12 @@
   dependencies:
     tslib "^2.4.0"
 
-"@sapphire/prettier-config@^1.4.3":
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.4.3.tgz#a623e186048f6e080afd8db448c4318c1740084c"
-  integrity sha512-B0/SBL2x/R/DqF3cIY+f+1DzGI20SLyFBhvKnN9EndCow2feB5TWHvVArJKTDN7PMVgU1Gia2aCLyXO+/OM32w==
+"@sapphire/prettier-config@^1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.4.4.tgz#9736a15f13fdb35b4c2712959bd8bdd55abdffc9"
+  integrity sha512-G0UcXQDcN3cOL0C3EtH3y1N/zatLnuncCHXrzcrfWcTFwSCYo+ukWVupnJMy+cihkcU+yDS7MliM8WF5B7gdRg==
   dependencies:
-    prettier "^2.6.2"
+    prettier "^2.7.1"
 
 "@sapphire/ratelimits@^1.2.1":
   version "1.2.1"
@@ -1490,11 +1490,6 @@ prettier-linter-helpers@^1.0.0:
   integrity sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==
   dependencies:
     fast-diff "^1.1.2"
-
-prettier@^2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
-  integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
 
 prettier@^2.7.1:
   version "2.7.1"
