@@ -50,7 +50,7 @@
 		"@sapphire/utilities": "^3.11.0",
 		"@types/common-tags": "^1.8.1",
 		"@types/pg": "^8.6.5",
-		"bufferutil": "^4.0.6",
+		"bufferutil": "^4.0.7",
 		"chokidar": "^3.5.3",
 		"colorette": "^2.0.19",
 		"common-tags": "^1.8.2",
