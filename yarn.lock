@@ -150,12 +150,12 @@
   dependencies:
     "@sapphire/utilities" "^3.9.3"
 
-"@sapphire/decorators@^3.1.6":
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-3.1.6.tgz#f75ecc3fb35f229485521e096061609f78afc8a5"
-  integrity sha512-lDYrlJ85lw07NIPpOmn9FQmKEzzzzBRo9hha7G4XY/enpzj8OubJCtaNEvXuULXceitXdfd1CjwM13oP2jAhkw==
+"@sapphire/decorators@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-6.0.0.tgz#214df9cc0dac5e76e64a0ae0b924f16085f2762e"
+  integrity sha512-su+5K/ZT8PTxPLal9ZEq2Ik1J4ucEnY1ccBY1USW3NRj8iLFaEhPeUKpikRey3Wox2mpKeoxzZphrIWO5E8fng==
   dependencies:
-    tslib "^2.3.1"
+    tslib "^2.4.1"
 
 "@sapphire/discord-utilities@^2.1.1":
   version "2.1.1"
