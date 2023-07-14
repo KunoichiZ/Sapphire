@@ -68,12 +68,12 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.44.0.tgz#961a5903c74139390478bdc808bcde3fc45ab7af"
   integrity sha512-Ag+9YM4ocKQx9AarydN0KY2j0ErMHNIocPDrVo8zAE44xLTjEtz81OdR68/cydGtk6m6jDb5Za3r2useMzYmSw==
 
-"@favware/graphql-pokemon@^5.5.9":
-  version "5.5.9"
-  resolved "https://registry.yarnpkg.com/@favware/graphql-pokemon/-/graphql-pokemon-5.5.9.tgz#be7f3a3547080c5c44c96d62b5771c26928b810c"
-  integrity sha512-WG9jGm+zJRZ5C4pyyFN+HArFiZYQRCA2C+ezEhTnDi8VVO+MjDYN8tzc45R7y0rbPUeU6tHVPnEkZYrT11x94g==
+"@favware/graphql-pokemon@^7.3.3":
+  version "7.3.3"
+  resolved "https://registry.yarnpkg.com/@favware/graphql-pokemon/-/graphql-pokemon-7.3.3.tgz#9e4968e2e4d65e5fe7172e367ecd80129ae1ad98"
+  integrity sha512-rP30TVk/omFkNguqx6xpCzQDqSkhNCK2bE+/HB5OKbVovtZldh9WozaLzf6Rp7zb9Cs+vPwXNCjcVBDvVrh9kg==
   dependencies:
-    graphql "^15.5.1"
+    graphql "^16.7.1"
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
@@ -1070,10 +1070,10 @@ graphemer@^1.4.0:
   resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
-graphql@^15.5.1:
-  version "15.5.1"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.5.1.tgz#f2f84415d8985e7b84731e7f3536f8bb9d383aad"
-  integrity sha512-FeTRX67T3LoE3LWAxxOlW2K3Bz+rMYAC18rRguK4wgXaTZMiJwSUwDmPFo3UadAKbzirKIg5Qy+sNJXbpPRnQw==
+graphql@^16.7.1:
+  version "16.7.1"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.7.1.tgz#11475b74a7bff2aefd4691df52a0eca0abd9b642"
+  integrity sha512-DRYR9tf+UGU0KOsMcKAlXeFfX89UiiIZ0dRU3mR0yJfu6OjZqUcp68NnFLnqQU5RexygFoDy1EW+ccOYcPfmHg==
 
 has-flag@^4.0.0:
   version "4.0.0"
