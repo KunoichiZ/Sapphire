@@ -148,12 +148,12 @@
     picocolors "^1.0.0"
     tslib "^2.6.0"
 
-"@sapphire/cron@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/cron/-/cron-1.1.0.tgz#991770c31aaad81c132b5a9e31c9294eef80a08f"
-  integrity sha512-ANyxI4eVpYNDjTXlzwcv/8dd8H9R2k9a0MUGrgIfF8y9FWcvpJM6xrKRs11K0PtDfKsR0C0sjfXdCTUHYcI9OQ==
+"@sapphire/cron@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/cron/-/cron-1.1.1.tgz#d5d28b35712f4ff5bfa0cc3387b1959987b98daf"
+  integrity sha512-SBQepfBkwCzYBqMfYB+lrfx7AK6zVdT4lK7X4Q0SthxYS82MYw6qAiRUd24bzhaXc33KBk7g7Uljbxu98qDDJw==
   dependencies:
-    "@sapphire/utilities" "^3.11.0"
+    "@sapphire/utilities" "^3.13.0"
 
 "@sapphire/decorators@^3.1.6":
   version "3.1.6"
@@ -263,12 +263,12 @@
   dependencies:
     tslib "^2.4.0"
 
-"@sapphire/time-utilities@^1.7.9":
-  version "1.7.9"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.9.tgz#55339334b1c041fa82ab7cb40f8571aaf76b0b51"
-  integrity sha512-aZ3Ues3lZhc7Gee8nreoDwDK9SlCJusYSqGcb6fwYUfuNEJT9hwjjHqM6k6RW9dJ0xb/PfQs5dgRkhFRKAZ7iw==
+"@sapphire/time-utilities@^1.7.10":
+  version "1.7.10"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.10.tgz#a108447b4d12d2f484f023f2cdabe33da267906f"
+  integrity sha512-icmuse7m3oGJXRtweTmTT6vMMtCpWwGCpzephI5K8aQQRsfZwKYA+jAriSnT4+Lfw6LcR8j7TfkAAX7SyOOggQ==
   dependencies:
-    "@sapphire/cron" "^1.1.0"
+    "@sapphire/cron" "^1.1.1"
     "@sapphire/duration" "^1.1.0"
     "@sapphire/timer-manager" "^1.0.0"
     "@sapphire/timestamp" "^1.0.1"
@@ -314,6 +314,11 @@
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.12.0.tgz#3ee8330338aa79a7e0cab04d4d0eec9ed69fc9bf"
   integrity sha512-y1JP4FdPBkZjJGJcb5Zx0ok64mtpGvz0TLOC49HTwYsfBQL8tsTct93yoYdEEMWSZFmOF1ZvV8L6jIJ1CW8bJw==
+
+"@sapphire/utilities@^3.13.0":
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.13.0.tgz#04fd73281ad4cd63c2c87ffbac3faa393d77cf95"
+  integrity sha512-BD5ycPjZX5dXxrAb90dJTY8ukpPVBXgU17gA5ghK2memS4hwAzFYpvK+R+6zh4d6HYIKVuqrVhGXjvZenAa/Aw==
 
 "@types/common-tags@^1.8.1":
   version "1.8.1"
