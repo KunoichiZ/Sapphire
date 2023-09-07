@@ -48,7 +48,7 @@
 		"@sapphire/time-utilities": "^1.7.10",
 		"@sapphire/type": "^2.4.0",
 		"@sapphire/utilities": "^3.11.0",
-		"@types/common-tags": "^1.8.1",
+		"@types/common-tags": "^1.8.2",
 		"@types/pg": "^8.10.2",
 		"bufferutil": "^4.0.7",
 		"chokidar": "^3.5.3",
