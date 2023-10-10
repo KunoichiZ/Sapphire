@@ -376,10 +376,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.8.3.tgz#c4ae2bb1cfab2999ed441a95c122bbbe1567a66d"
   integrity sha512-jxiZQFpb+NlH5kjW49vXxvxTjeeqlbsnTAdBTKpzEdPs9itay7MscYXz3Fo9VYFEsfQ6LJFitHad3faerLAjCw==
 
-"@types/pg@^8.10.3":
-  version "8.10.3"
-  resolved "https://registry.yarnpkg.com/@types/pg/-/pg-8.10.3.tgz#39b3acba4f313a65c8fbb4b241fcb21cc1ba4126"
-  integrity sha512-BACzsw64lCZesclRpZGu55tnqgFAYcrCBP92xLh1KLypZLCOsvJTSTgaoFVTy3lCys/aZTQzfeDxtjwrvdzL2g==
+"@types/pg@^8.10.4":
+  version "8.10.4"
+  resolved "https://registry.yarnpkg.com/@types/pg/-/pg-8.10.4.tgz#1d65bc7cb4a069b529d33ab0657feab81776a6fc"
+  integrity sha512-6cxJPHzhlJxqAMkWl2w3KubTEM0UjGC0UrtIToa9J/CEuRFJ2bquKt+g9MhYBN9n1+U6UZZ8CW6Z4oLx/Tvh/w==
   dependencies:
     "@types/node" "*"
     pg-protocol "*"
