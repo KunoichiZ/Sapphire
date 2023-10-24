@@ -270,10 +270,10 @@
     "@discordjs/collection" "^0.1.6"
     tslib "^2.2.0"
 
-"@sapphire/plugin-subcommands@^4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-4.2.1.tgz#393e09d7837079d45e25300cd6976ad93fbd5b60"
-  integrity sha512-biENmpxzW8qVDbSJBq4MOqF5Rl68GZl6Ok90AMCHOaq9LqDw2VcT939/yAajVzvsBjhmP4pSbu4ZcYJY1fMoWg==
+"@sapphire/plugin-subcommands@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-4.3.0.tgz#4e4bfdd1645983c0e4949b3cb660fde83919a0b1"
+  integrity sha512-+oivum6cGvI6E7mMcjLd6FYwW8Rpqpw4NNlyPz9c1dUEM5puU+H1rJbWJeHpsZqr4QBdVlC6tmbch/igT1ORzQ==
   dependencies:
     "@sapphire/utilities" "^3.13.0"
     tslib "^2.6.2"
