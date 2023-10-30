@@ -61,7 +61,7 @@
 		"reflect-metadata": "^0.1.13",
 		"utf-8-validate": "^6.0.3",
 		"ws": "^8.14.2",
-		"zlib-sync": "^0.1.8"
+		"zlib-sync": "^0.1.9"
 	},
 	"imports": {
 		"#data/*": "./dist/lib/data/*.js",
