@@ -330,14 +330,14 @@
     tslib "^2.3.1"
     typescript "^4.5.5"
 
-"@sapphire/type@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-2.4.0.tgz#2be5411cec4242ecad5170aab616c7e8d3319b6d"
-  integrity sha512-oEyNiNr2zfStol5yLAjsLC4nYW0jP0wrOmQFQVl7SX/gumskoTy0hKGtKAWUwSMmc9N5pdlw3QbFNDzIkKYRvg==
+"@sapphire/type@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-2.4.1.tgz#924f3f27c7941fa72f67cd1f17a6e48b6117baf9"
+  integrity sha512-LXwSDvTkB6cR5V+UlG/SRZoumrs/Rek2Bn/x1w16O+OevIe7eMCP/YNOSeCTCBzSVXdDy6SioYohqXkd0A2nGA==
   dependencies:
     "@discordjs/node-pre-gyp" "^0.4.5"
-    nan "^2.17.0"
-    tslib "^2.5.0"
+    nan "^2.18.0"
+    tslib "^2.6.2"
 
 "@sapphire/utilities@^1.5.1":
   version "1.5.1"
@@ -1583,11 +1583,6 @@ ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
-
-nan@^2.17.0:
-  version "2.17.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.17.0.tgz#c0150a2368a182f033e9aa5195ec76ea41a199cb"
-  integrity sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==
 
 nan@^2.18.0:
   version "2.18.0"
