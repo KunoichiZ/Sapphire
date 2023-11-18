@@ -43,7 +43,7 @@
 		"@sapphire/discord.js-utilities": "^1.6.0",
 		"@sapphire/event-iterator": "^1.6.1",
 		"@sapphire/framework": "^1.0.0-alpha.11",
-		"@sapphire/plugin-subcommands": "^4.2.1",
+		"@sapphire/plugin-subcommands": "^5.1.0",
 		"@sapphire/stopwatch": "^1.5.0",
 		"@sapphire/time-utilities": "^1.7.10",
 		"@sapphire/type": "^2.4.1",
