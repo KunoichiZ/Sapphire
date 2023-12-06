@@ -187,12 +187,12 @@
     picocolors "^1.0.0"
     tslib "^2.6.0"
 
-"@sapphire/cron@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/cron/-/cron-1.1.1.tgz#d5d28b35712f4ff5bfa0cc3387b1959987b98daf"
-  integrity sha512-SBQepfBkwCzYBqMfYB+lrfx7AK6zVdT4lK7X4Q0SthxYS82MYw6qAiRUd24bzhaXc33KBk7g7Uljbxu98qDDJw==
+"@sapphire/cron@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/cron/-/cron-1.1.2.tgz#e9fdce71f28d0dfc4af85e6bd16f79f6afd016e1"
+  integrity sha512-Yyo4dL/5Fqfvt//exNNZVnnYovS05iharOO+IdZyYwkU+Gyltb/al/rttbAH4cctXfcpW4aDlMJ7PFDxgtUCaA==
   dependencies:
-    "@sapphire/utilities" "^3.13.0"
+    "@sapphire/utilities" "^3.14.0"
 
 "@sapphire/decorators@^3.1.6":
   version "3.1.6"
@@ -229,10 +229,10 @@
   dependencies:
     "@sapphire/discord-utilities" "^2.1.5"
 
-"@sapphire/duration@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/duration/-/duration-1.1.0.tgz#941d93585c6dd434d4d3416c28d2eb20d936db19"
-  integrity sha512-ATb2pWPLcSgG7bzvT6MglUcDexFSufr2FLXUmhipWGFtZbvDhkopGBIuHyzoGy7LZvL8UY5T6pRLNdFv5pl/Lg==
+"@sapphire/duration@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/duration/-/duration-1.1.1.tgz#070f6107ef834125202e27660e6b936ec73695bb"
+  integrity sha512-c6+ZvVEmZ82+G5aZOz8QbTLNY1nN0j/fxykFNULnmoc2WspFO7PbXUDZMeHQoanWbFRC83U2DszhF2Zl5BwjrA==
 
 "@sapphire/eslint-config@^4.4.3":
   version "4.4.3"
@@ -302,25 +302,25 @@
   dependencies:
     tslib "^2.6.2"
 
-"@sapphire/time-utilities@^1.7.10":
-  version "1.7.10"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.10.tgz#a108447b4d12d2f484f023f2cdabe33da267906f"
-  integrity sha512-icmuse7m3oGJXRtweTmTT6vMMtCpWwGCpzephI5K8aQQRsfZwKYA+jAriSnT4+Lfw6LcR8j7TfkAAX7SyOOggQ==
+"@sapphire/time-utilities@^1.7.11":
+  version "1.7.11"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.11.tgz#b29aaff20ee03c20addb02db55b861956584cf45"
+  integrity sha512-xvEs4wVQeddE5hl4nz4CUXpX8K4fNyYiatSVGTY3KWybqOIWD+JtdFqa/+7ER+fPoDuF6Ro6vDYddVb6dcBapQ==
   dependencies:
-    "@sapphire/cron" "^1.1.1"
-    "@sapphire/duration" "^1.1.0"
-    "@sapphire/timer-manager" "^1.0.0"
-    "@sapphire/timestamp" "^1.0.1"
+    "@sapphire/cron" "^1.1.2"
+    "@sapphire/duration" "^1.1.1"
+    "@sapphire/timer-manager" "^1.0.1"
+    "@sapphire/timestamp" "^1.0.2"
 
-"@sapphire/timer-manager@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/timer-manager/-/timer-manager-1.0.0.tgz#e8ecf15a7042ee611048b4f90fab1399653d3934"
-  integrity sha512-vxxnv75QPMGKt6IB6nL2xRJfwzcUQ9DBGzJLg6G8eS5O4u7j3IR/yr/GQsa4gIpjw6kQOgn8lUdnSTlpnERTbQ==
-
-"@sapphire/timestamp@^1.0.1":
+"@sapphire/timer-manager@^1.0.1":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/timestamp/-/timestamp-1.0.1.tgz#438d2c10702430cb95db84ada519f240800e5e4e"
-  integrity sha512-uLg+rBFuBiaQY/pFGDDzZSOH2cfv4ONIB7zQGNuRCTpYKBW/iIhRBIZjJZyn8NVkXQhVi+Q94DI4i6gDhYVs7w==
+  resolved "https://registry.yarnpkg.com/@sapphire/timer-manager/-/timer-manager-1.0.1.tgz#dcb504d0e102b4d7a61f73e3bede72753bef7fd2"
+  integrity sha512-axX9vuQI6e2gCcUZ/3yCbo415O8p61DZ7bHL6VloVySk6U3O3HzONnl0CGEcczwqKGZ4Ujga0Qj4izdulgu2SA==
+
+"@sapphire/timestamp@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/timestamp/-/timestamp-1.0.2.tgz#b9ee94adda7b420945ac5232e16a0e0a76d88c53"
+  integrity sha512-Jn5armLFr3Z9u9CTF9h9qWFy0rFKA4UlalRPSAF9KL0xbXTSTLEJyZrRoTtQwLGcuXdSaaLc/u9Ywy4oW2eTEw==
 
 "@sapphire/ts-config@^3.2.0":
   version "3.2.0"
@@ -353,6 +353,11 @@
   version "3.13.0"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.13.0.tgz#04fd73281ad4cd63c2c87ffbac3faa393d77cf95"
   integrity sha512-BD5ycPjZX5dXxrAb90dJTY8ukpPVBXgU17gA5ghK2memS4hwAzFYpvK+R+6zh4d6HYIKVuqrVhGXjvZenAa/Aw==
+
+"@sapphire/utilities@^3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.14.0.tgz#4181145cf3cad127009d758e1a6ceb27db3c4eca"
+  integrity sha512-eYlpYlaKLvxTNjD3ymxpsf4MaSHW3x6vf+DMsLdMsV235J7i66VboHb8uxNcogR/lJ7khmMhMTCtabqUhNX4bA==
 
 "@types/common-tags@^1.8.4":
   version "1.8.4"
