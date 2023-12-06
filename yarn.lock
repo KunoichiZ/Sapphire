@@ -344,15 +344,15 @@
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.5.1.tgz#6fd9d70a55704a9a5b197e4479a610c8be865b6c"
   integrity sha512-pcV0VqLrAlfPi5MU5RzN16vCC3sjKALfL/iuz8g1SMmfbDaZny0k68QXbGp9Rd7AGyrHy6AKMhsNA3SMyb3pFA==
 
-"@sapphire/utilities@^3.11.0":
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.11.0.tgz#2dccfb332dc5c119e1425cce6b2c64160b770bad"
-  integrity sha512-ich7J+329UTEgWxgk8b871rMhbFW/hvXdabdiKaUKd6g10eIMkIakWf+EGkDQsiDSiebIXll9TIPPmWtN3cVSw==
-
 "@sapphire/utilities@^3.13.0":
   version "3.13.0"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.13.0.tgz#04fd73281ad4cd63c2c87ffbac3faa393d77cf95"
   integrity sha512-BD5ycPjZX5dXxrAb90dJTY8ukpPVBXgU17gA5ghK2memS4hwAzFYpvK+R+6zh4d6HYIKVuqrVhGXjvZenAa/Aw==
+
+"@sapphire/utilities@^3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.14.0.tgz#4181145cf3cad127009d758e1a6ceb27db3c4eca"
+  integrity sha512-eYlpYlaKLvxTNjD3ymxpsf4MaSHW3x6vf+DMsLdMsV235J7i66VboHb8uxNcogR/lJ7khmMhMTCtabqUhNX4bA==
 
 "@types/common-tags@^1.8.4":
   version "1.8.4"
