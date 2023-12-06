@@ -247,10 +247,10 @@
     prettier "^2.8.8"
     typescript "^5.1.6"
 
-"@sapphire/event-iterator@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.7.0.tgz#af34f497eace8d3969629bca1d4703a1f4dabb36"
-  integrity sha512-Alcm521FI58+SAK/K4x26f2EEhRfCXnBoOGOuNzrWg8FTZO3X4M1l6EUpQY6yxUyvmWhZW4PjTw92Yx201SrEQ==
+"@sapphire/event-iterator@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.7.1.tgz#e21520e9feee6569537edef3e1529f7ee03fbfe4"
+  integrity sha512-s/q1JAuLCRSzj8PqE0dCYCOYATkQF025O6MbyTNZdroUFGjoTvYc7F0i04tYnmKpNOumj+GZQ8itkVqrTCPuJQ==
   dependencies:
     tslib "^2.6.2"
 
