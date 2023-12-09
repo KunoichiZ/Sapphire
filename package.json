@@ -58,7 +58,7 @@
 		"discord.js": "^12.5.3",
 		"node-fetch": "^3.2.8",
 		"pg": "^8.11.3",
-		"reflect-metadata": "^0.1.13",
+		"reflect-metadata": "^0.1.14",
 		"utf-8-validate": "^6.0.3",
 		"ws": "^8.14.2",
 		"zlib-sync": "^0.1.9"
