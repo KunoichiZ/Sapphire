@@ -47,7 +47,7 @@
 		"@sapphire/stopwatch": "^1.5.1",
 		"@sapphire/time-utilities": "^1.7.11",
 		"@sapphire/type": "^2.4.3",
-		"@sapphire/utilities": "^3.11.0",
+		"@sapphire/utilities": "^3.15.1",
 		"@types/common-tags": "^1.8.4",
 		"@types/pg": "^8.10.9",
 		"bufferutil": "^4.0.8",
