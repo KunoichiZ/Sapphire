@@ -41,7 +41,7 @@
 	"dependencies": {
 		"@sapphire/decorators": "^3.1.6",
 		"@sapphire/discord.js-utilities": "^1.6.0",
-		"@sapphire/event-iterator": "^1.7.1",
+		"@sapphire/event-iterator": "^1.7.2",
 		"@sapphire/framework": "^1.0.0-alpha.11",
 		"@sapphire/plugin-subcommands": "^4.2.1",
 		"@sapphire/stopwatch": "^1.5.2",
