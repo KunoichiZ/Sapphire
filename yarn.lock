@@ -388,10 +388,10 @@
   dependencies:
     undici-types "~5.26.4"
 
-"@types/pg@^8.11.0":
-  version "8.11.0"
-  resolved "https://registry.yarnpkg.com/@types/pg/-/pg-8.11.0.tgz#355a07531d467f2e4fabaa78be087ce2d99fd862"
-  integrity sha512-sDAlRiBNthGjNFfvt0k6mtotoVYVQ63pA8R4EMWka7crawSR60waVYR0HAgmPRs/e2YaeJTD/43OoZ3PFw80pw==
+"@types/pg@^8.11.1":
+  version "8.11.1"
+  resolved "https://registry.yarnpkg.com/@types/pg/-/pg-8.11.1.tgz#2384c64feeb349841d74e4d5539c02a127395c12"
+  integrity sha512-tUMU6HRvsosqH0qov7YH0Kj6EnziKoqmHUcREBPlDEQLWT+TxDUBT1MmQ53byHXs171xn3YFPIPwVTkVb16mVg==
   dependencies:
     "@types/node" "*"
     pg-protocol "*"
