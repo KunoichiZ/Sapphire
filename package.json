@@ -59,7 +59,7 @@
 		"node-fetch": "^3.2.8",
 		"pg": "^8.11.5",
 		"reflect-metadata": "^0.2.2",
-		"utf-8-validate": "^6.0.3",
+		"utf-8-validate": "^6.0.4",
 		"ws": "^8.17.0",
 		"zlib-sync": "^0.1.9"
 	},
