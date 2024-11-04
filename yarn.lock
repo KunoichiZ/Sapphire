@@ -352,12 +352,12 @@
   resolved "https://registry.yarnpkg.com/@sapphire/ratelimits/-/ratelimits-1.2.1.tgz#0a51929581f1cd9f285bdff86618d3ea87e74233"
   integrity sha512-Vln4L+jOWXfAGWW5aGASvcbPX4i+vgM0wdTEklev8/RGh+QH1uMGMrsgyrm70rFNBwxBSkMApy7xqrzsmiW+0w==
 
-"@sapphire/stopwatch@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.5.2.tgz#25119a47e943a70f38d5f10ed2b60fb15e115474"
-  integrity sha512-FrR1GnaEIuXpEfnaz7DjNgoN/Cp8dJ5XFgb8CxXTCAJi8LYk0YsyGSdmmcs9R3ZNZrA1vOSv0dFVLitgiVA36Q==
+"@sapphire/stopwatch@^1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.5.3.tgz#ee7c2205b39220d2078e25361e3ceeaba3d026f6"
+  integrity sha512-HwsZZl5+BHWAMsRPALyabTlVLjPyXAIwZGSYZg7LxqK5neMaWLmc8Fh06ZZe85GkJQ2e+JDiNAaNRyD1Fya0Kw==
   dependencies:
-    tslib "^2.6.2"
+    tslib "^2.8.1"
 
 "@sapphire/time-utilities@^1.7.12":
   version "1.7.12"
