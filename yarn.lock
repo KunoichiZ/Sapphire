@@ -304,10 +304,10 @@
     prettier "^3.3.0"
     typescript "^5.4.5"
 
-"@sapphire/event-iterator@^1.7.3":
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.7.3.tgz#1c66e740dd911fc2846abd683a51c4a1681d67da"
-  integrity sha512-0bQvTUnQYCfKntRrMCd1+VHCvS5ZGjKb9zZ/X8CSGt+QnqHJrh5gj+MP4fXmzezjq7ie1m5lnpJpLGzImuc32w==
+"@sapphire/event-iterator@^1.7.4":
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/event-iterator/-/event-iterator-1.7.4.tgz#a9437a98a31a22fbb7d1c271f1fcc40a0c0bd48a"
+  integrity sha512-kSqQUUXqE8fhtcNPebgYKn8g7EiQ0gtPXLN//lyipDb4Yw/bBRhNdszy/n/sk/ouDUah/oNzxacMU4o+abb71g==
   dependencies:
     tslib "^2.8.1"
 
