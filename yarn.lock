@@ -387,14 +387,14 @@
     tslib "^2.3.1"
     typescript "^4.5.5"
 
-"@sapphire/type@^2.5.1":
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-2.5.1.tgz#69ad3bc9afb220cf2a5d87da9e2f68980688c51f"
-  integrity sha512-0UDGhR/qNuaUTiC0w9pcvs1dQj5SmNEfs4fjk7UfsnSJSFMNIbVmIdyajJHe37C46/NQZwn1SohGTh9XThgXZg==
+"@sapphire/type@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-2.6.0.tgz#1b21f154b80fed4815c9298548b19ad4ac8ec27a"
+  integrity sha512-GyoJJ/4hAQPNO8cVWp67JUbFlK11cgSfgtu5YwoJNuXXxNsJ58Uh3ENmG5dkwibfGBebBRssfOZHwnKS1iiFvQ==
   dependencies:
     "@discordjs/node-pre-gyp" "^0.4.5"
-    nan "^2.20.0"
-    tslib "^2.6.3"
+    nan "^2.22.0"
+    tslib "^2.8.1"
 
 "@sapphire/utilities@^1.5.1":
   version "1.5.1"
@@ -1796,10 +1796,10 @@ nan@^2.18.0:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.18.0.tgz#26a6faae7ffbeb293a39660e88a76b82e30b7554"
   integrity sha512-W7tfG7vMOGtD30sHoZSSc/JVYiyDPEyQVso/Zz+/uQd0B0L46gtC+pHha5FFMRpil6fm/AoEcRWyOVi4+E/f8w==
 
-nan@^2.20.0:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.20.0.tgz#08c5ea813dd54ed16e5bd6505bf42af4f7838ca3"
-  integrity sha512-bk3gXBZDGILuuo/6sKtr0DQmSThYHLtNCdSdXk9YkxD/jK6X2vmCyyXBBxyqZ4XcnzTyYEAThfX3DCEnLf6igw==
+nan@^2.22.0:
+  version "2.22.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.22.0.tgz#31bc433fc33213c97bad36404bb68063de604de3"
+  integrity sha512-nbajikzWTMwsW+eSsNm3QwlOs7het9gGJU5dDZzRTQGk03vyBOauxgI4VakDzE0PtsGTmXPsXTbbjVhRwR5mpw==
 
 natural-compare-lite@^1.4.0:
   version "1.4.0"
@@ -2461,11 +2461,6 @@ tslib@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
-
-tslib@^2.6.3:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.3.tgz#0438f810ad7a9edcde7a241c3d80db693c8cbfe0"
-  integrity sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==
 
 tslib@^2.8.1:
   version "2.8.1"
