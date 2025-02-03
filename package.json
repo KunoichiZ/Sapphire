@@ -28,7 +28,7 @@
 		"@sapphire/ts-config": "^3.2.0",
 		"@types/node": "^22.10.10",
 		"@types/node-fetch": "^3.0.3",
-		"@types/ws": "^8.5.13",
+		"@types/ws": "^8.5.14",
 		"@typescript-eslint/eslint-plugin": "^5.61.0",
 		"@typescript-eslint/parser": "^5.61.0",
 		"eslint": "^9.19.0",
