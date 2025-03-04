@@ -451,10 +451,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.22.tgz#0d29f382472c4ccf3bd96ff0ce47daf5b7b84b18"
   integrity sha512-g+f/qj/cNcqKkc3tFqlXOYjrmZA+jNBiDzbP3kH+B+otKFqAdPgVTGP1IeKRdMml/aE69as5S4FqtxAbl+LaMw==
 
-"@types/node@^22.13.8":
-  version "22.13.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.13.8.tgz#57e2450295b33a6518d6fd4f65f47236d3e41d8d"
-  integrity sha512-G3EfaZS+iOGYWLLRCEAXdWK9my08oHNZ+FHluRiggIYJPOXzhOiDgpVCUHaUvyIC5/fj7C/p637jdzC666AOKQ==
+"@types/node@^22.13.9":
+  version "22.13.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.13.9.tgz#5d9a8f7a975a5bd3ef267352deb96fb13ec02eca"
+  integrity sha512-acBjXdRJ3A6Pb3tqnw9HZmyR3Fiol3aGxRCK1x3d+6CDAMjl7I649wpSd+yNURCjbOUGu9tqtLKnTGxmK6CyGw==
   dependencies:
     undici-types "~6.20.0"
 
