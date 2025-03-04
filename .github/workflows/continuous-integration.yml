@@ -13,17 +13,18 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout Project
-        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
-      - name: Use Node.js v18
-        uses: actions/setup-node@2fddd8803e2f5c9604345a0b591c3020ee971a93 # tag=v3
+        uses: actions/checkout@v4
+      - name: Use Node.js v20
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: yarn
-      - name: Restore CI Cache
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-14-${{ hashFiles('**/yarn.lock') }}
+          registry-url: https://registry.yarnpkg.com/
+      # - name: Restore CI Cache
+      #   uses: actions/cache@v1
+      #   with:
+      #     path: node_modules
+      #     key: ${{ runner.os }}-14-${{ hashFiles('**/yarn.lock') }}
       - name: Install Dependencies
         run: yarn --ignore-scripts --frozen-lockfile
       - name: Copy Configuration
