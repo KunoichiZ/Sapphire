@@ -30,3 +30,4 @@ stash.patch
 
 # .orig files
 *.orig
+.vscode/launch.json
