@@ -26,7 +26,7 @@
 		"@sapphire/eslint-config": "^5.0.5",
 		"@sapphire/prettier-config": "^2.0.0",
 		"@sapphire/ts-config": "^3.2.0",
-		"@types/node": "^22.13.11",
+		"@types/node": "^22.13.13",
 		"@types/node-fetch": "^3.0.3",
 		"@types/ws": "^8.18.0",
 		"@typescript-eslint/eslint-plugin": "^5.61.0",
