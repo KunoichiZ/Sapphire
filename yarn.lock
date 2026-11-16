@@ -390,14 +390,14 @@
     tslib "^2.3.1"
     typescript "^4.5.5"
 
-"@sapphire/type@^2.6.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-2.6.0.tgz#1b21f154b80fed4815c9298548b19ad4ac8ec27a"
-  integrity sha512-GyoJJ/4hAQPNO8cVWp67JUbFlK11cgSfgtu5YwoJNuXXxNsJ58Uh3ENmG5dkwibfGBebBRssfOZHwnKS1iiFvQ==
+"@sapphire/type@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-3.0.0.tgz#4507237e8613662c8fc9a26c6a922f490f137024"
+  integrity sha512-zxkC+InkvZgto+okaNyK4UgXnCzf5E16iP3EWi9UP1NIFf4cAcyS0fXBs09IinvPYp3Qc+ZAHgxiMDCtvEtpoA==
   dependencies:
     "@discordjs/node-pre-gyp" "^0.4.5"
-    nan "^2.22.0"
-    tslib "^2.8.1"
+    nan "^2.30.0"
+    tslib "^2.9.1"
 
 "@sapphire/utilities@^1.5.1":
   version "1.5.1"
@@ -1672,10 +1672,10 @@ nan@^2.18.0:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.18.0.tgz#26a6faae7ffbeb293a39660e88a76b82e30b7554"
   integrity sha512-W7tfG7vMOGtD30sHoZSSc/JVYiyDPEyQVso/Zz+/uQd0B0L46gtC+pHha5FFMRpil6fm/AoEcRWyOVi4+E/f8w==
 
-nan@^2.22.0:
-  version "2.22.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.22.0.tgz#31bc433fc33213c97bad36404bb68063de604de3"
-  integrity sha512-nbajikzWTMwsW+eSsNm3QwlOs7het9gGJU5dDZzRTQGk03vyBOauxgI4VakDzE0PtsGTmXPsXTbbjVhRwR5mpw==
+nan@^2.30.0:
+  version "2.30.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.30.0.tgz#66d75ca6db19616b3f58a6229f06c806c05d4661"
+  integrity sha512-P5mokDkSvCGBz6mZDD/2l+w9QoICRXdCyZ9ONGmTePr40oihJg3Kpn0YU3twKd6PJnwSlLBWNQeOT6yWEV2c4A==
 
 natural-compare-lite@^1.4.0:
   version "1.4.0"
@@ -2267,6 +2267,11 @@ tslib@^2.8.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.8.1.tgz#612efe4ed235d567e8aba5f2a5fab70280ade83f"
   integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
+
+tslib@^2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.9.1.tgz#8986213ba2f17f38ba39a7c43d0e565a9134ff5f"
+  integrity sha512-a4Ux9VKuIMHsOS7ENbEq6hK2ZGYIT27Rtl0E4eD9KqwxhKiQeMZE/9xb3IdYwWaSOyIBQLExhQgXDTYoiCxnWA==
 
 tsutils@^3.21.0:
   version "3.21.0"
